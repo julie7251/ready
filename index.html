@@ -1,19 +1,165 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>레디큐</title>
-</head>
-<body>
-    <header></header>
-    <div class="container">
-    <section></section>
-    <section></section>
-    <section></section>
-    <section></section>
-    <section></section>
+    <!-- 주석확인필요 -->
+    <!-- seo -->
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="description"
+      content="레디큐는 맛있는 숙취해소제를 찾는 사람들을 위한 브랜드입니다."
+    />
+    <meta
+      name="keywords"
+      content="레디큐, 한독, readyq, 숙취해소제품, 숙취해소, 레디큐브랜드, 레디큐효능, 레디큐스틱, 레디큐스틱형, 숙취해소제, 맛있는숙취해소, 합리적인숙취해소, 포켓사이즈, 간편한숙취해소, 레디큐효과, 레디큐복용법, 가성비, 필수템, 스틱형, 망고맛, 열대과일맛, 레디큐룰렛이벤트, 룰렛이벤트, 숙취, 망고맛레디큐, 음주전, 음주후, 포켓"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta property="title" content="레디큐" />
+    <meta
+      property="keyword"
+      content="레디큐, 한독, readyq, 숙취해소제품, 숙취해소, 레디큐브랜드, 레디큐효능, 레디큐스틱, 레디큐스틱형, 숙취해소제, 맛있는숙취해소, 합리적인숙취해소, 포켓사이즈, 간편한숙취해소, 레디큐효과, 레디큐복용법, 가성비, 필수템, 스틱형, 망고맛, 열대과일맛, 레디큐룰렛이벤트, 룰렛이벤트, 숙취, 망고맛레디큐, 음주전, 음주후, 포켓"
+    />
+    <meta property="og:title" content="레디큐" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="레디큐는 맛있는 숙취해소제를 찾는 사람들을 위한 브랜드입니다."
+    />
+    <meta
+      property="og:description"
+      content="레디큐는 맛있는 숙취해소제를 찾는 사람들을 위한 브랜드입니다."
+    />
+    <!-- <meta
+      property="og:image"
+      content="https://www.hyundaigroup.com/upload/mainbanner/main02.png"
+    />
+    <meta property="og:url" content="https://www.hyundaigroup.com" /> -->
+    <!-- ikon -->
+    <script
+      src="https://kit.fontawesome.com/5251502df3.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- css -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <!-- js -->
+    <script src="js/html5shiv.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.js"
+      integrity="sha512-bxzECOBohzcTcWocMAlNDE2kYs0QgwGs4eD8TlAN2vfovq13kfDfp95sJSZrNpt0VMkpP93ZxLC/+WN/7Trw2g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- <script src="js/prefixfree.min.js"></script> -->
+    <script src="js/respond.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.css"
+    />
+    <script src="js/main.js"></script>
+  </head>
+  <body>
+    <ul id="pageMenu">
+      <li data-menuanchor="page1" class="active">
+        <a href="#page1"><span>페이지1</span><i></i></a>
+      </li>
+      <li data-menuanchor="page2">
+        <a href="#page2"><span>페이지2</span><i></i></a>
+      </li>
+      <li data-menuanchor="page3">
+        <a href="#page3"><span>페이지3</span><i></i></a>
+      </li>
+      <li data-menuanchor="page4">
+        <a href="#page4"><span>페이지4</span><i></i></a>
+      </li>
+      <li data-menuanchor="page5">
+        <a href="#page5"><span>페이지5</span><i></i></a>
+      </li>
+    </ul>
+
+    <header class="header">
+      <div class="hd-left">
+        <a href="#"><img src="images/header/logo.png" alt="헤더로고" /></a>
+      </div>
+      <div class="hd-right">
+        <div class="hd-right-left">
+          <ul class="hd-nav">
+            <li>
+              <a href="#"><span>브랜드스토리</span></a>
+            </li>
+            <li>
+              <a href="#"><span>제품소개</span></a>
+            </li>
+            <li>
+              <a href="#"><span>구매처</span></a>
+            </li>
+            <li>
+              <a href="#"><span>뉴스룸</span></a>
+            </li>
+          </ul>
+        </div>
+        <div class="hd-right-right">
+          <div class="hd-login">
+            <ul>
+              <li>
+                <a href="#"><i class="fa-regular fa-user"></i></a>
+              </li>
+              <li>
+                <a href="#"><span>Log In</span></a>
+              </li>
+              <li>
+                <span><i class="fa-solid fa-chevron-down"></i></span>
+              </li>
+            </ul>
+          </div>
+          <div class="hd-language">
+            <ul>
+              <li>
+                <a href="#"><span>KR</span></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><span><i class="fa-solid fa-chevron-down"></i></span
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div id="fullpage">
+      <div class="section" id="section1">
+        <div class="section-bg">
+          <div class="jangseonggue">
+            <img src="images/section1/jangseonggue.png" alt="장성규" />
+          </div>
+          <img src="images/section1/Group 78 (1).png" alt="섹션1배경" />
+        </div>
+      </div>
+      <div class="section" id="section2">
+        <div class="section-inner"></div>
+      </div>
+      <div class="section" id="section3">
+        <div class="section-inner"></div>
+      </div>
+      <div class="section" id="section4">
+        <div class="section-inner"></div>
+      </div>
+      <div class="section" id="section5">
+        <div class="section-inner"></div>
+      </div>
+
+      <div class="section fp-auto-height" id="section6">
+        <div class="section-inner">푸터</div>
+      </div>
     </div>
-    <footer></footer>
-</body>
+  </body>
 </html>
