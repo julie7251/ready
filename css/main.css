@@ -8,104 +8,6 @@ body {
   font-family: "Gothic A1", sans-serif;
 }
 
-/* 노말라이즈 */
-html,
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-div,
-p,
-blockquote,
-pre,
-code,
-address,
-ul,
-ol,
-li,
-menu,
-nav,
-section,
-article,
-aside,
-dl,
-dt,
-dd,
-table,
-thead,
-tbody,
-tfoot,
-label,
-caption,
-th,
-td,
-form,
-fieldset,
-legend,
-hr,
-input,
-button,
-textarea,
-object,
-figure,
-figcaption {
-  margin: 0;
-  padding: 0;
-}
-
-main,
-header,
-section,
-nav,
-footer,
-aside,
-article,
-figure {
-  display: block;
-}
-
-html {
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
-
-html,
-body {
-  overflow-x: hidden; /* 반응형 */
-}
-
-ul,
-ol,
-li {
-  list-style: none;
-}
-
-h1,
-h2,
-h3,
-h4,
-strong,
-th {
-  font-weight: normal;
-  font-family: inherit;
-  color: inherit;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-  outline: none;
-}
-
-i,
-em {
-  font-style: normal;
-}
-
 /* 헤더 */
 .header {
   position: fixed;
@@ -230,75 +132,14 @@ em {
 .section.active .ani-02 {animation: fadeLeft 0.5s 0.55s both;}
 .section.active .ani-03 i {animation: fadeUp 0.4s 0.2s both} */
 
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes fadeUp {
-  0% {
-    transform: translateY(80px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-@keyframes fadeLeft {
-  0% {
-    transform: translateX(-80px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-@keyframes fadeRight {
-  0% {
-    transform: translateX(80px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-@keyframes up {
-  0% {
-    transform: translateY(120%);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-@keyframes moveTxt {
-  0% {
-    transform: translateX(-20px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-
-.fp-controlArrow.fp-prev {
-  left: 120px;
-}
-.fp-controlArrow.fp-next {
-  right: 120px;
-}
 
 * {
   box-sizing: border-box;
 }
 .header {
   width: 100%;
+  height: 140px;
+
 }
 /* 헤더 */
 .header {
@@ -537,3 +378,90 @@ em {
 }
 
 /* Section-4 */
+.sidemenu{
+  position: fixed;
+right: 0;
+top: 0;
+width: 100px;
+height: 100%;
+background-color: rgba(255, 255, 255, 0.2);
+/* background-color: blue; */
+}
+.video-box {
+  display: flex;
+  justify-content: center;
+  /* 우측 고정메뉴너비확인 */
+  margin-right: 70px;
+}
+/* 간격 넓게 잡음 */
+.video-box iframe {
+  margin: 0 3% 0 0; /* 각 동영상 사이의 여백 */
+}
+/* 네비 */
+.ft-menu {
+width: 100%;
+/* 100px -> 50px*/
+height: 50px;
+  position: relative;
+  display: flex;
+  background-color: #ff7a00;
+}
+.ft-menu ul {
+    /* 100% 80% 차이 */
+  width: 80%;
+  display: flex;
+  gap: 7%;
+  padding-left: 7%;
+}
+.ft-menu ul li {
+  color: #fff;
+  line-height: 50px;
+}
+/* .ft-menu ul li::after {
+  content: "";
+  border-right: 1px solid #fff;
+} */
+/*셀렉션 */
+.familysite {
+  width: 15%;
+height: 36px;
+margin-top: 7px;
+  margin-right: 8%;
+  background-color: #ff7a00;
+  color: #fff;
+  text-align: center;
+  border: none;
+}
+.familysite-list {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.familysite-list li{
+  /* display: none; */
+
+}
+footer .logo-img {
+  width: 220px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  padding: 2.5% 0 2.5% 0;
+}
+.sns-img {
+  padding: 1.5% 0 1.5% 0;
+}
+.sns-img img {
+  width: 50px;
+  padding-right: 1%;
+}
+.text {
+  color: #7a7a7a;
+  text-align: center;
+  /* letter-spacing: 0.2px; */
+  line-height: 1.5em;
+}
+.text-copy {
+  font-weight: bold;
+}
+
