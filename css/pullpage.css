@@ -100,19 +100,27 @@ em {
 }
 
 /* 페이지 앵커 */
-
+.sidemenu {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100px;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
+  /* background-color: blue; */
+  z-index: 9999999;
+}
 #pageMenu {
   position: fixed;
   right: 0;
-  top: 50%;
-  transform: translate(0, -50%);
+  top: 200px;
   width: 100px;
-  height: 50%;
+  height: 60%;
   /* background-color: bisque; */
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  gap: 5%;
+  justify-content: left;
+  gap: 2%;
   z-index: 999;
 }
 
@@ -124,7 +132,6 @@ em {
   width: 100%;
   position: relative;
   text-align: center;
-  
 }
 #pageMenu li a span {
   color: #fff;
@@ -133,20 +140,24 @@ em {
   font-weight: bold;
   line-height: 30px;
   display: inline-block;
-
 }
 #pageMenu.on a span {
   color: #fff;
-
 }
 #pageMenu a i img {
   width: 30px;
   height: auto;
 }
-#pageMenu a .readyq img{
+
+#pageMenu a .event img {
+  width: 30px;
+  padding-bottom: 70px;
+}
+
+#pageMenu a .readyq img {
   width: 35px;
 }
-#pageMenu a .product img{
+#pageMenu a .product img {
   width: 20px;
 }
 
@@ -223,11 +234,6 @@ em {
 #section6 .section-inner {
   min-height: 300px;
 }
-
-/* 애니메이션 */
-/* .section.active .ani-01 {animation: fadeLeft 0.5s 0.35s both;}
-.section.active .ani-02 {animation: fadeLeft 0.5s 0.55s both;}
-.section.active .ani-03 i {animation: fadeUp 0.4s 0.2s both} */
 
 @keyframes fadeIn {
   0% {
