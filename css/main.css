@@ -2,10 +2,6 @@
 
 /* 폰트 적용 */
 @import url("https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap");
-
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
-@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
-
 html,
 body {
   font-family: "Gothic A1", sans-serif;
@@ -19,7 +15,6 @@ body {
   width: 100%;
   background-color: rgba(255, 255, 255, 0.2);
   z-index: 10000;
-  background-color: violet;
 }
 .header .logo {
   padding: 15px;
@@ -31,19 +26,19 @@ body {
 /* 페이지 */
 /*확인용 색상 */
 #section1 {
-  background-color: #ffa800;
+  background-color: #feca39;
 }
 #section2 {
   background-color: #fff;
 }
 #section3 {
-  background-color: #ffa800;
+  background-color: #feca39;
 }
 #section4 {
   background-color: #fff;
 }
 #section5 {
-  background-color: #ffa800;
+  background-color: #feca39;
 }
 #section6 {
   background-color: #fff;
@@ -59,20 +54,12 @@ body {
   min-height: 300px;
 }
 
-
-/* 애니메이션 */
-/* .section.active .ani-01 {animation: fadeLeft 0.5s 0.35s both;}
-.section.active .ani-02 {animation: fadeLeft 0.5s 0.55s both;}
-.section.active .ani-03 i {animation: fadeUp 0.4s 0.2s both} */
-
 * {
   box-sizing: border-box;
 }
 .header {
   width: 100%;
-
   height: 140px;
-
 }
 /* 헤더 */
 .header {
@@ -101,8 +88,8 @@ body {
   width: 100%;
   /* background-color: beige; */
   display: flex;
-  gap: 11%;
-  font-size: 0.9vw;
+  gap: 10%;
+  font-size: 1.1vw;
   font-weight: 600;
   color: #fff;
   justify-content: flex-end;
@@ -125,54 +112,11 @@ body {
 }
 .hd-login ul li {
   color: #fff;
-  font-size: 0.9vw;
+  font-size: 1.1vw;
   font-weight: 600;
 }
-.signup {
-  position: relative;
-}
-.signup li {
-  display: none;
-  width: 80px;
-  position: absolute;
-  top: 4px;
-  left: 0px;
-  padding-top: 10px;
-}
-.signup li a {
-  display: block;
-  width: 100%;
-}
-.signup li a span {
-  display: block;
-  width: 100%;
-  /* background-color: aqua; */
-}
-.language {
-  position: relative;
-}
-.language li {
-  display: none;
-  width: 80px;
-  position: absolute;
-  top: 4px;
-  left: 0px;
-  padding-top: 10px;
-}
-.language li a {
-  display: block;
-  width: 100%;
-}
-.language li a span {
-  display: block;
-  width: 100%;
-  /* background-color: aqua; */
-}
-/* header-middle */
-.header-middle {
-  position: relative;
-  display: block;
-  background-color: #fff;
+.hd-login ul li:nth-child(2) {
+  padding-bottom: 10px;
 }
 /* .hd-login>ul>li>.login-ul{
   /* display:none; }*/
@@ -211,7 +155,7 @@ body {
 }
 .hd-language ul li {
   color: #fff;
-  font-size: 0.9vw;
+  font-size: 1.1vw;
   font-weight: 600;
 }
 /* 섹션1 */
@@ -220,12 +164,12 @@ body {
   height: 100vh;
   display: flex;
 }
-.section1-bg {
+.section-bg {
   position: relative;
   width: 100%;
   height: 100%;
 }
-.section1-bg img {
+.section-bg img {
   width: 90%;
   height: 100%;
 }
@@ -239,108 +183,60 @@ body {
   width: 60%;
   height: 100%;
 }
-.scroll {
-  position: absolute;
-  bottom: 2%;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 4.5%;
-}
-.scroll span {
-  position: absolute;
-  bottom: 77%;
-  left: 42.5%;
-  transform: translateX(-42.5%);
-  width: 12%;
-  height: 12%;
-  border-radius: 50%;
-  background-color: #fff;
-  /* display: none; */
-}
-/* .scroll span a{
-  display: block;
-  width: 1%;
-} */
 /* @media screen and (max-width :1669px) {
   .section-bg{
+   
     height: 57.10vw;
-}
+   }
 } */
 
-/* 섹션2 */
-.section2-bg {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-.section2-bg img {
-  width: 100%;
-  height: 100%;
-}
-.jangseonggue {
-  position: absolute;
-  bottom: -1%;
-  left: 22%;
-  width: 100%;
-}
-.jangseonggue img {
-  width: 60%;
-  height: 100%;
-}
-
-
-
-/* Section-3------------------- */
-
+/* Section-3 */
 .ingredient {
-  margin: 120px 0 0 0;
+  margin: 0 auto;
   width: 60%;
-  height: 80%;
   position: relative;
-  /* background-color: #ffb0b0; */
+  /* background-color: #444141; */
 }
-/* .ingredient-img {
+.ingredient-img {
   width: 55%;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -38%);
   object-fit: cover;
-} */
+}
 .detail-wrap {
   width: 100%;
-  height: 85vh;
   position: relative;
-  background: url("../images/ingredient.png") no-repeat center;
-  /* background-color: rgba(255, 255, 255, 0.2); */
+  /* background-color: rgb(75, 218, 47); */
 }
 .detail {
   display: flex;
   align-items: center;
-  width: 50%;
   gap: 3%;
+  width: 35%;
+  /* background-color: bisque; */
 }
 .detail img {
-  width: 20%;
+  width: 25%;
   cursor: pointer;
 }
 .detail-txt {
-  width: 80%;
+  width: 78%;
   opacity: 0;
   transition: opacity 0.5s ease;
 }
+
 .detail-txt h2 {
   color: #444;
-  font-family: "Noto Sans KR", sans-serif;
-  font-weight: 600;
-  font-size: 1.3vw;
+  font-weight: bold;
+  font-size: 1.1vw;
   line-height: 1.7;
 }
 .detail-txt p {
-  font-family: "Noto Sans KR", sans-serif;
   color: #555;
-  font-weight: 400;
-  font-size: 0.8vw;
+  font-weight: 600;
+  font-size: 0.7vw;
   line-height: 1.5;
 }
 .detail-1 {
@@ -348,39 +244,39 @@ body {
   flex-direction: row-reverse;
   text-align: right;
   position: absolute;
-  top: 9%;
-  left: -9%;
+  top: -250px;
+  left: 50px;
 }
 .detail-2 {
   display: flex;
   flex-direction: row-reverse;
   text-align: right;
   position: absolute;
-  top: 43%;
-  left: -22%;
+  top: 25px;
+  left: -95px;
 }
 .detail-3 {
   display: flex;
   flex-direction: row-reverse;
   text-align: right;
   position: absolute;
-  bottom: 9%;
-  left: -9%;
+  top: 303px;
+  left: 50px;
 }
 .detail-4 {
   position: absolute;
-  top: 9%;
-  right: -9%;
+  top: -250px;
+  left: 697px;
 }
 .detail-5 {
   position: absolute;
-  top: 43%;
-  right: -22%;
+  top: 25px;
+  left: 842px;
 }
 .detail-6 {
   position: absolute;
-  bottom: 9%;
-  right: -9%;
+  top: 303px;
+  left: 697px;
 }
 .detail-1:hover .detail-txt {
   opacity: 1;
@@ -401,81 +297,7 @@ body {
   opacity: 1;
 }
 
-
-
-/* Section-4------------------- */
-.product-wrap {
-  margin: 120px 0 0 0;
-  display: flex;
-  width: 100%;
-  height: 80vh;
-  position: relative;
-  /* background-color: antiquewhite; */
-}
-.stick {
-  display: flex;
-  align-items: center;
-  position: absolute;
-  top: 5%;
-  left: 10%;
-}
-.drink {
-  display: flex;
-  align-items: center;
-  gap: 40px;
-  position: absolute;
-  bottom: 5%;
-  left: 38%;
-}
-.chew {
-  display: flex;
-  align-items: center;
-  position: absolute;
-  top: 5%;
-  right: 10%;
-}
-.product-txt h2 {
-  color: #444;
-  font-family: "Noto Sans KR", sans-serif;
-  font-weight: 800;
-  font-size: 1.8vw;
-  line-height: 2.2;
-}
-.product-txt p {
-  color: #777;
-  font-family: "Noto Sans KR", sans-serif;
-  font-weight: 400;
-  font-size: 0.9vw;
-  line-height: 1.5;
-}
-.stick-img,
-.drink-img,
-.chew-img {
-  animation: vibration 5s infinite linear;
-}
-
-@keyframes vibration {
-  0% {
-    transform: rotate(5deg);
-  }
-  50% {
-    transform: rotate(-5deg);
-  }
-  100% {
-    transform: rotate(5deg);
-  }
-}
-/* sildemenu */
-
-.sidemenu {
-  position: fixed;
-  right: 0;
-  top: 0;
-  width: 100px;
-  height: 100%;
-  background-color: rgba(255, 255, 255, 0.2);
-  /* background-color: blue; */
-}
+/* Section-4 */
 
 .video-box {
   display: flex;
@@ -495,13 +317,9 @@ footer {
   background-color: #ff7a00;
 }
 .ft-menu {
-
-
   width: 50%;
   height: 50px;
   line-height: 50px;
-
-
   display: flex;
   justify-content: space-around;
   background-color: #ff7a00;
@@ -509,20 +327,11 @@ footer {
   /* text-align: center; */
   white-space: nowrap;
 }
-
 .site {
   width: 10%;
   position: absolute;
   right: 12%;
   padding-left: 30px;
-
-.ft-menu ul {
-  /* 100% 80% 차이 */
-  width: 80%;
-  display: flex;
-  gap: 7%;
-  padding-left: 7%;
-
 }
 .site a {
   padding: 10%;
@@ -530,7 +339,6 @@ footer {
 }
 
 .familysite {
-
   background-color: #fff;
   border: 1px solid #ff7a00;
   display: none;
@@ -543,23 +351,6 @@ footer {
 .familysite > li:hover {
   text-decoration: underline 0.1em;
   color: #ff7a00;
-
-  width: 15%;
-  height: 36px;
-  margin-top: 7px;
-  margin-right: 8%;
-  background-color: #ff7a00;
-  color: #fff;
-  text-align: center;
-  border: none;
-}
-.familysite-list {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-.familysite-list li {
-  /* display: none; */
 }
 footer .logo-img {
   width: 220px;
