@@ -2,6 +2,8 @@
 
 /* 폰트 적용 */
 @import url("https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
 
 html,
 body {
@@ -16,6 +18,7 @@ body {
   width: 100%;
   background-color: rgba(255, 255, 255, 0.2);
   z-index: 10000;
+  background-color: violet;
 }
 .header .logo {
   padding: 15px;
@@ -132,14 +135,12 @@ body {
 .section.active .ani-02 {animation: fadeLeft 0.5s 0.55s both;}
 .section.active .ani-03 i {animation: fadeUp 0.4s 0.2s both} */
 
-
 * {
   box-sizing: border-box;
 }
 .header {
   width: 100%;
   height: 140px;
-
 }
 /* 헤더 */
 .header {
@@ -270,53 +271,56 @@ body {
    }
 } */
 
-/* Section-3 */
+/* Section-3------------------- */
 .ingredient {
-  margin: 0 auto;
+  margin: 120px 0 0 0;
   width: 60%;
+  height: 80%;
   position: relative;
-  /* background-color: #444141; */
+  /* background-color: #ffb0b0; */
 }
-.ingredient-img {
+/* .ingredient-img {
   width: 55%;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -38%);
+  transform: translate(-50%, -50%);
   object-fit: cover;
-}
+} */
 .detail-wrap {
   width: 100%;
+  height: 85vh;
   position: relative;
-  /* background-color: rgb(75, 218, 47); */
+  background: url("../images/ingredient.png") no-repeat center;
+  /* background-color: rgba(255, 255, 255, 0.2); */
 }
 .detail {
   display: flex;
   align-items: center;
+  width: 50%;
   gap: 3%;
-  width: 35%;
-  /* background-color: bisque; */
 }
 .detail img {
-  width: 25%;
+  width: 20%;
   cursor: pointer;
 }
 .detail-txt {
-  width: 78%;
+  width: 80%;
   opacity: 0;
   transition: opacity 0.5s ease;
 }
-
 .detail-txt h2 {
   color: #444;
-  font-weight: bold;
-  font-size: 1.1vw;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 600;
+  font-size: 1.3vw;
   line-height: 1.7;
 }
 .detail-txt p {
+  font-family: "Noto Sans KR", sans-serif;
   color: #555;
-  font-weight: 600;
-  font-size: 0.7vw;
+  font-weight: 400;
+  font-size: 0.8vw;
   line-height: 1.5;
 }
 .detail-1 {
@@ -324,39 +328,39 @@ body {
   flex-direction: row-reverse;
   text-align: right;
   position: absolute;
-  top: -250px;
-  left: 50px;
+  top: 9%;
+  left: -9%;
 }
 .detail-2 {
   display: flex;
   flex-direction: row-reverse;
   text-align: right;
   position: absolute;
-  top: 25px;
-  left: -95px;
+  top: 43%;
+  left: -22%;
 }
 .detail-3 {
   display: flex;
   flex-direction: row-reverse;
   text-align: right;
   position: absolute;
-  top: 303px;
-  left: 50px;
+  bottom: 9%;
+  left: -9%;
 }
 .detail-4 {
   position: absolute;
-  top: -250px;
-  left: 697px;
+  top: 9%;
+  right: -9%;
 }
 .detail-5 {
   position: absolute;
-  top: 25px;
-  left: 842px;
+  top: 43%;
+  right: -22%;
 }
 .detail-6 {
   position: absolute;
-  top: 303px;
-  left: 697px;
+  bottom: 9%;
+  right: -9%;
 }
 .detail-1:hover .detail-txt {
   opacity: 1;
@@ -377,15 +381,77 @@ body {
   opacity: 1;
 }
 
-/* Section-4 */
-.sidemenu{
+/* Section-4------------------- */
+.product-wrap {
+  margin: 120px 0 0 0;
+  display: flex;
+  width: 100%;
+  height: 80vh;
+  position: relative;
+  /* background-color: antiquewhite; */
+}
+.stick {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 5%;
+  left: 10%;
+}
+.drink {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  position: absolute;
+  bottom: 5%;
+  left: 38%;
+}
+.chew {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 5%;
+  right: 10%;
+}
+.product-txt h2 {
+  color: #444;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 800;
+  font-size: 1.8vw;
+  line-height: 2.2;
+}
+.product-txt p {
+  color: #777;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 400;
+  font-size: 0.9vw;
+  line-height: 1.5;
+}
+.stick-img,
+.drink-img,
+.chew-img {
+  animation: vibration 5s infinite linear;
+}
+
+@keyframes vibration {
+  0% {
+    transform: rotate(5deg);
+  }
+  50% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(5deg);
+  }
+}
+/* sildemenu */
+.sidemenu {
   position: fixed;
-right: 0;
-top: 0;
-width: 100px;
-height: 100%;
-background-color: rgba(255, 255, 255, 0.2);
-/* background-color: blue; */
+  right: 0;
+  top: 0;
+  width: 100px;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
+  /* background-color: blue; */
 }
 .video-box {
   display: flex;
@@ -399,15 +465,15 @@ background-color: rgba(255, 255, 255, 0.2);
 }
 /* 네비 */
 .ft-menu {
-width: 100%;
-/* 100px -> 50px*/
-height: 50px;
+  width: 100%;
+  /* 100px -> 50px*/
+  height: 50px;
   position: relative;
   display: flex;
   background-color: #ff7a00;
 }
 .ft-menu ul {
-    /* 100% 80% 차이 */
+  /* 100% 80% 차이 */
   width: 80%;
   display: flex;
   gap: 7%;
@@ -424,8 +490,8 @@ height: 50px;
 /*셀렉션 */
 .familysite {
   width: 15%;
-height: 36px;
-margin-top: 7px;
+  height: 36px;
+  margin-top: 7px;
   margin-right: 8%;
   background-color: #ff7a00;
   color: #fff;
@@ -437,9 +503,8 @@ margin-top: 7px;
   flex-direction: column;
   text-align: center;
 }
-.familysite-list li{
+.familysite-list li {
   /* display: none; */
-
 }
 footer .logo-img {
   width: 220px;
@@ -464,4 +529,3 @@ footer .logo-img {
 .text-copy {
   font-weight: bold;
 }
-
