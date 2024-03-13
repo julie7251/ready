@@ -2,6 +2,7 @@
 
 /* 폰트 적용 */
 @import url("https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap");
+
 html,
 body {
   font-family: "Gothic A1", sans-serif;
@@ -23,22 +24,94 @@ body {
   text-align: center;
 }
 
+/* 페이지 앵커 */
+#pageMenu {
+  position: fixed;
+  right: 40px;
+  top: 50%;
+  transform: translate(0, -50%);
+  width: 80px;
+  z-index: 999;
+}
+#pageMenu li {
+  margin: 5px 0;
+}
+#pageMenu a {
+  display: block;
+  width: 100%;
+  position: relative;
+  text-align: right;
+  padding-right: 20px;
+}
+#pageMenu a span {
+  color: #fff;
+  font-size: 0px;
+  font-family: "Montserrat";
+  font-weight: bold;
+  line-height: 30px;
+  display: inline-block;
+}
+#pageMenu.on a span {
+  color: #fff;
+}
+#pageMenu a i {
+  display: inline-block;
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: #d5d5d5;
+  border-radius: 50%;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+#pageMenu a i::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 17px;
+  height: 17px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  opacity: 0;
+  transition: all 0.3s;
+}
+#pageMenu li.active a span {
+  font-size: 13px;
+}
+#pageMenu li.active a i::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 17px;
+  height: 17px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  opacity: 1;
+}
+
 /* 페이지 */
 /*확인용 색상 */
 #section1 {
-  background-color: #feca39;
+  background-color: #ffa800;
 }
 #section2 {
   background-color: #fff;
 }
 #section3 {
-  background-color: #feca39;
+  background-color: #ffa800;
 }
 #section4 {
   background-color: #fff;
 }
 #section5 {
-  background-color: #feca39;
+  background-color: #ffa800;
 }
 #section6 {
   background-color: #fff;
@@ -54,12 +127,16 @@ body {
   min-height: 300px;
 }
 
+/* 애니메이션 */
+/* .section.active .ani-01 {animation: fadeLeft 0.5s 0.35s both;}
+.section.active .ani-02 {animation: fadeLeft 0.5s 0.55s both;}
+.section.active .ani-03 i {animation: fadeUp 0.4s 0.2s both} */
+
 * {
   box-sizing: border-box;
 }
 .header {
   width: 100%;
-  height: 140px;
 }
 /* 헤더 */
 .header {
@@ -88,8 +165,8 @@ body {
   width: 100%;
   /* background-color: beige; */
   display: flex;
-  gap: 10%;
-  font-size: 1.1vw;
+  gap: 11%;
+  font-size: 0.9vw;
   font-weight: 600;
   color: #fff;
   justify-content: flex-end;
@@ -112,11 +189,54 @@ body {
 }
 .hd-login ul li {
   color: #fff;
-  font-size: 1.1vw;
+  font-size: 0.9vw;
   font-weight: 600;
 }
-.hd-login ul li:nth-child(2) {
-  padding-bottom: 10px;
+.signup {
+  position: relative;
+}
+.signup li {
+  display: none;
+  width: 80px;
+  position: absolute;
+  top: 4px;
+  left: 0px;
+  padding-top: 10px;
+}
+.signup li a {
+  display: block;
+  width: 100%;
+}
+.signup li a span {
+  display: block;
+  width: 100%;
+  /* background-color: aqua; */
+}
+.language {
+  position: relative;
+}
+.language li {
+  display: none;
+  width: 80px;
+  position: absolute;
+  top: 4px;
+  left: 0px;
+  padding-top: 10px;
+}
+.language li a {
+  display: block;
+  width: 100%;
+}
+.language li a span {
+  display: block;
+  width: 100%;
+  /* background-color: aqua; */
+}
+/* header-middle */
+.header-middle {
+  position: relative;
+  display: block;
+  background-color: #fff;
 }
 /* .hd-login>ul>li>.login-ul{
   /* display:none; }*/
@@ -155,7 +275,7 @@ body {
 }
 .hd-language ul li {
   color: #fff;
-  font-size: 1.1vw;
+  font-size: 0.9vw;
   font-weight: 600;
 }
 /* 섹션1 */
@@ -164,12 +284,12 @@ body {
   height: 100vh;
   display: flex;
 }
-.section-bg {
+.section1-bg {
   position: relative;
   width: 100%;
   height: 100%;
 }
-.section-bg img {
+.section1-bg img {
   width: 90%;
   height: 100%;
 }
@@ -183,13 +303,62 @@ body {
   width: 60%;
   height: 100%;
 }
+.scroll {
+  position: absolute;
+  bottom: 2%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4.5%;
+}
+.scroll span {
+  position: absolute;
+  bottom: 77%;
+  left: 42.5%;
+  transform: translateX(-42.5%);
+  width: 12%;
+  height: 12%;
+  border-radius: 50%;
+  background-color: #fff;
+  /* display: none; */
+}
+/* .scroll span a{
+  display: block;
+  width: 1%;
+} */
 /* @media screen and (max-width :1669px) {
   .section-bg{
-   
     height: 57.10vw;
-   }
+}
 } */
-
+/* 섹션2 */
+#section2 {
+  width: 100%;
+  height: 100vh;
+}
+.section2-bg {
+  position: relative;
+  /* bottom: -1%; */
+  width: 100%;
+  height: 100vh;
+}
+.mangojuice{
+  width: 100%;
+  height: 100vh;
+}
+.mangojuice img {
+  width: 100%;
+  height: 100%;
+}
+.jangseonggue {
+  position: absolute;
+  bottom: -1%;
+  left: 22%;
+  width: 100%;
+}
+.jangseonggue img {
+  width: 60%;
+  height: 100%;
+}
 /* Section-3 */
 .ingredient {
   margin: 0 auto;
@@ -298,7 +467,15 @@ body {
 }
 
 /* Section-4 */
-
+.sidemenu {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100px;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
+  /* background-color: blue; */
+}
 .video-box {
   display: flex;
   justify-content: center;
@@ -310,47 +487,47 @@ body {
   margin: 0 3% 0 0; /* 각 동영상 사이의 여백 */
 }
 /* 네비 */
-footer {
-  font-size: 14px;
-}
-.ft-nav {
+.ft-menu {
+  width: 100%;
+  /* 100px -> 50px*/
+  height: 50px;
+  position: relative;
+  display: flex;
   background-color: #ff7a00;
 }
-.ft-menu {
-  width: 50%;
-  height: 50px;
-  line-height: 50px;
+.ft-menu ul {
+  /* 100% 80% 차이 */
+  width: 80%;
   display: flex;
-  justify-content: space-around;
+  gap: 7%;
+  padding-left: 7%;
+}
+.ft-menu ul li {
+  color: #fff;
+  line-height: 50px;
+}
+/* .ft-menu ul li::after {
+  content: "";
+  border-right: 1px solid #fff;
+} */
+/*셀렉션 */
+.familysite {
+  width: 15%;
+  height: 36px;
+  margin-top: 7px;
+  margin-right: 8%;
   background-color: #ff7a00;
   color: #fff;
-  /* text-align: center; */
-  white-space: nowrap;
+  text-align: center;
+  border: none;
 }
-.site {
-  width: 10%;
-  position: absolute;
-  right: 12%;
-  padding-left: 30px;
+.familysite-list {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
-.site a {
-  padding: 10%;
-  /* color: #000; */
-}
-
-.familysite {
-  background-color: #fff;
-  border: 1px solid #ff7a00;
-  display: none;
-}
-
-.familysite li {
-  color: #444;
+.familysite-list li {
   /* display: none; */
-}
-.familysite > li:hover {
-  text-decoration: underline 0.1em;
-  color: #ff7a00;
 }
 footer .logo-img {
   width: 220px;

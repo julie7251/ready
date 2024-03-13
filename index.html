@@ -55,11 +55,6 @@
 
   <body>
     <ul id="pageMenu">
-      <li data-menuanchor="page" class="active">
-        <a href="#"
-          ><span>이벤트</span><i class="event"><img src="images/ev_icon.png" alt="" /></i
-        ></a>
-      </li>
       <li data-menuanchor="page1" class="active">
         <a href="#page1"
           ><span>HOME</span><i class="home"><img src="images/home_icon.png" alt="" /></i
@@ -86,8 +81,7 @@
         ></a>
       </li>
     </ul>
-    <!-- 우측 고정메뉴 배경 -->
-    <!-- <div class="sidemenu"></div> -->
+
     <header class="header">
       <div class="hd-left">
         <a href="#"><img src="images/header/logo.png" alt="헤더로고" /></a>
@@ -115,16 +109,18 @@
               <li>
                 <a href="#"><i class="fa-regular fa-user"></i></a>
               </li>
-              <li>
+              <li class="login-ul">
                 <a href="#"><span>Log In</span></a>
-                <ul class="login-ul">
+                <ul class="signup">
                   <li>
-                    <a href="#"><span class="signup">Sign Up</span></a>
+                    <a href="#"><span>Sign Up</span></a>
                   </li>
                 </ul>
               </li>
-              <li>
-                <span><i class="fa-solid fa-chevron-down"></i></span>
+              <li class="singup-i">
+                <a href="#"
+                  ><span><i class="fa-solid fa-chevron-down"></i></span
+                ></a>
               </li>
             </ul>
           </div>
@@ -132,8 +128,13 @@
             <ul>
               <li>
                 <a href="#"><span>KR</span></a>
+                <ul class="language">
+                  <li>
+                    <a href="#"><span>EN</span></a>
+                  </li>
+                </ul>
               </li>
-              <li>
+              <li class="language-i">
                 <a href="#"
                   ><span><i class="fa-solid fa-chevron-down"></i></span
                 ></a>
@@ -145,15 +146,25 @@
     </header>
     <div id="fullpage">
       <div class="section" id="section1">
-        <div class="section-bg">
+        <div class="section1-bg">
           <div class="jangseonggue">
             <img src="images/section1/jangseonggue.png" alt="장성규" />
+          </div>
+          <div class="scroll">
+            <img src="images/section1/스크롤.png" alt="스크롤" />
+            <div class="scroll-btn">
+              <span><a href="#"></a></span>
+            </div>
           </div>
           <img src="images/section1/Group 78 (1).png" alt="섹션1배경" />
         </div>
       </div>
       <div class="section" id="section2">
-        <div class="section-inner"></div>
+        <div class="section2-bg">
+          <div class="mangojuice">
+            <img src="images/section2/Frame 13.png" alt="망고주스" />
+          </div>
+        </div>
       </div>
       <div class="section" id="section3">
         <div class="section-inner">
@@ -209,8 +220,8 @@
       <div class="section" id="section4">
         <div class="section-inner"></div>
       </div>
-
       <div class="section" id="section5">
+        <div class="sidemenu"></div>
         <div class="video-box">
           <iframe
             width="500"
@@ -233,22 +244,18 @@
         <img src="images/home.png" alt="" />
       </div>
       <footer class="section fp-auto-height" id="section6">
-        <nav class="ft-nav">
-          <ul class="ft-menu">
-            <li><a href="#">회사소개</a></li>
-            <li><a href="#">이용약관</a></li>
-            <li><a href="#">개인정보처리방침</a></li>
-            <li><a href="#">고객센터</a></li>
-
-            <li class="site">
-              <a href="#">패밀리사이트<i class="xi-caret-down-min"></i></a>
-              <ul class="familysite">
-                <li><a href="#">한독프로몰</a></li>
-                <li><a href="#">뉴트리시아</a></li>
-                <li><a href="#">클리어틴</a></li>
-                <li><a href="#">페스</a></li>
-              </ul>
-            </li>
+        <nav class="ft-menu">
+          <ul>
+            <a href="#"><li>회사소개</li></a>
+            <a href="#"><li>이용약관</li></a>
+            <a href="#"><li>개인정보처리방침</li></a>
+            <a href="#"><li>고객센터</li></a>
+          </ul>
+          <button class="familysite">패밀리사이트</button>
+          <ul class="familysite-list">
+            <li>한독1</li>
+            <li>한독1</li>
+            <li>한독1</li>
           </ul>
         </nav>
         <div class="ft-bt">
