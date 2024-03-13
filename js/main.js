@@ -30,6 +30,17 @@ $(function () {
     afterSlideLoad: function (anchorLink, index, slideAnchor, slideIndex) {
       console.log(`afterSlideLoad!`);
     },
+
+
+  $(".singup-i").click(function () {
+    $(".signup li").fadeToggle(600);
+  });
+  $(".language-i").click(function () {
+    $(".language li").fadeToggle(600);
+  });
+});
+
+
     onSlideLeave: function (anchorLink, index, slideIndex, direction, nextSlideIndex) {
       console.log(`onSlideLeave!`);
     },
@@ -55,3 +66,4 @@ $(".ani-03").each(function () {
 //     target.classList.remove("stick-img");
 //   }, 400);
 // };
+

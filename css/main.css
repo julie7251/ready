@@ -31,19 +31,19 @@ body {
 /* 페이지 */
 /*확인용 색상 */
 #section1 {
-  background-color: #feca39;
+  background-color: #ffa800;
 }
 #section2 {
   background-color: #fff;
 }
 #section3 {
-  background-color: #feca39;
+  background-color: #ffa800;
 }
 #section4 {
   background-color: #fff;
 }
 #section5 {
-  background-color: #feca39;
+  background-color: #ffa800;
 }
 #section6 {
   background-color: #fff;
@@ -64,12 +64,15 @@ body {
 /* .section.active .ani-01 {animation: fadeLeft 0.5s 0.35s both;}
 .section.active .ani-02 {animation: fadeLeft 0.5s 0.55s both;}
 .section.active .ani-03 i {animation: fadeUp 0.4s 0.2s both} */
+
 * {
   box-sizing: border-box;
 }
 .header {
   width: 100%;
+
   height: 140px;
+
 }
 /* 헤더 */
 .header {
@@ -98,8 +101,8 @@ body {
   width: 100%;
   /* background-color: beige; */
   display: flex;
-  gap: 10%;
-  font-size: 1.1vw;
+  gap: 11%;
+  font-size: 0.9vw;
   font-weight: 600;
   color: #fff;
   justify-content: flex-end;
@@ -122,11 +125,54 @@ body {
 }
 .hd-login ul li {
   color: #fff;
-  font-size: 1.1vw;
+  font-size: 0.9vw;
   font-weight: 600;
 }
-.hd-login ul li:nth-child(2) {
-  padding-bottom: 10px;
+.signup {
+  position: relative;
+}
+.signup li {
+  display: none;
+  width: 80px;
+  position: absolute;
+  top: 4px;
+  left: 0px;
+  padding-top: 10px;
+}
+.signup li a {
+  display: block;
+  width: 100%;
+}
+.signup li a span {
+  display: block;
+  width: 100%;
+  /* background-color: aqua; */
+}
+.language {
+  position: relative;
+}
+.language li {
+  display: none;
+  width: 80px;
+  position: absolute;
+  top: 4px;
+  left: 0px;
+  padding-top: 10px;
+}
+.language li a {
+  display: block;
+  width: 100%;
+}
+.language li a span {
+  display: block;
+  width: 100%;
+  /* background-color: aqua; */
+}
+/* header-middle */
+.header-middle {
+  position: relative;
+  display: block;
+  background-color: #fff;
 }
 /* .hd-login>ul>li>.login-ul{
   /* display:none; }*/
@@ -165,7 +211,7 @@ body {
 }
 .hd-language ul li {
   color: #fff;
-  font-size: 1.1vw;
+  font-size: 0.9vw;
   font-weight: 600;
 }
 /* 섹션1 */
@@ -174,12 +220,12 @@ body {
   height: 100vh;
   display: flex;
 }
-.section-bg {
+.section1-bg {
   position: relative;
   width: 100%;
   height: 100%;
 }
-.section-bg img {
+.section1-bg img {
   width: 90%;
   height: 100%;
 }
@@ -193,14 +239,59 @@ body {
   width: 60%;
   height: 100%;
 }
+.scroll {
+  position: absolute;
+  bottom: 2%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4.5%;
+}
+.scroll span {
+  position: absolute;
+  bottom: 77%;
+  left: 42.5%;
+  transform: translateX(-42.5%);
+  width: 12%;
+  height: 12%;
+  border-radius: 50%;
+  background-color: #fff;
+  /* display: none; */
+}
+/* .scroll span a{
+  display: block;
+  width: 1%;
+} */
 /* @media screen and (max-width :1669px) {
   .section-bg{
-   
     height: 57.10vw;
-   }
+}
 } */
 
+/* 섹션2 */
+.section2-bg {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.section2-bg img {
+  width: 100%;
+  height: 100%;
+}
+.jangseonggue {
+  position: absolute;
+  bottom: -1%;
+  left: 22%;
+  width: 100%;
+}
+.jangseonggue img {
+  width: 60%;
+  height: 100%;
+}
+
+
+
 /* Section-3------------------- */
+
 .ingredient {
   margin: 120px 0 0 0;
   width: 60%;
@@ -311,6 +402,7 @@ body {
 }
 
 
+
 /* Section-4------------------- */
 .product-wrap {
   margin: 120px 0 0 0;
@@ -374,6 +466,7 @@ body {
   }
 }
 /* sildemenu */
+
 .sidemenu {
   position: fixed;
   right: 0;
@@ -403,9 +496,11 @@ footer {
 }
 .ft-menu {
 
+
   width: 50%;
   height: 50px;
   line-height: 50px;
+
 
   display: flex;
   justify-content: space-around;
@@ -465,7 +560,6 @@ footer {
 }
 .familysite-list li {
   /* display: none; */
-
 }
 footer .logo-img {
   width: 220px;
