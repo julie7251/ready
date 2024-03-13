@@ -55,6 +55,11 @@
 
   <body>
     <ul id="pageMenu">
+      <li data-menuanchor="page" class="active">
+        <a href="#"
+          ><span>이벤트</span><i class="event"><img src="images/ev_icon.png" alt="" /></i
+        ></a>
+      </li>
       <li data-menuanchor="page1" class="active">
         <a href="#page1"
           ><span>HOME</span><i class="home"><img src="images/home_icon.png" alt="" /></i
@@ -81,7 +86,8 @@
         ></a>
       </li>
     </ul>
-
+    <!-- 우측 고정메뉴 배경 -->
+    <!-- <div class="sidemenu"></div> -->
     <header class="header">
       <div class="hd-left">
         <a href="#"><img src="images/header/logo.png" alt="헤더로고" /></a>
@@ -137,7 +143,6 @@
         </div>
       </div>
     </header>
-
     <div id="fullpage">
       <div class="section" id="section1">
         <div class="section-bg">
@@ -153,7 +158,9 @@
       <div class="section" id="section3">
         <div class="section-inner">
           <div class="ingredient">
+
             <!-- <img src="images/ingredient.png" alt="주요성분" class="ingredient-img" /> -->
+
             <ul class="detail-wrap">
               <li class="detail detail-1">
                 <img src="images/icon-milk thistle.png" alt="밀크씨슬" />
@@ -173,14 +180,19 @@
                 <img src="images/icon-fruits.png" alt="열대과일" />
                 <div class="detail-txt detail-txt-3">
                   <h2>열대과일</h2>
+
+
                   <p>오렌지, 패션후르츠, 구아바, 바나나를 담아 상큼달콤하게!</p>
+
                 </div>
               </li>
               <li class="detail detail-4">
                 <img src="images/icon-Hovenia.png" alt="헛개나무열매" />
                 <div class="detail-txt detail-txt-4">
                   <h2>헛개나무열매</h2>
+
                   <p>숙취를 유발하는 아세트알데히드라의 외부배출을 도와<br>빠른 숙취해소에 효과적입니다.</p>
+
                 </div>
               </li>
               <li class="detail detail-5">
@@ -194,7 +206,9 @@
                 <img src="images/icon-honey.png" alt="" />
                 <div class="detail-txt detail-txt-6">
                   <h2>국산벌꿀</h2>
+
                   <p>과음으로 떨어진 혈당을 국산 벌꿀로 빠르게 높여줍니다.</p>
+
                 </div>
               </li>
             </ul>
@@ -237,8 +251,12 @@
           </div>
         </div>
       </div>
+
+
       <div class="section" id="section5">
+
         <div class="sidemenu"></div>
+
         <div class="video-box">
           <iframe
             width="500"
@@ -261,20 +279,26 @@
         <img src="images/home.png" alt="" />
       </div>
       <footer class="section fp-auto-height" id="section6">
-        <nav class="ft-menu">
-          <ul>
-            <a href="#"><li>회사소개</li></a>
-            <a href="#"><li>이용약관</li></a>
-            <a href="#"><li>개인정보처리방침</li></a>
-            <a href="#"><li>고객센터</li></a>
+
+        <nav class="ft-nav">
+        <ul class="ft-menu">
+            <li><a href="#">회사소개</a></li>
+            <li><a href="#">이용약관</a></li>
+            <li><a href="#">개인정보처리방침</a></li>
+            <li><a href="#">고객센터</a></li>
+
+            <li class="site">
+              <a href="#">패밀리사이트<i class="xi-caret-down-min"></i></a>
+              <ul class="familysite">
+                <li><a href="#">한독프로몰</a></li>
+                <li><a href="#">뉴트리시아</a></li>
+                <li><a href="#">클리어틴</a></li>
+                <li><a href="#">페스</a></li>
+              </ul>
+            </li>
           </ul>
-          <button class="familysite">패밀리사이트</button>
-          <ul class="familysite-list">
-            <li>한독1</li>
-            <li>한독1</li>
-            <li>한독1</li>
-          </ul>
-        </nav>
+ </nav>  
+
         <div class="ft-bt">
           <a href="#"><img src="images/logo2.png" class="logo-img" alt="로고" /></a>
           <div class="contents-box">
