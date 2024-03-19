@@ -8,7 +8,7 @@ $(function () {
     // responsiveWidth: 920,
     // responsiveHeight:900,
     recordHistory: false,
-    anchors: ["page1", "page2", "page3", "page4", "page5"],
+    anchors: ["page1", "page2", "page3", "page4"],
     menu: "#pageMenu",
     // autoScrolling: false,
 

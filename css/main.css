@@ -30,113 +30,6 @@ body {
   text-align: center;
 }
 
-/* 페이지 앵커 */
-#pageMenu {
-  position: fixed;
-  right: 40px;
-  top: 50%;
-  transform: translate(0, -50%);
-  width: 80px;
-  z-index: 999;
-}
-#pageMenu li {
-  margin: 5px 0;
-}
-#pageMenu a {
-  display: block;
-  width: 100%;
-  position: relative;
-  text-align: right;
-  padding-right: 20px;
-}
-#pageMenu a span {
-  color: #fff;
-  font-size: 0px;
-  font-family: "Montserrat";
-  font-weight: bold;
-  line-height: 30px;
-  display: inline-block;
-}
-#pageMenu.on a span {
-  color: #fff;
-}
-#pageMenu a i {
-  display: inline-block;
-  position: absolute;
-  width: 8px;
-  height: 8px;
-  background: #d5d5d5;
-  border-radius: 50%;
-  top: 50%;
-  right: 0;
-  transform: translateY(-50%);
-}
-#pageMenu a i::before {
-  content: "";
-  display: inline-block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 17px;
-  height: 17px;
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  border-radius: 50%;
-  opacity: 0;
-  transition: all 0.3s;
-}
-#pageMenu li.active a span {
-  font-size: 13px;
-}
-#pageMenu li.active a i::before {
-  content: "";
-  display: inline-block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 17px;
-  height: 17px;
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  border-radius: 50%;
-  opacity: 1;
-}
-
-/* 페이지 */
-/*확인용 색상 */
-#section1 {
-  background-color: #ffa800;
-}
-#section2 {
-  background-color: #fff;
-}
-#section3 {
-  background-color: #ffd300;
-}
-#section4 {
-  background-color: #fff;
-}
-#section5 {
-  background-color: #ffa800;
-}
-#section6 {
-  background-color: #fff;
-}
-.section .section-inner {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  color: #fff;
-}
-#section6 .section-inner {
-  min-height: 300px;
-}
-
-/* 애니메이션 */
-/* .section.active .ani-01 {animation: fadeLeft 0.5s 0.35s both;}
-.section.active .ani-02 {animation: fadeLeft 0.5s 0.55s both;}
-.section.active .ani-03 i {animation: fadeUp 0.4s 0.2s both} */
 
 * {
   box-sizing: border-box;
@@ -490,11 +383,13 @@ body {
 /* section-4 */
 
 /* section 5 */
+
 .video-box {
+  max-width: 1800px;
   display: flex;
   justify-content: center;
   /* 우측 고정메뉴너비확인 */
-  margin-right: 70px;
+  /* margin-right: 70px; */
 }
 /* 간격 넓게 잡음 */
 .video-box iframe {
@@ -502,67 +397,83 @@ body {
 }
 /* 네비 */
 footer {
-  font-size: 14px;
-}
-.ft-nav {
-  background-color: #ff7a00;
+  color: #454545;
+  border: 1px solid #333;
 }
 .ft-menu {
-  width: 50%;
+  width: 100%;
   height: 50px;
   line-height: 50px;
+  position: relative;
   display: flex;
-  justify-content: space-around;
-  background-color: #ff7a00;
-  color: #fff;
-  /* text-align: center; */
+  justify-content: left;
+  gap: 8%;
+  padding-left: 8%;
+  /* background-color: #ff7a00; */
+  border-bottom: 1px solid #333;
+  font-weight: bold;
   white-space: nowrap;
 }
-.site {
-  width: 10%;
-  position: absolute;
-  right: 12%;
-  padding-left: 30px;
+.ft-menu ul {
+  /* 100% 80% 차이 */
+  width: 80%;
+  display: flex;
+  gap: 7%;
+  padding-left: 7%;
 }
-.site a {
-  padding: 10%;
-  /* color: #000; */
+.ft-menu ul li {
+  color: #fff;
+  line-height: 50px;
 }
-
+/* .ft-menu ul li::after {
+  content: "";
+  border-right: 1px solid #fff;
+} */
+/*셀렉션 */
 .familysite {
-  background-color: #fff;
-  border: 1px solid #ff7a00;
-  display: none;
+  width: 400px;
+  height: auto;
+  /* margin-top: 7px;
+  margin-right: 8%; */
+  background-color: #4400ff;
+  color: #454545;
+  text-align: center;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  z-index: 9999;
 }
-
-.familysite li {
-  color: #444;
+.familysite-list {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.familysite-list li {
   /* display: none; */
 }
-.familysite > li:hover {
-  text-decoration: underline 0.1em;
-  color: #ff7a00;
-}
 footer .logo-img {
-  width: 220px;
+  width: 280px;
   height: auto;
   display: block;
   margin: 0 auto;
-  padding: 2.5% 0 2.5% 0;
+  padding: 2% 0 0 0;
 }
 .sns-img {
-  padding: 1.5% 0 1.5% 0;
+  padding: 2.5% 0 0.5% 0;
 }
 .sns-img img {
-  width: 50px;
+  width: 60px;
   padding-right: 1%;
 }
 .text {
-  color: #7a7a7a;
+  color: #4b4b4b;
   text-align: center;
   /* letter-spacing: 0.2px; */
   line-height: 1.5em;
 }
 .text-copy {
   font-weight: bold;
+  text-align: center;
+  padding: 0 0 5% 0;
+  color: #4b4b4b;
 }
