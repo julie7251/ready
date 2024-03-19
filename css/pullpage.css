@@ -235,17 +235,8 @@ em {
 
 /* 페이지 */
 /*확인용 색상 */
-#section1 {
-  background-color: #feca39;
-}
-#section2 {
-  background-color: #fff;
-}
-#section3 {
-  background-color: #feca39;
-}
-#section4 {
-  background-color: #fff;
+#section1, #section2, #section3, #section4{
+  background-color: #FFD300;
 }
 
 
