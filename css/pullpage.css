@@ -99,7 +99,7 @@ em {
   font-style: normal;
 }
 
-/* 페이지 앵커 */
+
 .sidemenu {
   position: fixed;
   right: 0;
@@ -117,13 +117,21 @@ em {
   width: 100px;
   height: 60%;
   /* background-color: bisque; */
+
+#pageMenu {
+  position: fixed;
+  right: 40px;
+  top: 50%;
+  transform: translate(0, -50%);
+  width: 80px;
+  height: 50%;
+
   display: flex;
   flex-direction: column;
   justify-content: left;
   gap: 2%;
   z-index: 999;
 }
-
 #pageMenu li {
   margin: 5px 0;
 }
@@ -131,28 +139,37 @@ em {
   display: block;
   width: 100%;
   position: relative;
-  text-align: center;
+
+  text-align: right;
+  padding-right: 20px;
+
 }
 #pageMenu li a span {
   color: #fff;
   font-size: 0px;
-  font-family: "Montserrat";
+
   font-weight: bold;
   line-height: 30px;
   display: inline-block;
 }
 #pageMenu.on a span {
   color: #fff;
+
+    font-size: 10px;
+  background-color: #feca39;
+
 }
 #pageMenu a i img {
   width: 30px;
   height: auto;
 }
 
+
 #pageMenu a .event img {
   width: 30px;
   padding-bottom: 70px;
 }
+
 
 #pageMenu a .readyq img {
   width: 35px;
@@ -160,8 +177,7 @@ em {
 #pageMenu a .product img {
   width: 20px;
 }
-
-/* #pageMenu a i {
+#pageMenu a i {
   display: inline-block;
   position: absolute;
   width: 8px;
@@ -171,9 +187,8 @@ em {
   top: 50%;
   right: 0;
   transform: translateY(-50%);
-} */
-
-/* #pageMenu a i::before {
+}
+#pageMenu a i::before {
   content: "";
   display: inline-block;
   position: absolute;
@@ -186,11 +201,11 @@ em {
   border-radius: 50%;
   opacity: 0;
   transition: all 0.3s;
-} */
-/* #pageMenu li.active a span {
+}
+#pageMenu li.active a span {
   font-size: 13px;
-} */
-/* #pageMenu li.active a i::before {
+}
+#pageMenu li.active a i::before {
   content: "";
   display: inline-block;
   position: absolute;
@@ -202,8 +217,7 @@ em {
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 50%;
   opacity: 1;
-} */
-
+}
 /* 페이지 */
 /*확인용 색상 */
 #section1 {

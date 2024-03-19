@@ -2,12 +2,17 @@
 
 /* 폰트 적용 */
 @import url("https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap");
+
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
 @font-face {
   font-family: "GmarketSansMedium";
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff") format("woff");
   font-weight: normal;
   font-style: normal;
+
+* {
+  box-sizing: border-box;
+
 }
 html,
 body {
@@ -30,117 +35,6 @@ body {
   text-align: center;
 }
 
-/* 페이지 앵커 */
-#pageMenu {
-  position: fixed;
-  right: 40px;
-  top: 50%;
-  transform: translate(0, -50%);
-  width: 80px;
-  z-index: 999;
-}
-#pageMenu li {
-  margin: 5px 0;
-}
-#pageMenu a {
-  display: block;
-  width: 100%;
-  position: relative;
-  text-align: right;
-  padding-right: 20px;
-}
-#pageMenu a span {
-  color: #fff;
-  font-size: 0px;
-  font-family: "Montserrat";
-  font-weight: bold;
-  line-height: 30px;
-  display: inline-block;
-}
-#pageMenu.on a span {
-  color: #fff;
-}
-#pageMenu a i {
-  display: inline-block;
-  position: absolute;
-  width: 8px;
-  height: 8px;
-  background: #d5d5d5;
-  border-radius: 50%;
-  top: 50%;
-  right: 0;
-  transform: translateY(-50%);
-}
-#pageMenu a i::before {
-  content: "";
-  display: inline-block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 17px;
-  height: 17px;
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  border-radius: 50%;
-  opacity: 0;
-  transition: all 0.3s;
-}
-#pageMenu li.active a span {
-  font-size: 13px;
-}
-#pageMenu li.active a i::before {
-  content: "";
-  display: inline-block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 17px;
-  height: 17px;
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  border-radius: 50%;
-  opacity: 1;
-}
-
-/* 페이지 */
-/*확인용 색상 */
-#section1 {
-  background-color: #ffa800;
-}
-#section2 {
-  background-color: #fff;
-}
-#section3 {
-  background-color: #ffd300;
-}
-#section4 {
-  background-color: #fff;
-}
-#section5 {
-  background-color: #ffa800;
-}
-#section6 {
-  background-color: #fff;
-}
-.section .section-inner {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  color: #fff;
-}
-#section6 .section-inner {
-  min-height: 300px;
-}
-
-/* 애니메이션 */
-/* .section.active .ani-01 {animation: fadeLeft 0.5s 0.35s both;}
-.section.active .ani-02 {animation: fadeLeft 0.5s 0.55s both;}
-.section.active .ani-03 i {animation: fadeUp 0.4s 0.2s both} */
-
-* {
-  box-sizing: border-box;
-}
 .header {
   width: 100%;
 }
@@ -327,15 +221,7 @@ body {
   background-color: #fff;
   /* display: none; */
 }
-/* .scroll span a{
-  display: block;
-  width: 1%;
-} */
-/* @media screen and (max-width :1669px) {
-  .section-bg{
-    height: 57.10vw;
-}
-} */
+
 
 /* 섹션2 */
 #section2 {
@@ -367,11 +253,13 @@ body {
   height: 100%;
 }
 
+
 /* section-3 */
 #section3 .section-inner {
   max-width: 1800px;
   display: flex;
   flex-direction: column;
+
   margin: 0 auto;
   padding-top: 180px;
 }
@@ -435,6 +323,7 @@ body {
   width: 65%;
   height: auto;
 }
+
 @keyframes vibration {
   0% {
     transform: rotate(1deg);
@@ -457,7 +346,7 @@ body {
   text-align: center;
   padding: 50px;
   display: none;
-}
+
 .target-1 .target-hover {
   position: absolute;
   top: 320px;
@@ -489,14 +378,13 @@ body {
 }
 /* section-4 */
 
-/* section 5 */
+
 .video-box {
   display: flex;
   justify-content: center;
   /* 우측 고정메뉴너비확인 */
   margin-right: 70px;
 }
-/* 간격 넓게 잡음 */
 .video-box iframe {
   margin: 0 3% 0 0; /* 각 동영상 사이의 여백 */
 }
@@ -508,24 +396,47 @@ footer {
   background-color: #ff7a00;
 }
 .ft-menu {
-  width: 50%;
+
+  position: relative;
+  width: 90%;
   height: 50px;
   line-height: 50px;
   display: flex;
-  justify-content: space-around;
+  justify-content: left;
+  gap: 8%;
   background-color: #ff7a00;
   color: #fff;
-  /* text-align: center; */
+  padding-left: 8%;
   white-space: nowrap;
+font-weight: 600;
+}
+.ft-menu > li::after {
+  content: "";
+  position: absolute;
+  /* left: 10px; */
+  top: 50%;
+  transform: translatey(-50%);
+  width: 1px;
+  height: 20px;
+  margin-left: 4%;
+  /* background-color: rgba(255, 255, 255, 0.3); */
+  background-color: #fff;
+  
+}
+.ft-menu > li:nth-child(4):after {
+  content: none;
+}
+.ft-menu > li:last-child:after {
+  content: none;
 }
 .site {
   width: 10%;
   position: absolute;
-  right: 12%;
-  padding-left: 30px;
+  right: 0;
+  /* padding-left: 30px; */
 }
 .site a {
-  padding: 10%;
+  /* padding-right: 10%; */
   /* color: #000; */
 }
 
@@ -533,11 +444,7 @@ footer {
   background-color: #fff;
   border: 1px solid #ff7a00;
   display: none;
-}
 
-.familysite li {
-  color: #444;
-  /* display: none; */
 }
 .familysite > li:hover {
   text-decoration: underline 0.1em;
