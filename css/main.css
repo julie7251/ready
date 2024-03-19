@@ -2,8 +2,17 @@
 
 /* 폰트 적용 */
 @import url("https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
+@font-face {
+  font-family: "GmarketSansMedium";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+
 * {
   box-sizing: border-box;
+
 }
 html,
 body {
@@ -25,6 +34,7 @@ body {
   color: #fff;
   text-align: center;
 }
+
 .header {
   width: 100%;
 }
@@ -224,7 +234,7 @@ body {
   width: 100%;
   height: 100vh;
 }
-.mangojuice{
+.mangojuice {
   width: 100%;
   height: 100vh;
 }
@@ -242,177 +252,132 @@ body {
   width: 60%;
   height: 100%;
 }
-/* Section-3 */
-.ingredient {
+
+
+/* section-3 */
+#section3 .section-inner {
+  max-width: 1800px;
+  display: flex;
+  flex-direction: column;
+
   margin: 0 auto;
-  width: 60%;
-  position: relative;
-  /* background-color: #444141; */
+  padding-top: 180px;
 }
-.ingredient-img {
-  width: 55%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -38%);
-  object-fit: cover;
+/* #section3 .section-inner h1 {
+  text-align: center;
+  margin-top: 210px;
+  font-family: "GmarketSansMedium";
+  font-size: 40px;
+  font-weight: bold;
+  color: rgb(233, 74, 125);
+} */
+.target-title {
+  width: 35%;
 }
-.detail-wrap {
-  width: 100%;
-  /* height: 800vh; */
-  position: relative;
-  background-color: rgba(255, 255, 255, 0.2);
+.target-wrap {
+  margin: 100px 0 0 0;
+  display: flex;
+  align-items: flex-end;
+  /* justify-content: center; */
+  width: 90%;
+  height: 470px;
 }
-.detail {
+.target-1 {
+  width: calc(100% / 3 - 10px);
   display: flex;
   align-items: center;
-  width: 50%;
-  gap: 3%;
-}
-.detail img {
-  width: 20%;
+  flex-direction: column;
+  gap: 30px;
   cursor: pointer;
 }
-.detail-txt {
-  width: 80%;
-  opacity: 0;
-  transition: opacity 0.5s ease;
-}
-.detail-txt h2 {
-  color: #444;
-  font-family: "Noto Sans KR", sans-serif;
-  font-weight: 600;
-  font-size: 1.3vw;
-  line-height: 1.7;
-}
-.detail-txt p {
-  font-family: "Noto Sans KR", sans-serif;
-  color: #555;
-  font-weight: 400;
-  font-size: 0.8vw;
-  line-height: 1.5;
-}
-.detail-1 {
-  display: flex;
-  flex-direction: row-reverse;
-  text-align: right;
-  position: absolute;
-  top: -250px;
-  left: 50px;
-}
-.detail-2 {
-  display: flex;
-  flex-direction: row-reverse;
-  text-align: right;
-  position: absolute;
-  top: 25px;
-  left: -95px;
-}
-.detail-3 {
-  display: flex;
-  flex-direction: row-reverse;
-  text-align: right;
-  position: absolute;
-  top: 303px;
-  left: 50px;
-}
-.detail-4 {
-  position: absolute;
-  top: -250px;
-  left: 697px;
-}
-.detail-5 {
-  position: absolute;
-  top: 25px;
-  left: 842px;
-}
-.detail-6 {
-  position: absolute;
-  top: 303px;
-  left: 697px;
-}
-.detail-1:hover .detail-txt {
-  opacity: 1;
-}
-.detail-2:hover .detail-txt {
-  opacity: 1;
-}
-.detail-3:hover .detail-txt {
-  opacity: 1;
-}
-.detail-4:hover .detail-txt {
-  opacity: 1;
-}
-.detail-5:hover .detail-txt {
-  opacity: 1;
-}
-.detail-6:hover .detail-txt {
-  opacity: 1;
-}
-
-/* Section-4 */
-.product-wrap {
-  margin: 0 auto;
-  display: flex;
-  width: 100%;
-  position: relative;
-}
-.stick {
+.target-2 {
+  width: calc(100% / 3 - 10px);
   display: flex;
   align-items: center;
-  position: absolute;
-  top: -220px;
-  left: 12%;
+  flex-direction: column;
+  gap: 30px;
+  cursor: pointer;
 }
-.drink {
+.target-3 {
+  width: calc(100% / 3 - 10px);
   display: flex;
   align-items: center;
-  gap: 20px;
-  position: absolute;
-  top: 50px;
-  left: 38%;
+  flex-direction: column;
+  gap: 30px;
+  cursor: pointer;
 }
-.chew {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  position: absolute;
-  top: -220px;
-  left: 60%;
+.target-1 p,
+.target-2 p,
+.target-3 p {
+  text-align: center;
+  font-family: "GmarketSansMedium";
+  font-size: 1.5vw;
+  font-weight: bold;
+  color: rgb(233, 74, 125);
+  margin-top: 20px;
+  line-height: 1.2;
 }
-.product-txt h2 {
-  color: #444;
-  font-family: "Noto Sans KR", sans-serif;
-  font-weight: 800;
-  font-size: 1.8vw;
-  line-height: 2.2;
-}
-.product-txt p {
-  color: #777;
-  font-family: "Noto Sans KR", sans-serif;
-  font-weight: 400;
-  font-size: 0.9vw;
-  line-height: 1.5;
-}
-.stick-img,
-.drink-img,
-.chew-img {
-  animation: vibration 8s infinite linear;
+.target-img {
+  display: block;
+  animation: vibration 0.8s infinite linear;
+  width: 65%;
+  height: auto;
 }
 
 @keyframes vibration {
   0% {
-    transform: rotate(-5deg);
+    transform: rotate(1deg);
   }
   50% {
-    transform: rotate(-5deg);
+    transform: rotate(-1deg);
   }
   100% {
-    transform: rotate(5deg);
+    transform: rotate(1deg);
   }
 }
+/* .target-txt {
+  width: 50%;
+} */
+.target-hover {
+  width: 350px;
+  height: 450px;
+  background: url("../images/bg.png") no-repeat;
+  background-size: contain;
+  text-align: center;
+  padding: 50px;
+  display: none;
 
-/* ====================section 5 승아*/
+.target-1 .target-hover {
+  position: absolute;
+  top: 320px;
+}
+.target-2 .target-hover {
+  position: absolute;
+  top: 320px;
+}
+.target-3 .target-hover {
+  position: absolute;
+  top: 320px;
+}
+.target-hover h2 {
+  font-family: "GmarketSansMedium";
+  font-weight: bold;
+  font-size: 1.2vw;
+  color: #444;
+}
+.target-hover img {
+  height: 65%;
+  margin-top: 30px;
+}
+.target-hover p {
+  font-family: "Noto Sans KR";
+  font-size: 0.8vw;
+  font-weight: 400;
+  color: #444;
+  margin-top: 20px;
+}
+/* section-4 */
+
 
 .video-box {
   display: flex;
@@ -431,6 +396,7 @@ footer {
   background-color: #ff7a00;
 }
 .ft-menu {
+
   position: relative;
   width: 90%;
   height: 50px;
@@ -473,13 +439,12 @@ font-weight: 600;
   /* padding-right: 10%; */
   /* color: #000; */
 }
+
 .familysite {
   background-color: #fff;
   border: 1px solid #ff7a00;
   display: none;
-}
-.familysite li {
-  color: #444;
+
 }
 .familysite > li:hover {
   text-decoration: underline 0.1em;
@@ -508,4 +473,3 @@ footer .logo-img {
 .text-copy {
   font-weight: bold;
 }
-/* ==================================승아 끝 */

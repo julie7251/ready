@@ -99,7 +99,25 @@ em {
   font-style: normal;
 }
 
-/* 페이지 앵커 */
+
+.sidemenu {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100px;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
+  /* background-color: blue; */
+  z-index: 9999999;
+}
+#pageMenu {
+  position: fixed;
+  right: 0;
+  top: 200px;
+  width: 100px;
+  height: 60%;
+  /* background-color: bisque; */
+
 #pageMenu {
   position: fixed;
   right: 40px;
@@ -107,10 +125,11 @@ em {
   transform: translate(0, -50%);
   width: 80px;
   height: 50%;
+
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  gap: 5%;
+  justify-content: left;
+  gap: 2%;
   z-index: 999;
 }
 #pageMenu li {
@@ -120,8 +139,10 @@ em {
   display: block;
   width: 100%;
   position: relative;
+
   text-align: right;
   padding-right: 20px;
+
 }
 #pageMenu li a span {
   color: #fff;
@@ -133,13 +154,23 @@ em {
 }
 #pageMenu.on a span {
   color: #fff;
+
     font-size: 10px;
   background-color: #feca39;
+
 }
 #pageMenu a i img {
   width: 30px;
   height: auto;
 }
+
+
+#pageMenu a .event img {
+  width: 30px;
+  padding-bottom: 70px;
+}
+
+
 #pageMenu a .readyq img {
   width: 35px;
 }
@@ -217,6 +248,7 @@ em {
 #section6 .section-inner {
   min-height: 300px;
 }
+
 @keyframes fadeIn {
   0% {
     opacity: 0;
