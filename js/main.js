@@ -59,3 +59,20 @@ $(function () {
 //     });
 //   });
 // }
+// 섹션-3 마우스 호버 이미지 교체
+document.addEventListener("DOMContentLoaded", function () {
+  const targetImgs = document.querySelectorAll(".target-img");
+  const targetHovers = document.querySelectorAll(".target-hover");
+
+  targetImgs.forEach((img, index) => {
+    img.addEventListener("mouseover", function () {
+      img.style.display = "none";
+      targetHovers[index].style.display = "block";
+    });
+
+    targetHovers[index].addEventListener("mouseout", function () {
+      img.style.display = "inline-block"; // or whatever the original display property was
+      targetHovers[index].style.display = "none";
+    });
+  });
+});
