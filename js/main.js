@@ -8,7 +8,7 @@ $(function () {
     // responsiveWidth: 920,
     // responsiveHeight:900,
     recordHistory: false,
-    anchors: ["page1", "page2", "page3", "page4", "page5"],
+    anchors: ["page1", "page2", "page3", "page4", "page5", "page6"],
     menu: "#pageMenu",
     // autoScrolling: false,
 
@@ -30,13 +30,7 @@ $(function () {
     afterSlideLoad: function (anchorLink, index, slideAnchor, slideIndex) {
       console.log(`afterSlideLoad!`);
     },
-    onSlideLeave: function (
-      anchorLink,
-      index,
-      slideIndex,
-      direction,
-      nextSlideIndex
-    ) {
+    onSlideLeave: function (anchorLink, index, slideIndex, direction, nextSlideIndex) {
       console.log(`onSlideLeave!`);
     },
   });

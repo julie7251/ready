@@ -210,7 +210,8 @@ em {
 #section1,
 #section2,
 #section3,
-#section4 {
+#section4,
+#section5 {
   background-color: #ffd300;
 }
 .section .section-inner {
