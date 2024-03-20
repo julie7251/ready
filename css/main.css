@@ -29,6 +29,9 @@ body {
   color: #fff;
   text-align: center;
 }
+
+
+
 .section .section-inner {
   display: flex;
   justify-content: center;
@@ -36,6 +39,7 @@ body {
   height: 100%;
   color: #fff;
 }
+
 * {
   box-sizing: border-box;
 }
