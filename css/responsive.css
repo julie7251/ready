@@ -1,6 +1,45 @@
 @media screen and (max-width: 1920px) {
-    /* 수정예정 */
-    .container {
-        padding: 0 20px;
-      }
+  /* 수정예정 */
+  .container {
+    padding: 0 20px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  /* section-3 */
+  #section3 .section-inner {
+    max-width: 1200px;
+    padding-top: 120px;
+  }
+  .target-wrap {
+    margin-top: 80px;
+    height: 380px;
+  }
+  .target-1 p,
+  .target-2 p,
+  .target-3 p {
+    margin-top: 0px;
+  }
+  .target-hover {
+    width: 250px;
+    height: 330px;
+    padding: 35px;
+  }
+  .target-hover img {
+    margin-top: 20px;
+  }
+  .target-hover p {
+    margin-top: 20px;
+  }
+  .target-1 .target-hover {
+    position: absolute;
+    top: 250px;
+  }
+  .target-2 .target-hover {
+    position: absolute;
+    top: 250px;
+  }
+  .target-3 .target-hover {
+    position: absolute;
+    top: 250px;
+  }
 }
