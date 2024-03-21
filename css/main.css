@@ -437,89 +437,76 @@ body {
   margin-top: 20px;
 }
 /* section-4 */
-.video-box {
-  max-width: 1800px;
-  display: flex;
-  justify-content: center;
-  /* 우측 고정메뉴너비확인 */
-  /* margin-right: 70px; */
+/* ==================================승아 */
+#section5{
+  /* background-color: aliceblue; */
 }
-/* 간격 넓게 잡음 */
-.video-box iframe {
-  margin: 0 3% 0 0; /* 각 동영상 사이의 여백 */
+.sw-video{
+  width:90% ;
 }
-/* 네비 */
+/* =====================================푸터 네비 */
 footer {
-  color: #454545;
-  border: 1px solid #333;
+  font-size: 14px;
+  color: #222;
+  border: 1px solid #454545;
+  background-color: #ffd300;
+  /* background-color: #dab8d4; */
+}
+.xi-caret-down-min {
+  position: absolute;
+  top: 13px;
+  font-size: 20px;
+  width: 30px;
 }
 .ft-menu {
   width: 100%;
   height: 50px;
   line-height: 50px;
-  position: relative;
   display: flex;
   justify-content: left;
-  gap: 8%;
-  padding-left: 8%;
-  /* background-color: #ff7a00; */
-  border-bottom: 1px solid #333;
-  font-weight: bold;
-  white-space: nowrap;
-}
-.ft-menu ul {
-  /* 100% 80% 차이 */
-  width: 80%;
-  display: flex;
   gap: 7%;
   padding-left: 7%;
+  position: relative;
+  border-bottom: 1px solid #222;
+  font-weight: bold;
+  white-space: nowrap;
+  text-align: left;
 }
-.ft-menu ul li {
-  color: #fff;
-  line-height: 50px;
+.site {
+  width: 12%;
+  position: absolute;
+  right: 15%;
+  text-align: center;
+  /* background-color: #fff; */
 }
-/* .ft-menu ul li::after {
-  content: "";
-  border-right: 1px solid #fff;
-} */
-/*셀렉션 */
 .familysite {
-  width: 400px;
-  height: auto;
-  /* margin-top: 7px;
-  margin-right: 8%; */
-  background-color: #4400ff;
-  color: #454545;
-  text-align: center;
-  border: none;
-  display: flex;
-  flex-direction: column;
-  z-index: 9999;
+  width: 100%;
+  margin-top: 1px;
+  background-color: #fff;
+  border: 1px solid #222;
 }
-.familysite-list {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
+.familysite li:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
-.familysite-list li {
-  /* display: none; */
-}
+
+/* ======================================푸터 컨텐츠 */
 footer .logo-img {
-  width: 280px;
+  width: 250px;
   height: auto;
   display: block;
   margin: 0 auto;
-  padding: 2% 0 0 0;
+  padding: 1.5% 0 1.5% 0;
 }
 .sns-img {
-  padding: 2.5% 0 0.5% 0;
+  padding: 1% 0 1% 0;
 }
 .sns-img img {
   width: 60px;
   padding-right: 1%;
 }
 .text {
-  color: #4b4b4b;
+  color: #222;
   text-align: center;
   /* letter-spacing: 0.2px; */
   line-height: 1.5em;
@@ -528,5 +515,5 @@ footer .logo-img {
   font-weight: bold;
   text-align: center;
   padding: 0 0 5% 0;
-  color: #4b4b4b;
+  color: #222;
 }

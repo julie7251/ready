@@ -26,7 +26,6 @@
     <link rel="mask-icon" href="/images/favicon/safari-pinned-tab.svg" color="#5bbad5" />
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
-    <!-- 주석확인필요 -->
     <!-- seo -->
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="format-detection" content="telephone=no" />
@@ -42,14 +41,10 @@
       content="레디큐, 한독, readyq, 숙취해소제품, 숙취해소, 레디큐브랜드, 레디큐효능, 레디큐스틱, 레디큐스틱형, 숙취해소제, 맛있는숙취해소, 합리적인숙취해소, 포켓사이즈, 간편한숙취해소, 레디큐효과, 레디큐복용법, 가성비, 필수템, 스틱형, 망고맛, 열대과일맛, 레디큐룰렛이벤트, 룰렛이벤트, 숙취, 망고맛레디큐, 음주전, 음주후, 포켓" />
     <meta property="og:title" content="레디큐" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="레디큐는 맛있는 숙취해소제를 찾는 사람들을 위한 브랜드입니다." />
-    <meta property="og:description" content="레디큐는 맛있는 숙취해소제를 찾는 사람들을 위한 브랜드입니다." />
-    <!-- <meta
-      property="og:image"
-      content="https://www.hyundaigroup.com/upload/mainbanner/main02.png"
-    />
-    <meta property="og:url" content="https://www.hyundaigroup.com" /> -->
-    <!-- ikon -->
+    <meta property="og:title" content=" 맛있는 숙취해소제, 레디큐" />
+    <meta property="og:description" content="맛있는 숙취해소제, 레디큐" />
+    <meta property="og:image" content="https://ready-sable.vercel.app/images/logo2.png" />
+    <meta property="og:url" content="https://ready-sable.vercel.app/" />
     <!-- ikon -->
     <script src="https://kit.fontawesome.com/5251502df3.js" crossorigin="anonymous"></script>
     <!-- css -->
@@ -58,29 +53,42 @@
     <link rel="stylesheet" href="css/pullpage.css" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.css" />
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <!-- js -->
     <script src="js/html5shiv.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.js" integrity="sha512-bxzECOBohzcTcWocMAlNDE2kYs0QgwGs4eD8TlAN2vfovq13kfDfp95sJSZrNpt0VMkpP93ZxLC/+WN/7Trw2g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- <script src="js/prefixfree.min.js"></script> -->
     <script src="js/respond.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.css" />
+    <!-- Swiper js -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/seunga.js"></script>
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-NJLM9XX34S"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NJLM9XX34S"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  gtag('config', 'G-NJLM9XX34S');
-</script>
+      gtag("config", "G-NJLM9XX34S");
+    </script>
   </head>
+
 
   <body>
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NCGPKDP7" height="0" width="0" style="display: none; visibility: hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
     <ul id="pageMenu">
+      <li data-menuanchor="page0">
+        <a href="#page0"
+          ><i class="event"><img src="images/event_icon.png" alt="" /></i
+        ></a>
+      </li>
       <li data-menuanchor="page1" class="active">
         <a href="#page1"><span>HOME</span><i class="home"></i></a>
       </li>
@@ -88,13 +96,13 @@
         <a href="#page2"><span>ABOUT</span><i class="readyq"></i></a>
       </li>
       <li data-menuanchor="page3">
-        <a href="#page3"><span>레디큐 추천</span><i class="ingre"></i></a>
+        <a href="#page3"><span>레디큐 추천</span><i class="reco"></i></a>
       </li>
       <li data-menuanchor="page4">
-        <a href="#page3"><span>레디큐 제품</span><i class="ingre"></i></a>
+        <a href="#page4"><span>레디큐 제품</span><i class="product"></i></a>
       </li>
       <li data-menuanchor="page5">
-        <a href="#page5"><span>레디큐 video</span><i class="video"></i></a>
+        <a href="#page5"><span>레디큐 비디오</span><i class="video"></i></a>
       </li>
     </ul>
     <header class="header">
@@ -234,70 +242,70 @@
       </div>
       <div class="section" id="section4"></div>
       <div class="section" id="section5">
-        <div class="video-box">
-          <iframe
-            width="500"
-            height="281.2"
-            src="https://www.youtube.com/embed/s-JKnZJ7cxM"
-            title="밤 11시까지.. 한잔하면서 가격 꺾어 마셨습니다.. 숙취해소제 네고 [네고왕] Ep.15"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen></iframe>
-          <iframe
-            width="500"
-            height="281.2"
-            src="https://www.youtube.com/embed/uU3_lJUGono"
-            title="[ENG] 신동엽 이소라 드디어 만나는 순간 | 이소라의 슈퍼마켙 소라 EP.01-1"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen></iframe>
-          <iframe
-            width="500"
-            height="281.2"
-            src="https://www.youtube.com/embed/uU3_lJUGono"
-            title="[ENG] 신동엽 이소라 드디어 만나는 순간 | 이소라의 슈퍼마켙 소라 EP.01-1"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen></iframe>
-        </div>
-        <!-- =============== 확인용 -->
-        <img src="images/home.png" alt="" />
-      </div>
-      <footer class="section fp-auto-height" id="section6">
-        <nav class="ft-nav">
-          <ul class="ft-menu">
-            <li><a href="#">회사소개</a></li>
-            <li><a href="#">이용약관</a></li>
-            <li><a href="#">개인정보처리방침</a></li>
-            <li><a href="#">고객센터</a></li>
-            <li class="site">
-              <a href="#">패밀리사이트<i class="xi-caret-down-min"></i></a>
-              <ul class="familysite">
-                <li><a href="#">한독프로몰</a></li>
-                <li><a href="#">뉴트리시아</a></li>
-                <li><a href="#">클리어틴</a></li>
-                <li><a href="#">페스</a></li>
-              </ul>
-            </li>
-          </ul>
-        </nav>
-        <div class="ft-bt">
-          <a href="#"><img src="images/logo2.png" class="logo-img" alt="로고" /></a>
-          <div class="contents-box">
-            <div class="text">
-              <p>주식회사 한독 ㅣ서울특별시 강남구 테헤란로 132 (한독약품빌딩)</p>
-              <p>TEL. 1544-0831</p>
-              <p>평일 10:00 ~ 17:00 (주말 및 공휴일 휴무)</p>
-              <div class="sns-img">
-                <a href="#"> <img src="images/facebook.png" alt="1" /></a>
-                <a href="#"><img src="images/instar.png" alt="2" /></a>
-                <a href="#"><img src="images/youtube.png" alt="3" /></a>
-              </div>
-              <p class="text-copy">COPYRIGHT (C) 2024 GREENART ACADEMY</p>
+        <div class="swiper sw-video">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <iframe width="500" height="281.2" src="https://www.youtube.com/embed/s-JKnZJ7cxM" title="Video 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
+            <div class="swiper-slide">
+              <iframe width="500" height="281.2" src="https://www.youtube.com/embed/s-JKnZJ7cxM" title="Video 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="swiper-slide">
+              <iframe width="500" height="281.2" src="https://www.youtube.com/embed/s-JKnZJ7cxM" title="Video 3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="swiper-slide">
+              <iframe width="500" height="281.2" src="https://www.youtube.com/embed/s-JKnZJ7cxM" title="Video 3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="swiper-slide">
+              <iframe width="500" height="281.2" src="https://www.youtube.com/embed/s-JKnZJ7cxM" title="Video 3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="swiper-slide">
+              <iframe width="500" height="281.2" src="https://www.youtube.com/embed/s-JKnZJ7cxM" title="Video 3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+          </div><!-- swiper-wrapper끝 -->
+          <!-- 이전/다음 버튼 -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div><!-- sw-video 끝 -->
+      </div><!-- 섹션5 끝 -->
+      <footer class="section fp-auto-height" id="section6">
+      <nav class="ft-nav">
+        <ul class="ft-menu">
+          <li><a href="#">회사소개</a></li>
+          <li><a href="#">이용약관</a></li>
+          <li><a href="#">개인정보처리방침</a></li>
+          <li><a href="#">고객센터</a></li>
+          <li class="site">
+            <a href="#" class="family-site-toggle">패밀리사이트<i class="xi-caret-down-min"></i></a>
+            <ul class="familysite" style="display: none">
+              <li><a href="#">한독프로몰</a></li>
+              <li><a href="#">뉴트리시아</a></li>
+              <li><a href="#">클리어틴</a></li>
+              <li><a href="#">페스</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <div class="ft-bt">
+        <a href="#"><img src="images/logo2.png" class="logo-img" alt="로고" /></a>
+        <div class="contents-box">
+          <div class="text">
+            <p>주식회사 한독 ㅣ서울특별시 강남구 테헤란로 132 (한독약품빌딩)</p>
+            <p>TEL. 1544-0831</p>
+            <p>평일 10:00 ~ 17:00 (주말 및 공휴일 휴무)</p>
+            <div class="sns-img">
+              <a href="#"> <img src="images/facebook.png" alt="1" /></a>
+              <a href="#"><img src="images/instar.png" alt="2" /></a>
+              <a href="#"><img src="images/youtube.png" alt="3" /></a>
+            </div>
+            <p class="text-copy">COPYRIGHT (C) 2024 GREENART ACADEMY</p>
           </div>
+
         </div>
-      </footer>
-    </div>
+      </div>
+    </footer>
+    </div> <!-- 풀페이지끝 -->
+    
   </body>
 </html>
+

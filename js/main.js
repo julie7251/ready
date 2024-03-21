@@ -53,20 +53,22 @@ $(function () {
 //     });
 //   });
 // }
-// 섹션-3 마우스 호버 이미지 교체
-document.addEventListener("DOMContentLoaded", function () {
-  const targetImgs = document.querySelectorAll(".target-img");
-  const targetHovers = document.querySelectorAll(".target-hover");
-
-  targetImgs.forEach((img, index) => {
-    img.addEventListener("mouseover", function () {
-      img.style.display = "none";
-      targetHovers[index].style.display = "block";
-    });
-
-    targetHovers[index].addEventListener("mouseout", function () {
-      img.style.display = "inline-block"; // or whatever the original display property was
-      targetHovers[index].style.display = "none";
-    });
+// 메뉴관련
+var mainMenuLi = $(".mainmenu > li");
+var subMenu = $(".submenu");
+//   mainMenuLi 주메뉴로 마우스 이동하는 경우 실행
+$.each(mainMenuLi, function (index, item) {
+  $(this).mouseenter(function () {
+    allDepth3.hide();
+    // 모든 포커스 해제
+    subMenuLi.removeClass("submenu_focus_link");
+    // 서브 메뉴가 보여준다
+    $(this).find(".submenu").addClass("submenu_focus");
+    $(this).css("z-index", 999);
   });
+  $(this).mouseleave(function () {
+    // 서브메뉴 숨김
+    $(this).find(".submenu").removeClass("submenu_focus");
+  });
+ 
 });
