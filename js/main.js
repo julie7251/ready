@@ -8,7 +8,7 @@ $(function () {
     // responsiveWidth: 920,
     // responsiveHeight:900,
     recordHistory: false,
-    anchors: ["page1", "page2", "page3", "page4", "page5", "page6"],
+    anchors: ["page1", "page2", "page3", "page4", "page5"],
     menu: "#pageMenu",
     // autoScrolling: false,
 
@@ -30,7 +30,13 @@ $(function () {
     afterSlideLoad: function (anchorLink, index, slideAnchor, slideIndex) {
       console.log(`afterSlideLoad!`);
     },
-    onSlideLeave: function (anchorLink, index, slideIndex, direction, nextSlideIndex) {
+    onSlideLeave: function (
+      anchorLink,
+      index,
+      slideIndex,
+      direction,
+      nextSlideIndex
+    ) {
       console.log(`onSlideLeave!`);
     },
   });
@@ -40,6 +46,18 @@ $(function () {
   $(".language-i").click(function () {
     $(".language li").fadeToggle(600);
   });
+  new fullpage('#fullpage', {
+    // 옵션...
+    afterLoad: function(origin, destination, direction){
+        var loadedSection = this;
+
+        // section2로 스크롤 될 때
+        if(destination.index == 1){
+            // 애니메이션을 추가할 요소에 클래스 추가
+            document.querySelector('.section2-tit img').classList.add('animate');
+        }
+    }
+});
 });
 // window.onload =function(){
 //   document.querySelector('.singup-i').addEventListener('click', function() {
@@ -53,20 +71,3 @@ $(function () {
 //     });
 //   });
 // }
-// 섹션-3 마우스 호버 이미지 교체
-document.addEventListener("DOMContentLoaded", function () {
-  const targetImgs = document.querySelectorAll(".target-img");
-  const targetHovers = document.querySelectorAll(".target-hover");
-
-  targetImgs.forEach((img, index) => {
-    img.addEventListener("mouseover", function () {
-      img.style.display = "none";
-      targetHovers[index].style.display = "block";
-    });
-
-    targetHovers[index].addEventListener("mouseout", function () {
-      img.style.display = "inline-block"; // or whatever the original display property was
-      targetHovers[index].style.display = "none";
-    });
-  });
-});
