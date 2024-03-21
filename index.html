@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="ko">
 <head>
   <!-- Google Tag Manager -->
   <script>
@@ -76,26 +78,34 @@
   </script>
 </head>
   <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NCGPKDP7" height="0" width="0" style="display: none; visibility: hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
     <ul id="pageMenu">
       <li data-menuanchor="page1" class="active">
-        <a href="#page1"><span>HOME</span><i class="home"></i></a>
+        <a href="#page1"
+          ><span>HOME</span><i class="home"><img src="images/home_icon.png" alt="" /></i
+        ></a>
       </li>
       <li data-menuanchor="page2">
-        <a href="#page2"><span>ABOUT</span><i class="readyq"></i></a>
+        <a href="#page2"
+          ><span>ABOUT</span><i class="readyq"><img src="images/q_icon.png" alt="" /></i
+        ></a>
       </li>
       <li data-menuanchor="page3">
-        <a href="#page3"><span>레디큐 추천</span><i class="ingre"></i></a>
+        <a href="#page3"
+          ><span>레디큐 성분</span><i class="ingre"><img src="images/ingri_icon.png" alt="" /></i
+        ></a>
       </li>
       <li data-menuanchor="page4">
-        <a href="#page3"><span>레디큐 제품</span><i class="ingre"></i></a>
+        <a href="#page4"
+          ><span>레디큐 제품</span><i class="product"><img src="images/product_icon.png" alt="" /></i
+        ></a>
       </li>
       <li data-menuanchor="page5">
-        <a href="#page5"><span>레디큐 video</span><i class="video"></i></a>
+        <a href="#page5"
+          ><span>레디큐 video</span><i class="video"><img src="images/youtube_icon.png" alt="" /></i
+        ></a>
       </li>
     </ul>
+
     <header class="header">
       <div class="hd-left">
         <a href="#"><img src="images/header/logo.png" alt="헤더로고" /></a>
@@ -118,6 +128,10 @@
           </ul>
         </div>
         <div class="hd-right-right">
+          <div class="hamberger">
+            <span class="hamberger-bf">●</span>
+            <i class="fa-solid fa-bars"></i>
+          </div>
           <div class="hd-login">
             <ul>
               <li>
@@ -161,6 +175,12 @@
     <div id="fullpage">
       <div class="section" id="section1">
         <div class="section1-bg">
+          <div class="section1-bgbg">
+            <img src="images/section1/bg2.png" alt="섹션1배경" />
+            <!-- <div class="section1-subbg">
+              <img src="images/section1/bg2.png" alt="섹션1배경2">
+            </div> -->
+          </div>
           <div class="section1-bg2">
             <img src="images/section1/bg-2.png" alt="캬할땐큐하자" />
           </div>
@@ -169,11 +189,8 @@
           </div>
           <div class="scroll">
             <img src="images/section1/스크롤.png" alt="스크롤" />
-            <div class="scroll-btn">
-              <span class="hide"><a href="#"></a></span>
-            </div>
+            <div class="scroll-btn"></div>
           </div>
-          <img src="images/section1/bg.png" alt="섹션1배경" />
         </div>
       </div>
       <div class="section" id="section2">
@@ -186,18 +203,70 @@
           </div>
           <div class="section2-jangmv">
             <img src="images/section2/jangmovie.png" alt="장무비" />
-          </div>
-          <div class="section2-vd">
-            <iframe
-              src="https://www.youtube.com/embed/KbWdUSodFzg?autoplay=1&mute=1&loop=1&playlist=KbWdUSodFzg&si=qAz0Yg7ywXeWA-V-"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen></iframe>
+            <div class="section2-vd">
+              <iframe
+                src="https://www.youtube.com/embed/KbWdUSodFzg?autoplay=1&mute=1&loop=1&playlist=KbWdUSodFzg&si=qAz0Yg7ywXeWA-V-"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            </div>
           </div>
         </div>
       </div>
-      <div class="section" id="section3">
+      <!-- <div class="section" id="section3">
+        <div class="section-inner">
+          <div class="ingredient">
+            <img src="images/ingredient.png" alt="주요성분" class="ingredient-img" />
+            <ul class="detail-wrap">
+              <li class="detail detail-1">
+                <img src="images/icon-milk thistle.png" alt="밀크씨슬" />
+                <div class="detail-txt detail-txt-1">
+                  <h2>밀크씨슬</h2>
+                  <p>씨앗에 함유된 실리마린의 항산화 작용과 <br />간 신진대사 촉진 효과로 간 건강에 도움을 줍니다.</p>
+                </div>
+              </li>
+              <li class="detail detail-2">
+                <img src="images/icon-mango.png" alt="망고과즙" />
+                <div class="detail-txt detail-txt-2">
+                  <h2>망고과즙</h2>
+                  <p>목 넘김 좋은 달콤한 망고과즙으로 맛있게!</p>
+                </div>
+              </li>
+              <li class="detail detail-3">
+                <img src="images/icon-fruits.png" alt="열대과일" />
+                <div class="detail-txt detail-txt-3">
+                  <h2>열대과일</h2>
+                  <p>오렌지, 패션후르츠, 구아바, 바나나를 담아 상큼달콤하게!</p>
+                </div>
+              </li>
+              <li class="detail detail-4">
+                <img src="images/icon-Hovenia.png" alt="헛개나무열매" />
+                <div class="detail-txt detail-txt-4">
+                  <h2>헛개나무열매</h2>
+                  <p>숙취를 유발하는 아세트알데히드라의 외부배출을 도와<br />빠른 숙취해소에 효과적입니다.</p>
+                </div>
+              </li>
+              <li class="detail detail-5">
+                <img src="images/icon-cumin.png" alt="커큐민" />
+                <div class="detail-txt detail-txt-5">
+                  <h2>커큐민</h2>
+                  <p>한독의 기술력으로 42배 높은 탁월한 체내흡수율로<br />숙취 없이 개운한 아침을 선사합니다.</p>
+                </div>
+              </li>
+              <li class="detail detail-6">
+                <img src="images/icon-honey.png" alt="" />
+                <div class="detail-txt detail-txt-6">
+                  <h2>국산벌꿀</h2>
+                  <p>과음으로 떨어진 혈당을 국산 벌꿀로 빠르게 높여줍니다.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div> -->
+      <div class="section" id="section4">
         <div class="section-inner">
           <img src="images/target-title.png" alt="제목" class="target-title" />
           <div class="target-wrap">
@@ -301,20 +370,13 @@
         </div>
       </div>
       <div class="section" id="section5">
+        <div class="sidemenu"></div>
         <div class="video-box">
           <iframe
             width="500"
             height="281.2"
             src="https://www.youtube.com/embed/s-JKnZJ7cxM"
             title="밤 11시까지.. 한잔하면서 가격 꺾어 마셨습니다.. 숙취해소제 네고 [네고왕] Ep.15"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen></iframe>
-          <iframe
-            width="500"
-            height="281.2"
-            src="https://www.youtube.com/embed/uU3_lJUGono"
-            title="[ENG] 신동엽 이소라 드디어 만나는 순간 | 이소라의 슈퍼마켙 소라 EP.01-1"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen></iframe>
