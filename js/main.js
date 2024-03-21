@@ -8,7 +8,7 @@ $(function () {
     // responsiveWidth: 920,
     // responsiveHeight:900,
     recordHistory: false,
-    anchors: ["page1", "page2", "page3", "page4", "page5", "page6"],
+    anchors: ["page1", "page2", "page3", "page4", "page5"],
     menu: "#pageMenu",
     // autoScrolling: false,
 
@@ -30,7 +30,13 @@ $(function () {
     afterSlideLoad: function (anchorLink, index, slideAnchor, slideIndex) {
       console.log(`afterSlideLoad!`);
     },
-    onSlideLeave: function (anchorLink, index, slideIndex, direction, nextSlideIndex) {
+    onSlideLeave: function (
+      anchorLink,
+      index,
+      slideIndex,
+      direction,
+      nextSlideIndex
+    ) {
       console.log(`onSlideLeave!`);
     },
   });
@@ -40,6 +46,7 @@ $(function () {
   $(".language-i").click(function () {
     $(".language li").fadeToggle(600);
   });
+
 });
 // window.onload =function(){
 //   document.querySelector('.singup-i').addEventListener('click', function() {
@@ -69,6 +76,16 @@ $.each(mainMenuLi, function (index, item) {
   $(this).mouseleave(function () {
     // 서브메뉴 숨김
     $(this).find(".submenu").removeClass("submenu_focus");
+
+
+  // 섹션 4 슬라이드 버튼
+  var swiper = new Swiper("#section4 .mySwiper", {
+    navigation: {
+      nextEl: "#section4 .swiper-button-next",
+      prevEl: "#section4 .swiper-button-prev",
+    },
+
   });
  
 });
+

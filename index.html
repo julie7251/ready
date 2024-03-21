@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
   <head>
     <!-- Google Tag Manager -->
     <script>
@@ -80,9 +81,6 @@
 
 
   <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NCGPKDP7" height="0" width="0" style="display: none; visibility: hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
     <ul id="pageMenu">
       <li data-menuanchor="page0">
         <a href="#page0"
@@ -90,12 +88,17 @@
         ></a>
       </li>
       <li data-menuanchor="page1" class="active">
-        <a href="#page1"><span>HOME</span><i class="home"></i></a>
+        <a href="#page1"
+          ><span>HOME</span><i class="home"><img src="images/home_icon.png" alt="" /></i
+        ></a>
       </li>
       <li data-menuanchor="page2">
-        <a href="#page2"><span>ABOUT</span><i class="readyq"></i></a>
+        <a href="#page2"
+          ><span>ABOUT</span><i class="readyq"><img src="images/q_icon.png" alt="" /></i
+        ></a>
       </li>
       <li data-menuanchor="page3">
+
         <a href="#page3"><span>레디큐 추천</span><i class="reco"></i></a>
       </li>
       <li data-menuanchor="page4">
@@ -103,8 +106,10 @@
       </li>
       <li data-menuanchor="page5">
         <a href="#page5"><span>레디큐 비디오</span><i class="video"></i></a>
+
       </li>
     </ul>
+
     <header class="header">
       <div class="hd-left">
         <a href="#"><img src="images/header/logo.png" alt="헤더로고" /></a>
@@ -127,6 +132,10 @@
           </ul>
         </div>
         <div class="hd-right-right">
+          <div class="hamberger">
+            <span class="hamberger-bf">●</span>
+            <i class="fa-solid fa-bars"></i>
+          </div>
           <div class="hd-login">
             <ul>
               <li>
@@ -170,6 +179,12 @@
     <div id="fullpage">
       <div class="section" id="section1">
         <div class="section1-bg">
+          <div class="section1-bgbg">
+            <img src="images/section1/bg2.png" alt="섹션1배경" />
+            <!-- <div class="section1-subbg">
+              <img src="images/section1/bg2.png" alt="섹션1배경2">
+            </div> -->
+          </div>
           <div class="section1-bg2">
             <img src="images/section1/bg-2.png" alt="캬할땐큐하자" />
           </div>
@@ -178,11 +193,8 @@
           </div>
           <div class="scroll">
             <img src="images/section1/스크롤.png" alt="스크롤" />
-            <div class="scroll-btn">
-              <span class="hide"><a href="#"></a></span>
-            </div>
+            <div class="scroll-btn"></div>
           </div>
-          <img src="images/section1/bg.png" alt="섹션1배경" />
         </div>
       </div>
       <div class="section" id="section2">
@@ -195,53 +207,174 @@
           </div>
           <div class="section2-jangmv">
             <img src="images/section2/jangmovie.png" alt="장무비" />
-          </div>
-          <div class="section2-vd">
-            <iframe
-              src="https://www.youtube.com/embed/KbWdUSodFzg?autoplay=1&mute=1&loop=1&playlist=KbWdUSodFzg&si=qAz0Yg7ywXeWA-V-"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen></iframe>
+            <div class="section2-vd">
+              <iframe
+                src="https://www.youtube.com/embed/KbWdUSodFzg?autoplay=1&mute=1&loop=1&playlist=KbWdUSodFzg&si=qAz0Yg7ywXeWA-V-"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            </div>
           </div>
         </div>
       </div>
-      <div class="section" id="section3">
+      <!-- <div class="section" id="section3">
+        <div class="section-inner">
+          <div class="ingredient">
+            <img src="images/ingredient.png" alt="주요성분" class="ingredient-img" />
+            <ul class="detail-wrap">
+              <li class="detail detail-1">
+                <img src="images/icon-milk thistle.png" alt="밀크씨슬" />
+                <div class="detail-txt detail-txt-1">
+                  <h2>밀크씨슬</h2>
+                  <p>씨앗에 함유된 실리마린의 항산화 작용과 <br />간 신진대사 촉진 효과로 간 건강에 도움을 줍니다.</p>
+                </div>
+              </li>
+              <li class="detail detail-2">
+                <img src="images/icon-mango.png" alt="망고과즙" />
+                <div class="detail-txt detail-txt-2">
+                  <h2>망고과즙</h2>
+                  <p>목 넘김 좋은 달콤한 망고과즙으로 맛있게!</p>
+                </div>
+              </li>
+              <li class="detail detail-3">
+                <img src="images/icon-fruits.png" alt="열대과일" />
+                <div class="detail-txt detail-txt-3">
+                  <h2>열대과일</h2>
+                  <p>오렌지, 패션후르츠, 구아바, 바나나를 담아 상큼달콤하게!</p>
+                </div>
+              </li>
+              <li class="detail detail-4">
+                <img src="images/icon-Hovenia.png" alt="헛개나무열매" />
+                <div class="detail-txt detail-txt-4">
+                  <h2>헛개나무열매</h2>
+                  <p>숙취를 유발하는 아세트알데히드라의 외부배출을 도와<br />빠른 숙취해소에 효과적입니다.</p>
+                </div>
+              </li>
+              <li class="detail detail-5">
+                <img src="images/icon-cumin.png" alt="커큐민" />
+                <div class="detail-txt detail-txt-5">
+                  <h2>커큐민</h2>
+                  <p>한독의 기술력으로 42배 높은 탁월한 체내흡수율로<br />숙취 없이 개운한 아침을 선사합니다.</p>
+                </div>
+              </li>
+              <li class="detail detail-6">
+                <img src="images/icon-honey.png" alt="" />
+                <div class="detail-txt detail-txt-6">
+                  <h2>국산벌꿀</h2>
+                  <p>과음으로 떨어진 혈당을 국산 벌꿀로 빠르게 높여줍니다.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div> -->
+      <div class="section" id="section4">
         <div class="section-inner">
           <img src="images/target-title.png" alt="제목" class="target-title" />
           <div class="target-wrap">
-            <div class="target-1">
+            <a href="#section4" class="target-1">
               <img src="images/target-1.png" alt="타겟" class="target-img" />
-              <p class="target-txt">술자리 인싸되고 싶은<br />MZ !</p>
-              <div class="target-hover">
-                <h2>레디큐 츄</h2>
-                <img src="images/chew-2.png" alt="레디큐 츄" />
-                <p>간편하게, 간식처럼<br />즐길 수 있는 숙취해소제</p>
+              <img src="images/bubble.png" alt="말풍선" class="bubble-1" />
+              <p class="bubble-1-txt">HEY! 인싸가<br />되고싶어?</p>
+              <div class="target-1-hover">
+                <img src="images/bubble.png" alt="말풍선" class="bubble-2" />
+                <span>그럴 땐<br />레디큐 츄 !</span>
               </div>
-            </div>
+            </a>
             <div class="target-2">
               <img src="images/target-2.png" alt="타겟" class="target-img" />
-              <p class="target-txt">다음날 피부가<br />푸석하다느끼는 분 !</p>
-              <div class="target-hover">
-                <h2>레디큐 스틱 레이디</h2>
-                <img src="images/stick-lady-2.png" alt="레디큐 스틱" />
-                <p>타우린 + 글루타치온 + 콜라겐<br />함유된 숙취해소제</p>
+              <img src="images/bubble.png" alt="말풍선" class="bubble-1" />
+              <p class="bubble-2-txt">푸석한 피부가<br />고민이니?</p>
+              <div class="target-2-hover">
+                <img src="images/bubble.png" alt="말풍선" class="bubble-2" />
+                <span>그럴 땐<br />레디큐 스틱<br />레이디 !</span>
               </div>
             </div>
             <div class="target-3">
               <img src="images/target-3.png" alt="타겟" class="target-img" />
-              <p class="target-txt">다음날 숙취와 장트러블<br />걱정되는 분 !</p>
-              <div class="target-hover">
-                <h2>레디큐 드링크 프로</h2>
-                <img src="images/drink-pro.png" alt="레디큐 드링크 프로" />
-                <p>열처리 유산균 100억<br />함유된 숙취해소제</p>
+              <img src="images/bubble.png" alt="말풍선" class="bubble-1" />
+              <p class="bubble-3-txt">장....트러블로<br />고생..해?</p>
+              <div class="target-3-hover">
+                <img src="images/bubble.png" alt="말풍선" class="bubble-2" />
+                <span>그럴..땐..<br />레디큐 드링크<br />프로 !</span>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="section" id="section4"></div>
+      <div class="section" id="section4">
+        <div class="section-inner">
+          <!-- Swiper -->
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide slide-1">
+                <img src="images/product1-title.png" alt="제목" class="product-title"/>
+                <div class="product-1">
+                  <div class="left">
+                    <img src="images/product1.png" alt="레디큐 츄" class="product-img"/>
+                  </div>
+                  <div class="right">
+                    <h2>레디큐 츄</h2>
+                    <img src="images/effect.png" alt="밑줄">
+                    <p class="p1">
+                      자꾸만 손이가는 말랑 쫄깃 식감에<br />
+                      한 손에 쏙 들어오는 아담한 크기 !
+                    </p>
+                    <p class="p2">
+                      망고의 달콤함과 쫄~깃한 식감으로<br />
+                      술자리의 시작과 끝이 더 맛있어 집니다.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide slide-2">
+                <img src="images/product2-title.png" alt="제목" class="product-title" />
+                <div class="product-2">
+                <div class="left">
+                  <img src="images/product2.png" alt="레디큐 스틱 레이디"  class="product-img"/>
+                </div>
+                <div class="right">
+                  <h2>레디큐 스틱 레이디</h2>
+                  <p class="p1">
+                    자꾸만 손이가는 말랑 쫄깃 식감에<br />
+                    한 손에 쏙 들어오는 아담한 크기 !
+                  </p>
+                  <p class="p2">
+                    망고의 달콤함과 쫄~깃한 식감으로<br />
+                    술자리의 시작과 끝이 더 맛있어 집니다.
+                  </p>
+                </div>
+              </div>
+              </div>
+              <div class="swiper-slide slide-3">
+                <img src="images/product3-title.png" alt="제목"  class="product-title"/>
+                <div class="product-3">
+                <div class="left">
+                  <img src="images/product3.png" alt="레디큐 드링크 프로" class="product-img" />
+                </div>
+                <div class="right">
+                  <h2>레디큐 드링크 프로</h2>
+                  <p class="p1">
+                    자꾸만 손이가는 말랑 쫄깃 식감에<br />
+                    한 손에 쏙 들어오는 아담한 크기 !
+                  </p>
+                  <p class="p2">
+                    망고의 달콤함과 쫄~깃한 식감으로<br />
+                    술자리의 시작과 끝이 더 맛있어 집니다.
+                  </p>
+                </div>
+              </div>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+      </div>
       <div class="section" id="section5">
+
         <div class="swiper sw-video">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
@@ -268,6 +401,7 @@
           <div class="swiper-button-next"></div>
         </div><!-- sw-video 끝 -->
       </div><!-- 섹션5 끝 -->
+
       <footer class="section fp-auto-height" id="section6">
       <nav class="ft-nav">
         <ul class="ft-menu">
