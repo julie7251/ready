@@ -47,12 +47,45 @@ $(function () {
     $(".language li").fadeToggle(600);
   });
 
+});
+// window.onload =function(){
+//   document.querySelector('.singup-i').addEventListener('click', function() {
+//     var signupItems = document.querySelectorAll('.signup li');
+//     signupItems.forEach(function(item) {
+//       if (item.style.display === 'none') {
+//         item.style.display = 'block';
+//       } else {
+//         item.style.display = 'none';
+//       }
+//     });
+//   });
+// }
+// 메뉴관련
+var mainMenuLi = $(".mainmenu > li");
+var subMenu = $(".submenu");
+//   mainMenuLi 주메뉴로 마우스 이동하는 경우 실행
+$.each(mainMenuLi, function (index, item) {
+  $(this).mouseenter(function () {
+    allDepth3.hide();
+    // 모든 포커스 해제
+    subMenuLi.removeClass("submenu_focus_link");
+    // 서브 메뉴가 보여준다
+    $(this).find(".submenu").addClass("submenu_focus");
+    $(this).css("z-index", 999);
+  });
+  $(this).mouseleave(function () {
+    // 서브메뉴 숨김
+    $(this).find(".submenu").removeClass("submenu_focus");
+
+
   // 섹션 4 슬라이드 버튼
   var swiper = new Swiper("#section4 .mySwiper", {
     navigation: {
       nextEl: "#section4 .swiper-button-next",
       prevEl: "#section4 .swiper-button-prev",
     },
+
   });
+ 
 });
 

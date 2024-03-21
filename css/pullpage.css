@@ -103,6 +103,7 @@ em {
 
 #pageMenu {
   position: fixed;
+  height: 100%;
   right: 0;
   top: 50%;
   transform: translate(0, -50%);
@@ -111,40 +112,94 @@ em {
   /* background-color: bisque; */
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  gap: 5%;
-  z-index: 999;
-}
 
-#pageMenu li {
-  margin: 5px 0;
+  justify-content: center;
+  gap: 4%;
+  z-index: 9999;
+  padding: 0 4% 0 4%;
+
 }
 #pageMenu a {
   display: block;
   width: 100%;
   position: relative;
-  text-align: center;
-  
+  text-align: right;
+}
+#pageMenu li a .event img {
+  width: 27px;
+  height: auto;
+  display: inline-block;
+  position: absolute;
+  left: -10px;
+  top: -180px;
+  margin-bottom: 400px;
 }
 #pageMenu li a span {
+  width: 100px;
+  font-size: 14px;
+ letter-spacing: 0.5px; 
   color: #fff;
   font-size: 0px;
   font-family: "Montserrat";
   font-weight: bold;
-  line-height: 30px;
-  display: inline-block;
-
+  position: absolute;
+  top: -10px;
+  right: 10px;
+  padding: 8px;
+  text-align: center;
+  white-space: nowrap;
 }
 #pageMenu.on a span {
   color: #fff;
 
+  font-size: 10px;
+  background-color: #39d0fe;
+} */
+#pageMenu a .home {
+  display: inline-block;
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-size: cover;
+  border-radius: 50%;
+  /* background-color: rgba(255, 255, 255, 1); */
+  border: 1px solid #fff;
+  top: 60%;
+  transform: translateY(-50%);
 }
-#pageMenu a i img {
-  width: 30px;
-  height: auto;
+#pageMenu a .readyq {
+  display: inline-block;
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border: 1px solid #fff;
+  background-size: cover;
+  border-radius: 50%;
+  top: 60%;
+  transform: translateY(-50%);
 }
-#pageMenu a .readyq img{
-  width: 35px;
+#pageMenu a .reco {
+  display: inline-block;
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border: 1px solid #fff;
+  background-size: cover;
+  border-radius: 50%;
+  top: 60%;
+  transform: translateY(-50%);
+}
+#pageMenu a .product {
+  display: inline-block;
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border: 1px solid #fff;
+  background-size: cover;
+  border-radius: 50%;
+  top: 60%;
+  transform: translateY(-50%);
+
 }
 #pageMenu a .product img{
   width: 20px;
@@ -153,16 +208,20 @@ em {
 /* #pageMenu a i {
   display: inline-block;
   position: absolute;
-  width: 8px;
-  height: 8px;
-  background: #d5d5d5;
+  width: 12px;
+  height: 12px;
+  border: 1px solid #fff;
+  background-size: cover;
+
   border-radius: 50%;
   top: 50%;
   right: 0;
   transform: translateY(-50%);
-} */
 
-/* #pageMenu a i::before {
+}
+  /*
+#pageMenu a i::before {
+
   content: "";
   display: inline-block;
   position: absolute;
@@ -171,42 +230,40 @@ em {
   transform: translate(-50%, -50%);
   width: 17px;
   height: 17px;
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  border-radius: 50%;
   opacity: 0;
   transition: all 0.3s;
-} */
-/* #pageMenu li.active a span {
-  font-size: 13px;
-} */
+
+}*/
+#pageMenu li.active a span {
+  font-size: 14px;
+  padding: 8px;
+  background-color: rgb(228, 28, 211);
+  white-space: nowrap;
+  visibility: visible;
+  color: #fff;
+  /* border: 1px solid rgb(228, 28, 211); */
+  border-radius: 5px;
+}
 /* #pageMenu li.active a i::before {
-  content: "";
-  display: inline-block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 17px;
-  height: 17px;
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  width: 20px;
+  height: 20px;
+  border: 1px solid #fff;
   border-radius: 50%;
   opacity: 1;
 } */
-
+#pageMenu li.active a i {
+  width: 12px;
+  height: 12px;
+  background-color:  rgb(228, 28, 211);
+  /*background-color: rgb(228, 28, 211);*/
+  border: none;
+  opacity: 1;
+}
 /* 페이지 */
-/*확인용 색상 */
-#section1 {
-  background-color: #feca39;
-}
-#section2 {
-  background-color: #fff;
-}
-#section3 {
-  background-color: #feca39;
-}
-#section4 {
-  background-color: #fff;
-}
+#section1,
+#section2,
+#section3,
+#section4,
 #section5 {
   background-color: #feca39;
 }
@@ -220,14 +277,6 @@ em {
   height: 100%;
   color: #fff;
 }
-#section6 .section-inner {
-  min-height: 300px;
-}
-
-/* 애니메이션 */
-/* .section.active .ani-01 {animation: fadeLeft 0.5s 0.35s both;}
-.section.active .ani-02 {animation: fadeLeft 0.5s 0.55s both;}
-.section.active .ani-03 i {animation: fadeUp 0.4s 0.2s both} */
 
 @keyframes fadeIn {
   0% {
