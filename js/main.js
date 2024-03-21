@@ -8,7 +8,7 @@ $(function () {
     // responsiveWidth: 920,
     // responsiveHeight:900,
     recordHistory: false,
-    anchors: ["page1", "page2", "page3", "page4", "page5"],
+    anchors: ["page1", "page2", "page3", "page4", "page5", "page6"],
     menu: "#pageMenu",
     // autoScrolling: false,
 
@@ -30,13 +30,7 @@ $(function () {
     afterSlideLoad: function (anchorLink, index, slideAnchor, slideIndex) {
       console.log(`afterSlideLoad!`);
     },
-    onSlideLeave: function (
-      anchorLink,
-      index,
-      slideIndex,
-      direction,
-      nextSlideIndex
-    ) {
+    onSlideLeave: function (anchorLink, index, slideIndex, direction, nextSlideIndex) {
       console.log(`onSlideLeave!`);
     },
   });
@@ -46,20 +40,14 @@ $(function () {
   $(".language-i").click(function () {
     $(".language li").fadeToggle(600);
   });
-
+  // 섹션 4 슬라이드 버튼
+  var swiper = new Swiper("#section4 .mySwiper", {
+    navigation: {
+      nextEl: "#section4 .swiper-button-next",
+      prevEl: "#section4 .swiper-button-prev",
+    },
+  });
 });
-// window.onload =function(){
-//   document.querySelector('.singup-i').addEventListener('click', function() {
-//     var signupItems = document.querySelectorAll('.signup li');
-//     signupItems.forEach(function(item) {
-//       if (item.style.display === 'none') {
-//         item.style.display = 'block';
-//       } else {
-//         item.style.display = 'none';
-//       }
-//     });
-//   });
-// }
 // 메뉴관련
 var mainMenuLi = $(".mainmenu > li");
 var subMenu = $(".submenu");
@@ -76,16 +64,23 @@ $.each(mainMenuLi, function (index, item) {
   $(this).mouseleave(function () {
     // 서브메뉴 숨김
     $(this).find(".submenu").removeClass("submenu_focus");
-
-
-  // 섹션 4 슬라이드 버튼
-  var swiper = new Swiper("#section4 .mySwiper", {
-    navigation: {
-      nextEl: "#section4 .swiper-button-next",
-      prevEl: "#section4 .swiper-button-prev",
-    },
-
   });
  
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+  var familySiteToggle = document.querySelector('.family-site-toggle');
+  var familySiteMenu = document.querySelector('.familysite');
+
+  familySiteToggle.addEventListener('click', function (event) {
+      event.preventDefault(); // 기본 동작(링크 이동) 방지
+
+      // 하위 메뉴의 표시 상태를 토글합니다.
+      if (familySiteMenu.style.display === 'block') {
+          familySiteMenu.style.display = 'none';
+      } else {
+          familySiteMenu.style.display = 'block';
+      }
+  });
+
+});
