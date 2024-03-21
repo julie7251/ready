@@ -3,6 +3,16 @@
 /* 폰트 적용 */
 @import url("https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap");
 
+
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
+@font-face {
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff") format("woff");
+  font-family: "GmarketSansMedium";
+  font-weight: normal;
+  font-style: normal;
+}
+
 html,
 body {
   font-family: "Gothic A1", sans-serif;
@@ -126,12 +136,6 @@ body {
 #section6 .section-inner {
   min-height: 300px;
 }
-
-/* 애니메이션 */
-/* .section.active .ani-01 {animation: fadeLeft 0.5s 0.35s both;}
-.section.active .ani-02 {animation: fadeLeft 0.5s 0.55s both;}
-.section.active .ani-03 i {animation: fadeUp 0.4s 0.2s both} */
-
 * {
   box-sizing: border-box;
 }
@@ -464,57 +468,35 @@ height: 100%;
   height: 21.4vw;
 }
 
-/* Section-3------------------- */
-.ingredient {
+/* 섹션-3 */
+#section3 .section-inner {
+  max-width: 1800px;
+  display: flex;
+  flex-direction: column;
   margin: 0 auto;
-  width: 60%;
-  position: relative;
-  /* background-color: #444141; */
+  padding-top: 80px;
 }
-.ingredient-img {
-  width: 55%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -38%);
-  object-fit: cover;
-}
-.detail-wrap {
+.target-wrap {
+  margin: 50px 0 0 0;
+  display: flex;
+  align-items: flex-end;
+  /* justify-content: center; */
   width: 100%;
-  /* height: 800vh; */
-  position: relative;
-  background-color: rgba(255, 255, 255, 0.2);
+  height: 500px;
 }
-.detail {
+.target-1 {
+  animation: vibration 0.8s infinite linear;
+  position: relative;
+  width: calc(100% / 3 - 10px);
   display: flex;
   align-items: center;
   width: 50%;
   gap: 3%;
 }
-.detail img {
-  width: 20%;
-  cursor: pointer;
-}
-.detail-txt {
-  width: 80%;
-  opacity: 0;
-  transition: opacity 0.5s ease;
-}
-.detail-txt h2 {
-  color: #444;
-  font-family: "Noto Sans KR", sans-serif;
-  font-weight: 600;
-  font-size: 1.3vw;
-  line-height: 1.7;
-}
-.detail-txt p {
-  font-family: "Noto Sans KR", sans-serif;
-  color: #555;
-  font-weight: 400;
-  font-size: 0.8vw;
-  line-height: 1.5;
-}
-.detail-1 {
+.target-2 {
+  animation: vibration 0.8s infinite linear;
+  position: relative;
+  width: calc(100% / 3 - 10px);
   display: flex;
   flex-direction: row-reverse;
   text-align: right;
@@ -522,7 +504,10 @@ height: 100%;
   top: -250px;
   left: 50px;
 }
-.detail-2 {
+.target-3 {
+  animation: vibration 0.8s infinite linear;
+  position: relative;
+  width: calc(100% / 3 - 10px);
   display: flex;
   flex-direction: row-reverse;
   text-align: right;
@@ -530,123 +515,233 @@ height: 100%;
   top: 25px;
   left: -95px;
 }
-.detail-3 {
-  display: flex;
-  flex-direction: row-reverse;
-  text-align: right;
+.target-img {
+  display: block;
+  width: 70%;
+  height: auto;
+}
+.target-1 .bubble-1 {
+  width: 28%;
   position: absolute;
-  top: 303px;
-  left: 50px;
+  top: -100px;
+  right: 160px;
 }
-.detail-4 {
+.target-2 .bubble-1 {
+  width: 28%;
   position: absolute;
-  top: -250px;
-  left: 697px;
+  top: -40px;
+  right: 80px;
+  transform: rotate(10deg);
 }
-.detail-5 {
+.target-3 .bubble-1 {
+  width: 28%;
   position: absolute;
-  top: 25px;
-  left: 842px;
+  top: -50px;
+  left: 30px;
+  transform: scaleX(-1) rotate(20deg);
 }
-.detail-6 {
+.bubble-1-txt,
+.bubble-2-txt,
+.bubble-3-txt {
+  font-family: "Noto Sans KR";
+  font-size: 0.9vw;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #333;
+  text-align: center;
+}
+.bubble-1-txt {
   position: absolute;
-  top: 303px;
-  left: 697px;
+  top: -65px;
+  right: 190px;
 }
-.detail-1:hover .detail-txt {
-  opacity: 1;
+.bubble-2-txt {
+  position: absolute;
+  top: -3px;
+  right: 110px;
 }
-.detail-2:hover .detail-txt {
-  opacity: 1;
+.bubble-3-txt {
+  position: absolute;
+  top: -15px;
+  left: 60px;
 }
-.detail-3:hover .detail-txt {
-  opacity: 1;
+.target-1-hover,
+.target-2-hover,
+.target-3-hover {
+  display: none;
 }
-.detail-4:hover .detail-txt {
-  opacity: 1;
+.target-1-hover .bubble-2 {
+  width: 45%;
+  position: absolute;
+  top: -200px;
+  right: 70px;
 }
-.detail-5:hover .detail-txt {
-  opacity: 1;
+.target-2-hover .bubble-2 {
+  width: 45%;
+  position: absolute;
+  top: -130px;
+  right: -20px;
+  transform: rotate(10deg);
 }
-.detail-6:hover .detail-txt {
-  opacity: 1;
+.target-3-hover .bubble-2 {
+  width: 45%;
+  position: absolute;
+  top: -110px;
+  left: -70px;
+  transform: scaleX(-1) rotate(20deg);
+}
+.target-1-hover span,
+.target-2-hover span,
+.target-3-hover span {
+  /* font-family: "Noto Sans KR"; */
+  font-family: "GmarketSansMedium";
+  font-size: 1.5vw;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #e94a7d;
+  text-align: center;
+}
+.target-1-hover span {
+  position: absolute;
+  top: -150px;
+  right: 130px;
+}
+.target-2-hover span {
+  position: absolute;
+  top: -90px;
+  right: 34px;
+}
+.target-3-hover span {
+  position: absolute;
+  top: -65px;
+  left: -35px;
+}
+.target-1-hover p,
+.target-2-hover p,
+.target-3-hover p {
+  font-family: "Noto Sans KR";
+  font-size: 0.7vw;
+  font-weight: 100;
+  line-height: 1.2;
+  color: #333;
+}
+.target-1:hover .bubble-1,
+.target-1:hover .bubble-1-txt {
+  display: none;
+}
+.target-1:hover .target-img {
+  transform: scale(1.2);
+  transition: all 0.3s;
+}
+.target-1:hover .target-1-hover {
+  display: block;
+  transition: all 1s;
+}
+.target-2:hover .bubble-1,
+.target-2:hover .bubble-2-txt {
+  display: none;
+}
+.target-2:hover .target-img {
+  transform: scale(1.2);
+  transition: all 0.3s;
+}
+.target-2:hover .target-2-hover {
+  display: block;
+  transition: all 1s;
+}
+.target-3:hover .bubble-1,
+.target-3:hover .bubble-3-txt {
+  display: none;
+}
+.target-3:hover .target-img {
+  transform: scale(1.2);
+  transition: all 0.3s;
+}
+.target-3:hover .target-3-hover {
+  display: block;
+  transition: all 1s;
 }
 
-/* Section-4 */
-.sidemenu {
-  position: fixed;
-  right: 0;
-  top: 0;
-  width: 100px;
-  height: 100%;
-  background-color: rgba(255, 255, 255, 0.2);
-  /* background-color: blue; */
+/* 섹션-4 */
+#section4 .section-inner {
+  max-width: 1800px;
+  height: 80%;
+  margin: 150px 0 0 0;
 }
-
-/* Section-4------------------- */
-.product-wrap {
+#section4 .swiper .mySwiper {
+  width: 90%;
   margin: 0 auto;
-  display: flex;
+}
+#section4 .swiper-slide {
+  margin: 0 auto;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+.product-title {
+  text-align: center;
+  margin: 0 auto;
+  width: 40%;
+}
+.product-1,
+.product-2,
+.product-3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 150px;
+}
+.right {
+  display: flex;
+  flex-direction: column;
   position: relative;
 }
-.stick {
-  display: flex;
-  align-items: center;
+.right h2 {
+  /* font-family: "GmarketSansMedium"; */
+  font-family: "Noto Sans KR";
+  font-weight: bold;
+  font-size: 2vw;
+  color: #ffffff;
+  margin-bottom: 50px;
+  letter-spacing: 1px;
+}
+.right img {
   position: absolute;
-  top: -220px;
-  left: 12%;
+  top: 42px;
+  width: 250px;
+  height: 30px;
+  display: none;
 }
-.drink {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  position: absolute;
-  top: 50px;
-  left: 38%;
+.right p {
+  font-family: "Noto Sans KR";
+  font-weight: 500;
+  font-size: 1vw;
+  color: #555;
+  line-height: 1.4;
 }
-.chew {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  position: absolute;
-  top: -220px;
-  left: 60%;
+.right .p1 {
+  margin-bottom: 20px;
 }
-.product-txt h2 {
-  color: #444;
-  font-family: "Noto Sans KR", sans-serif;
-  font-weight: 800;
-  font-size: 1.8vw;
-  line-height: 2.2;
+.product-1 .right h2 {
+  background-color: #e94a7c;
+  width: 158px;
+  height: 50px;
+  line-height: 45px;
 }
-.product-txt p {
-  color: #777;
-  font-family: "Noto Sans KR", sans-serif;
-  font-weight: 400;
-  font-size: 0.9vw;
-  line-height: 1.5;
+.product-2 .right h2 {
+  background-color: #e94a7c;
+  width: 315px;
+  height: 50px;
+  line-height: 45px;
 }
-.stick-img,
-.drink-img,
-.chew-img {
-  animation: vibration 8s infinite linear;
+.product-3 .right h2 {
+  background-color: #e94a7c;
+  width: 315px;
+  height: 50px;
+  line-height: 45px;
 }
-
-@keyframes vibration {
-  0% {
-    transform: rotate(-5deg);
-  }
-  50% {
-    transform: rotate(-5deg);
-  }
-  100% {
-    transform: rotate(5deg);
-  }
-}
-
-/* section 5 */
-
+/* 섹션-5 */
 .video-box {
   display: flex;
   justify-content: center;

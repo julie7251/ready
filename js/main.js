@@ -46,28 +46,13 @@ $(function () {
   $(".language-i").click(function () {
     $(".language li").fadeToggle(600);
   });
-  new fullpage('#fullpage', {
-    // 옵션...
-    afterLoad: function(origin, destination, direction){
-        var loadedSection = this;
 
-        // section2로 스크롤 될 때
-        if(destination.index == 1){
-            // 애니메이션을 추가할 요소에 클래스 추가
-            document.querySelector('.section2-tit img').classList.add('animate');
-        }
-    }
+  // 섹션 4 슬라이드 버튼
+  var swiper = new Swiper("#section4 .mySwiper", {
+    navigation: {
+      nextEl: "#section4 .swiper-button-next",
+      prevEl: "#section4 .swiper-button-prev",
+    },
+  });
 });
-});
-// window.onload =function(){
-//   document.querySelector('.singup-i').addEventListener('click', function() {
-//     var signupItems = document.querySelectorAll('.signup li');
-//     signupItems.forEach(function(item) {
-//       if (item.style.display === 'none') {
-//         item.style.display = 'block';
-//       } else {
-//         item.style.display = 'none';
-//       }
-//     });
-//   });
-// }
+
