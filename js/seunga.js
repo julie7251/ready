@@ -1,18 +1,53 @@
-$(function () {
-     // 승아 슬라이드
-  var video_wiper = new Swiper('.sw-video', {
-    slidesPerView: 3, // 한 번에 보여지는 슬라이드 개수
-    spaceBetween: 10, // 슬라이드 간의 간격
-    loop: true, // 무한 루프 여부
-    autoplay: {
-      delay: 5000, // 자동 재생 간격 (밀리초)
-      disableOnInteraction: false, // 사용자 상호 작용 후 자동 재생 비활성화 여부
-    },
+$(document).ready(function () {
+  var swiper = new Swiper(".mySwiper", {
+    spaceBetween: 10,
+    slidesPerView: 3,
+    freeMode: true,
+    watchSlidesProgress: true,
+  });
+
+  var swiper2 = new Swiper(".mySwiper2", {
+    spaceBetween: 10,
     navigation: {
-      prevEl: '.sw-video .swiper-button-prev', // 이전 버튼 선택자
-      nextEl: '.sw-video .swiper-button-next', // 다음 버튼 선택자
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
     },
-    
+    thumbs: {
+      swiper: swiper,
+    },
+  });
+  // 메뉴관련
+  var mainMenuLi = $(".mainmenu > li");
+  var subMenu = $(".submenu");
+  //   mainMenuLi 주메뉴로 마우스 이동하는 경우 실행
+  $.each(mainMenuLi, function (index, item) {
+    $(this).mouseenter(function () {
+      allDepth3.hide();
+      // 모든 포커스 해제
+      subMenuLi.removeClass("submenu_focus_link");
+      // 서브 메뉴가 보여준다
+      $(this).find(".submenu").addClass("submenu_focus");
+      $(this).css("z-index", 999);
+    });
+    $(this).mouseleave(function () {
+      // 서브메뉴 숨김
+      $(this).find(".submenu").removeClass("submenu_focus");
+    });
+  });
+});
+window.addEventListener("load", function () {
+  var familySiteToggle = document.querySelector(".family-site-toggle");
+  var familySiteMenu = document.querySelector(".familysite");
+
+  familySiteToggle.addEventListener("click", function (event) {
+    event.preventDefault(); // 기본 동작(링크 이동) 방지
+
+    // 하위 메뉴의 표시 상태를 토글합니다.
+    if (familySiteMenu.style.display === "block") {
+      familySiteMenu.style.display = "none";
+    } else {
+      familySiteMenu.style.display = "block";
+    }
   });
   
-})
+});

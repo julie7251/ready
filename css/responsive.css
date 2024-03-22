@@ -20,114 +20,84 @@
     margin-top: 0px;
   }
    */
- /* ====================승아 */
- footer .logo-img {
-  width: 200px;
-  height: auto;
-}
-.sns-img img {
-  width: 45px;
-}
+  /* ====================승아 */
+  footer .logo-img {
+    width: 200px;
+    height: auto;
+  }
+  .sns-img img {
+    width: 45px;
+  }
 }
 @media screen and (max-width: 1000px) {
-.site {
-  width: 25%;
-  position: static;
-}
+  .site {
+    width: 25%;
+    position: static;
+  }
 }
 
 @media screen and (max-width: 850px) {
-#pageMenu li a .event img {
-  width: 24px;
-  left: -5px;
-  top: -190px;
-}
-#pageMenu li a span {
-  visibility: hidden;
-}
-#pageMenu li.active a span {
-  visibility: hidden;
-}
+  #pageMenu li a .event img {
+    width: 24px;
+    left: -5px;
+    top: -190px;
+  }
+  #pageMenu li a span {
+    visibility: hidden;
+  }
+  #pageMenu li.active a span {
+    visibility: hidden;
+  }
 }
 @media screen and (max-width: 700px) {
-#pageMenu li a .event img {
-  width: 22px;
-  left: -5px;
-  top: -200px;
+  #pageMenu li a .event img {
+    width: 22px;
+    left: -5px;
+    top: -200px;
+  }
+  #pageMenu {
+    gap: 3%;
+  }
+  footer .logo-img {
+    width: 160px;
+    height: auto;
+  }
+  .sns-img img {
+    width: 35px;
+  }
+  footer {
+    font-size: 12px;
+  }
 }
-#pageMenu {
-  gap: 3%;
-}
-footer .logo-img {
-  width: 160px;
-  height: auto;
-}
-.sns-img img {
-  width: 35px;
-}
-footer {
-  font-size: 12px;
-}
-}
-/* @media screen and (max-width: 570px) {
-#pageMenu li a .event img {
-  width: 20px;
-  left: -5px;
-  top: -200px;
-}
-.ft-menu {
-  height: 40px;
-  line-height: 40px;
-  gap: 5%;
-  padding-left: 5%;
-}
-footer .logo-img {
-  width: 140px;
-  height: auto;
-}
-.sns-img img {
-  width: 30px;
-}
-footer {
-  font-size: 11px;
-}
-.site {
-  width: 10%;
-  position: static;
-}
-} */
+
 @media screen and (max-width: 600px) {
-.ft-menu {
-  height: 30px;
-  line-height: 30px;
-  gap: 3%;
-  padding-left: 3%;
-}
-.xi-caret-down-min {
-  top: 8px;
-  font-size: 15px;
-  width: 20px;
-}
-footer .logo-img {
-  width: 120px;
-  height: auto;
-}
-.sns-img img {
-  width: 25px;
-}
-footer {
-  font-size: 10px;
-}
-.site {
-  padding-left: 150px;
-  width: 15%;
-}
+  .ft-menu {
+    height: 30px;
+    line-height: 30px;
+    gap: 3%;
+    padding-left: 2%;
+  }
+  .xi-caret-down-min {
+    top: 8px;
+    font-size: 15px;
+    width: 20px;
+  }
+  footer .logo-img {
+    width: 120px;
+    height: auto;
+  }
+  .sns-img img {
+    width: 25px;
+  }
+  footer {
+    font-size: 10px;
+  }
 }
 @media screen and (max-width: 320px) {
-.site {
-  padding-left: 0;
-  width: 5%;
-}
+  .site {
+    padding-left: 0;
+    width: 5%;
+  }
 }
 @media screen and (max-width: 1920px) {
   /* 수정예정 */
@@ -179,23 +149,23 @@ footer {
     width: 6%;
     /* background-color: aqua; */
   }
-  .scroll > img{
+  .scroll > img {
     display: block;
     margin: auto;
     width: 100%;
     height: 100%;
-    }
-    .scroll-btn {
-      position: absolute;
-      display: block;
-      bottom: 77%;
-      left: 42%;
-      width: 12%;
-      height: 12%;
-      border-radius: 50%;
-      background-color: #fff;
-      animation: disappear 3s infinite;
-    }
+  }
+  .scroll-btn {
+    position: absolute;
+    display: block;
+    bottom: 77%;
+    left: 42%;
+    width: 12%;
+    height: 12%;
+    border-radius: 50%;
+    background-color: #fff;
+    animation: disappear 3s infinite;
+  }
 }
 
 @media screen and (max-width: 1558px) {
