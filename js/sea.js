@@ -1,73 +1,53 @@
 $(function () {
-    $("#fullpage").fullpage({
-      autoScrolling: true,
-      slidesNavigation: false,
-      easing: "easeInOutCubic",
-      easingcss3: "ease",
-      scrollingSpeed: 1200,
-      // responsiveWidth: 920,
-      // responsiveHeight:900,
-      recordHistory: false,
-      anchors: ["page1", "page2", "page3", "page4", "page5"],
-      menu: "#pageMenu",
-      // autoScrolling: false,
-  
-      onLeave: function (index, nextIndex, direction) {
-        console.log(`onleave!`);
-      },
-      afterLoad: function (anchorLink, index) {
-        console.log(`afterLoad!`);
-      },
-      afterRender: function () {
-        console.log(`afterRender!`);
-      },
-      afterResize: function () {
-        console.log(`afterResize!`);
-      },
-      afterResponsive: function (isResponsive) {
-        console.log(`afterResponsive!`);
-      },
-      afterSlideLoad: function (anchorLink, index, slideAnchor, slideIndex) {
-        console.log(`afterSlideLoad!`);
-      },
-      onSlideLeave: function (
-        anchorLink,
-        index,
-        slideIndex,
-        direction,
-        nextSlideIndex
-      ) {
-        console.log(`onSlideLeave!`);
-      },
-    });
-    $(".singup-i").click(function () {
-      $(".signup li").fadeToggle(600);
-    });
-    $(".language-i").click(function () {
-      $(".language li").fadeToggle(600);
-    });
-    new fullpage('#fullpage', {
-      // 옵션...
-      afterLoad: function(origin, destination, direction){
-          var loadedSection = this;
-  
-          // section2로 스크롤 될 때
-          if(destination.index == 1){
-              // 애니메이션을 추가할 요소에 클래스 추가
-              document.querySelector('.section2-tit img').classList.add('animate');
-          }
+  $("#fullpage").fullpage({
+    autoScrolling: true,
+    slidesNavigation: false,
+    easing: "easeInOutCubic",
+    easingcss3: "ease",
+    scrollingSpeed: 1200,
+    recordHistory: false,
+    anchors: ["page1", "page2", "page3", "page4", "page5"],
+    menu: "#pageMenu",
+
+    onLeave: function (index, nextIndex, direction) {
+      if(index == 1) {
+        $('.section1-bg2 img').removeClass('animate'),
+      console.log(`onleave!`);
       }
+      // 스크롤이 시작될 때 이미지의 애니메이션 클래스를 제거합니다.
+      if (index == 2) {
+        $('.section2-tit img').removeClass('animate'),
+        $('.more-btn span').removeClass('animate');
+        $('.section2-vd video').each(function () {
+          $(this).get(0).pause();
+        });
+      }
+      console.log(`onleave!`);
+    },
+    afterLoad: function (anchorLink, index) {
+      // 스크롤이 완료된 후 #section2에 도달했을 때 애니메이션을 실행합니다.
+      if (index == 1) {
+        $('.section1-bg2 img').addClass('animate'),
+      console.log(`afterLoad!`);
+      }
+      if (index == 2) {
+        $('.section2-tit img').addClass('animate'),
+        $('.more-btn span').addClass('animate');
+        $('.section2-vd video').each(function () {
+          $(this).get(0).play();
+        });
+      }
+      console.log(`afterLoad!`);
+    },
+
   });
+
+  // 이벤트 핸들러
+  $(".singup-i").click(function () {
+    $(".signup li").fadeToggle(600);
   });
-  // window.onload =function(){
-  //   document.querySelector('.singup-i').addEventListener('click', function() {
-  //     var signupItems = document.querySelectorAll('.signup li');
-  //     signupItems.forEach(function(item) {
-  //       if (item.style.display === 'none') {
-  //         item.style.display = 'block';
-  //       } else {
-  //         item.style.display = 'none';
-  //       }
-  //     });
-  //   });
-  // }
+  $(".language-i").click(function () {
+    $(".language li").fadeToggle(600);
+  });
+});
+;

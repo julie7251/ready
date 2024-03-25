@@ -34,12 +34,6 @@ $(function () {
       console.log(`onSlideLeave!`);
     },
   });
-  $(".singup-i").click(function () {
-    $(".signup li").fadeToggle(600);
-  });
-  $(".language-i").click(function () {
-    $(".language li").fadeToggle(600);
-  });
   // 섹션 4 슬라이드 버튼
   var product_swiper = new Swiper("#section4 .product", {
     navigation: {

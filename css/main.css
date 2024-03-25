@@ -13,6 +13,105 @@ html,
 body {
   font-family: "Gothic A1", sans-serif;
 }
+/* 모달창 */
+.modal-wrap{
+  width: 100%;
+  height: 95vh;
+  justify-content:center;
+  align-items:center;
+  position:fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99999999;
+}
+.modal{
+  background: url("../images/modal-bg3.png") no-repeat center;
+  background-size: cover;
+  box-shadow: 5px 10px 10px 1px rgba(0,0,0,.3);
+  width:100%;
+  max-width: 1200px;
+  height: 100%;
+  border-radius: 50px;
+  /* display: flex; */
+  position: relative;
+}
+.modal-ft{
+  width:95%;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  position: fixed;
+  bottom: 0;
+}
+/* 룰렛 */
+.roulette-wrapper {
+	position: relative;
+	left: 0;
+	right: 0;
+	top: 0;
+	width: 60%;
+	max-width: 700px;
+}
+
+.resultLayer {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: none;
+	z-index: 10;
+	box-sizing: border-box;
+	max-width: 456px;
+	left: 0;
+	right: 0;
+	top: 10rem;
+	margin: 0 auto;
+}
+
+.resultLayer #closeLayer {
+	position: absolute;
+	top: -2rem;
+	right: -2rem;
+	margin: 0 auto;
+	width: 18.5%;
+	box-sizing: border-box;
+}
+
+
+.roulette-wrapper #roulette-gift {
+	position: absolute;
+	z-index: 2;
+	top: 40px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	max-width: 700px;
+	width: 100%;
+}
+
+.roulette-wrapper #roulette-niddle {
+	position: absolute;
+	z-index: 3;
+	width: 3%;
+	top: 10%;
+	left: 0;
+	right: 0;
+	margin: 7.7% 46.255%;
+}
+
+.roulette-wrapper #roulette-startBtn {
+	position: absolute;
+	z-index: 3;
+	width: 15%;
+	top: 31.5%;
+	left: 0;
+	right: 0;
+	margin: 38% 40%;
+}
+
 
 /* 헤더 */
 .header {
@@ -20,7 +119,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.2);
+  /* background-color: rgba(255, 255, 255, 0.2); */
   z-index: 10000;
 }
 .header .logo {
@@ -121,7 +220,7 @@ body {
 }
 .signup li {
   display: none;
-  width: 80px;
+  width: 90px;
   position: absolute;
   top: 4px;
   left: 0px;
@@ -202,6 +301,7 @@ body {
   font-size: 0.9vw;
   font-weight: 600;
 }
+
 /* 섹션1 */
 #section1 {
   width: 100%;
@@ -230,18 +330,28 @@ body {
 .section1-bg2 {
   position: absolute;
   bottom: 0;
-  left: 14%;
-  width: 70%;
+  left: 16%;
+  width: 65%;
 }
 .section1-bg2 img {
   width: 90%;
   display: block;
+}
+.section1-bg2 img.animate{
   animation: fadeInUp 1.5s ease-out forwards;
 }
-
+.section1-bgbg .yummy {
+  display: none;
+}
+.section1-bgbg .starbg {
+  display: none;
+}
+.section1-bgbg > .qua {
+  display: none;
+}
 .jangseonggue {
   position: absolute;
-  bottom: 0%;
+  bottom: -1%;
   left: 29.5%;
   width: 100%;
 }
@@ -299,6 +409,7 @@ body {
     height: 57.10vw;
 }
 } */
+
 /* 섹션2 */
 #section2 {
   width: 100%;
@@ -310,8 +421,8 @@ body {
   /* bottom: -1%; */
   width: 100%;
   height: 100vh;
-  /* background: url("../images/section2/sl_072622_51930_13-removebg-preview.png")no-repeat center;
-  background-size: cover; */
+  background: url("../images/section1/image.png")no-repeat center;
+  background-size: cover;
 }
 /* .section2-bg::after{
   content: "";
@@ -329,6 +440,8 @@ body {
 }
 .section2-tit img {
   width: 75%;
+}
+.section2-tit img.animate {
   animation: fadeInUp 1.5s ease-out forwards;
 }
 @keyframes fadeInUp {
@@ -352,6 +465,9 @@ body {
   font-size: 0.9vw;
   background-color: #e94A7d;
   border-radius: 7px;
+}
+.more-btn span.animate{
+  animation: fadeInUp 1.5s ease-out forwards;
 }
 .section2-chu {
   position: absolute;
@@ -398,191 +514,85 @@ body {
   left: 1%;
   width: 100%;
 }
+
 /* 섹션-3 */
 #section3 .section-inner {
-  max-width: 1800px;
+  max-width: 2000px;
   width: 100%;
-  height: 100%;
-  max-heigth: 1000px;
-  display: inline-block;
-  margin: 0 auto;
-  padding-top: 9%;
-  height: 100%;
-  text-align: center;
-}
-.target-title {
-  width: 35%;
-  margin-bottom: 150px;
-  /* display: block; */
-}
-.target-wrap {
+  height: 100vh;
   margin: 0 auto;
   display: flex;
-  align-items: flex-end;
+}
+.target-wrap{
   width: 100%;
-}
-.target-1 {
-  animation: vibration 0.8s infinite linear;
-  position: relative;
-  width: calc(100% / 3);
+  height: 100%;
+  margin-top: 200px;  
   display: flex;
-  align-items: center;
-  flex-direction: column;
-  cursor: pointer;
 }
-.target-2 {
-  animation: vibration 0.8s infinite linear;
-  position: relative;
+.target-1{
   width: calc(100% / 3);
+  height: 100%;
+  background: url("../images/target-1.png") no-repeat center;
   display: flex;
-  align-items: center;
-  flex-direction: column;
-  cursor: pointer;
+  align-items: flex-end
 }
-.target-3 {
-  animation: vibration 0.8s infinite linear;
-  position: relative;
+.target-2{
   width: calc(100% / 3);
+  height: 100%;
+  background: url("../images/target-2.png") no-repeat center;
   display: flex;
-  align-items: center;
+  align-items: flex-end
+}
+.target-3{
+  width: calc(100% / 3);
+  height: 100%;
+  background: url("../images/target-3.png") no-repeat center;
+  display: flex;
+  align-items: flex-end
+}
+.target-txt{
+  width: 100%;
+  height: 70%;
+  padding-bottom: 20%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
   flex-direction: column;
-  cursor: pointer;
+  align-items: center;
 }
-.target-img {
-  display: block;
-  width: 70%;
-  height: auto;
-}
-@keyframes vibration {
-  0% {
-    transform: rotate(1deg);
-  }
-  50% {
-    transform: rotate(-1deg);
-  }
-  100% {
-    transform: rotate(1deg);
-  }
-}
-.target-1 .bubble-1 {
-  width: 28%;
-  position: absolute;
-  top: -32%;
-  right: 26%;
-}
-.target-2 .bubble-1 {
-  width: 28%;
-  position: absolute;
-  top: -11%;
-  right: 13%;
-  transform: rotate(10deg);
-}
-.target-3 .bubble-1 {
-  width: 28%;
-  position: absolute;
-  top: -13%;
-  left: 5%;
-  transform: scaleX(-1) rotate(20deg);
-}
-.bubble-1-txt,
-.bubble-2-txt,
-.bubble-3-txt {
-  font-family: "Noto Sans KR";
-  font-size: 1vw;
-  /* font-size: 17px; */
-  font-weight: 600;
-  line-height: 1.2;
-  color: #333;
+.target-txt h2{
+  font-family: "GmarketSansMedium";
+  font-size: 70px;
+  font-weight: 900;
+  color: #fff;
   text-align: center;
-}
-.bubble-1-txt {
-  position: absolute;
-  top: -21%;
-  right: 31%;
-}
-.bubble-2-txt {
-  position: absolute;
-  top: -2%;
-  right: 17.5%;
-}
-.bubble-3-txt {
-  position: absolute;
-  top: -4.1%;
-  left: 10%;
-}
-.target-1-hover,
-.target-2-hover,
-.target-3-hover {
   display: none;
 }
-.target-1-hover .bubble-2 {
-  width: 45%;
-  position: absolute;
-  top: -56%;
-  right: 13%;
-}
-.target-2-hover .bubble-2 {
-  width: 45%;
-  position: absolute;
-  top: -30%;
-  right: 0%;
-  transform: rotate(10deg);
-}
-.target-3-hover .bubble-2 {
-  width: 45%;
-  position: absolute;
-  top: -28%;
-  left: -10%;
-  transform: scaleX(-1) rotate(20deg);
-}
-.target-1-hover span,
-.target-2-hover span,
-.target-3-hover span {
-  /* font-family: "Noto Sans KR"; */
+.target-txt p{
   font-family: "GmarketSansMedium";
-  font-size: 1.2vw;
-  /* font-size: 24px; */
-  font-weight: 600;
-  line-height: 1.2;
-  color: #e94a7d;
+  font-size: 40px;
+  font-weight: 400;
+  color: #fff;
   text-align: center;
 }
-.target-1-hover span {
-  position: absolute;
-  top: -35%;
-  right: 25%;
+.target-2 .target-txt h2 br, .target-3 .target-txt h2 br{
+  display: none;
 }
-.target-2-hover span {
-  position: absolute;
-  top: -17%;
-  right: 12%;
+.target-1 .target-txt p br, .target-2 .target-txt p br, .target-3 .target-txt p br{
+  display: none;
 }
-.target-3-hover span {
-  position: absolute;
-  top: -15%;
-  left: 0%;
+.target-1:hover .target-txt h2{
+  display: block;
 }
-.target-1-hover p,
-.target-2-hover p,
-.target-3-hover p {
-  font-family: "Noto Sans KR";
-  font-size: 0.7vw;
-  font-weight: 100;
-  line-height: 1.2;
-  color: #333;
+.target-1:hover .target-1{
 }
-.target-1:hover .target-img {
-  transform: scale(1.2);
-  transition: all 0.3s;
+.target-2:hover .target-txt h2{
+  display: block;
 }
-.target-2:hover .target-img {
-  transform: scale(1.2);
-  transition: all 0.3s;
+.target-3:hover .target-txt h2{
+  display: block;
 }
-.target-3:hover .target-img {
-  transform: scale(1.2);
-  transition: all 0.3s;
-}
+
 
 /* 섹션-4 */
 #section4 .section-inner {
@@ -692,56 +702,58 @@ body {
   top: 60%;
   left: 15%;
   color: #e94a7c;
-}
-/* ==================================승아 */
-
+}/* ==================================승아 */
 #section5 {
   background: #ffd300;
   position: relative;
 }
-.img-swbox {
-  width: 100%;
-  position: relative;
-}
-.ad_txt{
-  width: 25%;
-  min-width: 300px;
-position: absolute;
-top: 60px;
-left: 50%;
-transform: translateX(-50%);
-padding: 5% 0 5% 0;
-z-index: 9999;
+.ad_txt {
+  width: 340px;
+  position: absolute;
+  top: 6%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 4% 0 4% 0;
 }
 .swiper-button-prev:after,
 .swiper-button-next:after {
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
   font-weight: bold;
   color: #e94a7c;
-  /* display: inline-block; */
-}
-/* 확인 */
-.sw-inner .swiper {
-  width: 80%;
-  height: 80%;
-  /* padding: 10px; */
-  /* background-color: red;*/
 }
 .sw-inner {
-  padding-top: 4%;
-  width: 68%;
-  min-width: 890px;
-  height: 66%;
-  margin: 0 auto; /* 가운데 정렬을 위해 margin을 auto로 설정 */
+  padding-top: 5%;
+  width: 70%;
+  height: 70%;
+  margin: 0 auto;
+  /* background-color: aquamarine; */
+}
+/* 이미지 스와이퍼전체 부모 */
+.img-swbox {
+  width: 100%;
+  position: relative;
+  /* background-color: #fff; */
+}
+/* 이미지 스와이퍼 전체 */
+.sw-inner .mySwiper {
+  width: 55%;
+  /* height: 40%; */
+  /* background-color: red; */
 }
 .sw-inner .swiper-slide {
+ padding: 5px;
   text-align: center;
   /* background: #3eb670; */
   display: flex;
   justify-content: center;
   align-items: flex-start;
- 
+}
+/* 영상 부모화면 */
+.sw-inner .mySwiper2 {
+  width: 60%;
+  height: 90%;/* 영상.이미지 간격 */
+  /* background-color: blue; */
 }
 .sw-inner .swiper-slide img {
   display: block;
@@ -749,34 +761,17 @@ z-index: 9999;
   height: 100%;
   object-fit: cover;
 }
-/* 구분*/
-.sw-inner .mySwiper2 {
-  width: 80%;
-  height: 80%;
-}
-.sw-inner .mySwiper {
-  width: 60%;
-  height: 40%;
-  /* padding: 4% 0 4% 0; */
-}
 .sw-inner .mySwiper .swiper-slide {
-  width: 25%;
-  height: 100%;
+  /* width: 25%; */
+  /* height: 100%; */
   opacity: 0.4;
-  background-color: #444;
+  background-color:rgba(0,0,0,0.3);
 }
 .sw-inner .mySwiper .swiper-slide-thumb-active {
   border: 5px solid #e94a7c;
   opacity: 1;
 }
-.sw-inner .swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  /* object-fit: cover; */
-}
-
-/* =====================================푸터 네비 */
+/* =====================================푸터 */
 footer {
   min-width: 320px;
   font-size: 14px;
@@ -825,8 +820,6 @@ color: #222;
   text-decoration: underline;
   text-underline-offset: 3px;
 }
-
-/* ======================================푸터 컨텐츠 */
 footer .logo-img {
   width: 250px;
   height: auto;

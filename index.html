@@ -43,13 +43,12 @@
     <meta property="og:type" content="website" />
     <meta property="og:title" content=" 맛있는 숙취해소제, 레디큐" />
     <meta property="og:description" content="맛있는 숙취해소제, 레디큐" />
-    <meta property="og:image" content="https://ready-sable.vercel.app/images/logo2.png" />
+    <meta property="og:image" content="http://192.168.0.72:5504/images/logo.png" />
     <meta property="og:url" content="https://ready-sable.vercel.app/" />
     <!-- ikon -->
     <script src="https://kit.fontawesome.com/5251502df3.js" crossorigin="anonymous"></script>
     <!-- css -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.css" />
  <!-- Swiper CSS -->
@@ -58,9 +57,9 @@
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/responsive.css" />
     <link rel="stylesheet" href="css/jiwon.css">
-    <link rel="stylesheet" href="css/sea.css">
-
+    <link rel="stylesheet" href="css/seoa.css">
    <!-- 외부 JavaScript 파일 -->
+   <script src="js/jiwon.js"></script>
       <script src="js/main.js" defer></script>
     <!-- js -->
     <script src="js/html5shiv.js"></script>
@@ -69,10 +68,8 @@
     <script src="js/respond.min.js"></script>
   <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-   
     <!-- <script src="js/main.js"></script> -->
     <script src="js/seunga.js"></script>
-    <script src="js/jiwon.js"></script>
     <script src="js/sea.js"></script>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-NJLM9XX34S"></script>
@@ -91,10 +88,18 @@
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NCGPKDP7" height="0" width="0" style="display: none; visibility: hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
+          <script type='text/javascript' src='http://php-jestina2.azurewebsites.net/scripts/jQueryRotate.js'></script>
+          <div class="modal-ft">
+            <span class="close-day" id="day">오늘 하루 다시 보지 않기</span>
+            <span class="close-btn" id="close">창 닫기</span>
+          </div>
+        </div>
+    </div>
+    
     <ul id="pageMenu">
       <li data-menuanchor="page0">
         <a href="#page0"
-          ><i class="event"><img src="images/event_icon.png" alt="" /></i
+          ><i id="event" class="event"><img src="images/event_icon.png" alt="이벤트버튼" /></i
         ></a>
       </li>
       <li data-menuanchor="page1" class="active">
@@ -221,35 +226,25 @@
       </div>
       <div class="section" id="section3">
         <div class="section-inner">
-          <img src="images/target-title.png" alt="제목" class="target-title" />
           <div class="target-wrap">
-            <div class="target-1">
-              <img src="images/target-1.png" alt="타겟" class="target-img" />
-              <img src="images/bubble.png" alt="말풍선" class="bubble-1" />
-              <p class="bubble-1-txt">인싸가<br />되고싶어?</p>
-              <div class="target-1-hover">
-                <img src="images/bubble.png" alt="말풍선" class="bubble-2" />
-                <span>그럴 땐<br />레디큐 츄 !</span>
-              </div>
+          <div class="target-1">
+            <div class="target-txt">
+              <h2>레디큐 츄</h2>
+              <p>술자리 인싸가 <br>되고싶어?</p>
             </div>
-            <div class="target-2">
-              <img src="images/target-2.png" alt="타겟" class="target-img" />
-              <img src="images/bubble.png" alt="말풍선" class="bubble-1" />
-              <p class="bubble-2-txt">푸석한 피부가<br />고민이니?</p>
-              <div class="target-2-hover">
-                <img src="images/bubble.png" alt="말풍선" class="bubble-2" />
-                <span>그럴 땐<br />레디큐 스틱<br />레이디 !</span>
-              </div>
-            </div>
-            <div class="target-3">
-              <img src="images/target-3.png" alt="타겟" class="target-img" />
-              <img src="images/bubble.png" alt="말풍선" class="bubble-1" />
-              <p class="bubble-3-txt">장 트러블로<br />고생해?</p>
-              <div class="target-3-hover">
-                <img src="images/bubble.png" alt="말풍선" class="bubble-2" />
-                <span>그럴..땐..<br />레디큐 드링크<br />프로 !</span>
-              </div>
-            </div>
+          </div>
+          <div class="target-2">
+            <div class="target-txt">
+            <h2>레디큐 <br>스틱 레이디</h2>
+            <p>푸석한 피부가 <br>고민이니?</p>
+          </div>
+          </div>
+          <div class="target-3">
+            <div class="target-txt">
+            <h2>레디큐 <br>드링크 프로</h2>
+            <p>장트러블이 <br>고민이야?</p>
+          </div>
+          </div>
           </div>
         </div>
       </div>
@@ -366,7 +361,6 @@
     <div class="swiper-slide">
       <img src="images/imgbox/video-img5.jpg" alt="5">
     </div>
-    
     <div class="swiper-slide">
       <img src="images/imgbox/video-img6.jpg" alt="6">
     </div>
@@ -396,7 +390,7 @@
           </ul>
         </nav>
         <div class="ft-bt">
-          <a href="#"><img src="images/logo1.png" class="logo-img" alt="로고" /></a>
+          <a href="#"><img src="images/logo.png" class="logo-img" alt="로고" /></a>
           <div class="contents-box">
             <div class="text">
               <p>주식회사 한독 ㅣ서울특별시 강남구 테헤란로 132 (한독약품빌딩)</p>
@@ -413,9 +407,7 @@
         </div>
       </footer>  
 </div>
-
       <!-- 섹션5 끝 -->
-      
     </div>
     <!-- 풀페이지끝 -->
   </body>

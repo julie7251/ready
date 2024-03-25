@@ -1,275 +1,52 @@
-@charset "utf-8";
-@media screen and (max-width: 1598px){
+@media screen and (max-width: 1600px){
     /* 섹션 3 */
-      .target-1,
-      .target-2,
-      .target-3 {
-        width: calc(95% / 3);
+    .target-2 .target-txt h2 br, .target-3 .target-txt h2 br{
+        display: block;
       }
-      .target-1 .bubble-1,
-      .target-2 .bubble-1,
-      .target-3 .bubble-1 {
-        width: 30%;
-      }
-      .bubble-2-txt {
-        top: 0%;
-      }
-      .bubble-3-txt {
-        top: -3%;
-        left: 10.5%;
-      }
+}
+@media screen and (max-width: 1400px){
+    /* 모달창 */
+    .modal{
+        width: 90%;
+        height: 90%;
+        max-width: 1000px;
+        /* background-size: contain; */
     }
-    @media screen and (max-width: 1491px){
+}
+@media screen and (max-width: 1318px){
     /* 섹션 3 */
-      .target-1,
-      .target-2,
-      .target-3 {
-        width: calc(94% / 3);
+    .target-1 .target-txt p br, .target-2 .target-txt p br, .target-3 .target-txt p br{
+        display: block;
       }
-      .target-1 .bubble-1,
-      .target-2 .bubble-1,
-      .target-3 .bubble-1 {
-        width: 31%;
-      }
-      .bubble-1-txt,
-      .bubble-2-txt,
-      .bubble-3-txt {
-        font-size: 16px;
-      }
-      .target-1-hover .bubble-2,
-      .target-2-hover .bubble-2,
-      .target-3-hover .bubble-2 {
-        width: 46%;
-      }
-      .target-2-hover .bubble-2 {
-        right: -2%;
-        top: -31%;
-      }
-      .target-1-hover span,
-      .target-2-hover span,
-      .target-3-hover span {
-        font-size: 18px;
-      }
-      .target-1-hover span {
-        top: -36%;
-        right: 26%;
-      }
-      .target-2-hover span {
-        right: 10%;
-      }
-      .target-3-hover span {
-        left: 0%;
-      }
-    }
-    @media screen and (max-width: 1400px) {
-      .target-1 .bubble-1,
-      .target-2 .bubble-1,
-      .target-3 .bubble-1 {
-        width: 32%;
-      }
-      .bubble-1-txt,
-      .bubble-2-txt,
-      .bubble-3-txt {
-        font-size: 15px;
-      }
-      .bubble-1-txt {
-        top: -20%;
-      }
-    }
-    @media screen and (max-width: 1300px) {
-      /* 섹션 3 */
-      .target-1 .bubble-1,
-      .target-2 .bubble-1,
-      .target-3 .bubble-1 {
-        width: 32%;
-      }
-      .target-1-hover .bubble-2,
-      .target-2-hover .bubble-2,
-      .target-3-hover .bubble-2 {
-        width: 47%;
-      }
-      .target-2-hover span {
-        right: 9%;
-        top: -18.5%;
-      }
-      .target-3-hover span {
-        left: -2%;
-      }
-    }
-    @media screen and (max-width: 1216px){
-    /* 섹션 3 */
-      .target-1 .bubble-1,
-      .target-2 .bubble-1,
-      .target-3 .bubble-1 {
-        width: 34%;
-      }
-      .bubble-1-txt,
-      .bubble-2-txt,
-      .bubble-3-txt {
-        font-size: 14px;
-      }
-      .target-1-hover .bubble-2,
-      .target-2-hover .bubble-2,
-      .target-3-hover .bubble-2 {
-        width: 48%;
-      }
-      .target-1-hover span,
-      .target-2-hover span,
-      .target-3-hover span {
-        font-size: 17px;
-      }
-      .target-3-hover span {
-        left: -1%;
-      }
-    }
-    @media screen and (max-width: 1081px){
-    /* 섹션 3 */
-      .target-1 .bubble-1,
-      .target-2 .bubble-1,
-      .target-3 .bubble-1 {
-        width: 35%;
-      }
-    }
-    @media screen and (max-width: 1000px) {
-      /* 섹션 3 */
-      #section3 .section-inner {
-        padding-top: 10%;
-      }
-      .target-title {
-        width: 50%;
-        min-width: 410px;
-        margin-bottom: 50px;
-      }
-      .target-wrap {
-        flex-direction: column;
-        align-items: center;
-        /* justify-content: space-evenly; */
+}
+@media screen and (max-width: 1100px){
+    /* 모달창 */
+    .modal{
         width: 90%;
         height: 80%;
-        gap: 5%;
-      }
-      .target-1,
-      .target-2,
-      .target-3 {
-        position: relative;
-        height: auto;
-        width: 80%;
-      }
-      .target-img {
-        width: 35%;
-        max-width: 300px;
-      }
-      .target-1 .bubble-1 {
-        width: 25%;
-        top: 15%;
-        left: 7%;
-        transform: scaleX(-1) rotate(30deg);
-      }
-      .target-2 .bubble-1 {
-        width: 25%;
-        top: 0%;
-        right: 12%;
-        transform: rotate(20deg);
-      }
-      .target-3 .bubble-1 {
-        width: 25%;
-        top: -10%;
-        left: 15%;
-        transform: scaleX(-1) rotate(20deg);
-      }
-      .bubble-1-txt {
-        font-size: 16px;
-        top: 38%;
-        left: -31.5%;
-      }
-      .bubble-2-txt {
-        font-size: 16px;
-        top: 18%;
-        right: 17%;
-      }
-      .bubble-3-txt {
-        font-size: 16px;
-        top: 8%;
-        left: 20%;
-      }
-      .target-1-hover .bubble-2 {
-        width: 37%;
-        top: -20%;
-        right: -7%;
-        transform: rotate(20deg);
-      }
-      .target-2-hover .bubble-2 {
-        width: 37%;
-        top: -5%;
-        left: 0%;
-        transform: scaleX(-1) rotate(20deg);
-      }
-      .target-3-hover .bubble-2 {
-        width: 37%;
-        top: 0%;
-        left: 68%;
-        transform: rotate(20deg);
-      }
-      .target-1-hover span {
-        font-size: 22px;
-        top: 14%;
-        right: 3%;
-      }
-      .target-2-hover span {
-        font-size: 22px;
-        top: 18%;
-        left: -57%;
-      }
-      .target-3-hover span {
-        font-size: 22px;
-        top: 21%;
-        right: -77%;
-      }
+        max-width: 800px;
+        /* background-size: contain; */
     }
-    @media screen and (max-width: 900px) {
-      /* 섹션 3 */
-      #section3 .section-inner {
-        padding-top: 11%;
-      }
-      .target-wrap {
-        gap: 7%;
-      }
-      .target-img {
-        width: 36%;
-      }
-      .target-1-hover .bubble-2 {
-        top: -17%;
-        right: -6%;
-      }
-      .target-2-hover span{
-        top: 16%;
-        left: -57%;
-      }
-      .target-3-hover span {
-        top: 20%;
-        right: -75%;
-      }
+    /* 섹션 3 */
+    .target-wrap{
+        flex-direction: column
     }
-    @media screen and (max-width: 800px) {
-      #section3 .section-inner {
-        padding-top: 13%;
-      }
-      .target-img {
-        width: 37%;
-      }
-      .bubble-1-txt{
-        font-size: 15px;
-        top: 35%;
-      }
-      .bubble-2-txt {
-        font-size: 15px;
-        top: 17%;
-        right: 16%;
-      }
-      .bubble-3-txt {
-        font-size: 15px;
-        top: 5%;
-        left: 19.5%;
-      }
-      
+    .target-1{
+        background: url("../images/target-1-mo.png") no-repeat center;
+        width: 100%;
+        height: calc(100% / 3);
     }
+    .target-2{
+        background: url("../images/target-2-mo.png") no-repeat center;
+        width: 100%;
+        height: calc(100% / 3);
+    }
+    .target-3{
+        background: url("../images/target-3-mo.png") no-repeat center;
+        width: 100%;
+        height: calc(100% / 3);
+    }
+    .target-txt{
+        padding-bottom: 0;
+    }
+}
