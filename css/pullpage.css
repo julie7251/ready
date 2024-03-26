@@ -126,6 +126,7 @@ em {
   padding: 8px;
   text-align: center;
   white-space: nowrap;
+  visibility: hidden;
 }
 #pageMenu a .home, #pageMenu a .readyq, #pageMenu a .reco, #pageMenu a .product,#pageMenu a .video  {
   display: inline-block;
@@ -137,6 +138,7 @@ em {
   border: 1px solid #fff;
   top: 60%;
   transform: translateY(-50%);
+ 
 }
 #pageMenu li a .event img {
   width: 27px;
