@@ -49,5 +49,8 @@ $(function () {
   $(".language-i").click(function () {
     $(".language li").fadeToggle(600);
   });
+  $(".hamberger").click(function() {
+    $(".mb-nav").slideToggle(); // "mb-nav" 요소 슬라이드 토글
+  });
 });
 ;

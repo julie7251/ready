@@ -57,7 +57,7 @@
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/responsive.css" />
     <link rel="stylesheet" href="css/jiwon.css">
-    <link rel="stylesheet" href="css/seoa.css">
+    <link rel="stylesheet" href="css/sea.css">
    <!-- 외부 JavaScript 파일 -->
    <script src="js/jiwon.js"></script>
       <script src="js/main.js" defer></script>
@@ -88,39 +88,53 @@
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NCGPKDP7" height="0" width="0" style="display: none; visibility: hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
+          <!-- 모달창-이벤트 -->
+      <!-- <div class="modal-wrap" id="modal">
+        <div class="modal">
+          <img src="images/modal-bg.png" alt="이벤트" class="modal-bg">
+          <div class="roulette-wrapper">
+            <div class="resultLayer">
+              이벤트 종료되었을 경우
+              <img id="resultImg" src="http://webimg.jestina.co.kr/UpData/jestina/event/201201_jWeek/roulette_product_end.png" alt="이벤트종료">
+              이미 응모했을 경우
+              <img id="resultImg" src="http://webimg.jestina.co.kr/UpData/jestina/event/201201_jWeek/roulette_product_07.png" alt="이미참여하셨습니다/">
+              <button id="closeLayer">
+                <img src="http://webimg.jestina.co.kr/UpData/jestina/event/201201_jWeek/popup_close__btn.png" alt="닫기">
+              </button>
+            </div>
+            <img id="roulette-gift" src="images/roulette.png">
+            <img id="roulette-niddle" src="images/niddle.png">
+            <button id="start-rotate">
+              <img id="roulette-startBtn" src="images/go.png">
+            </button>
+          </div>
           <script type='text/javascript' src='http://php-jestina2.azurewebsites.net/scripts/jQueryRotate.js'></script>
           <div class="modal-ft">
-            <span class="close-day" id="day">오늘 하루 다시 보지 않기</span>
-            <span class="close-btn" id="close">창 닫기</span>
+            <img src="images/day.png" alt="닫기" class="close-day" id="day">
+            <img src="images/close.png" alt="닫기" class="close-btn" id="close">
           </div>
         </div>
-    </div>
-    
+    </div> -->
     <ul id="pageMenu">
-      <li data-menuanchor="page0">
-        <a href="#page0"
-          ><i id="event" class="event"><img src="images/event_icon.png" alt="이벤트버튼" /></i
-        ></a>
-      </li>
       <li data-menuanchor="page1" class="active">
-        <a href="#page1"><span>HOME</span><i class="home"></i></a>
+        <a href="#page1"><span>MAIN</span><i class="home"></i></a>
       </li>
       <li data-menuanchor="page2">
         <a href="#page2"><span>ABOUT</span><i class="readyq"></i></a>
       </li>
       <li data-menuanchor="page3">
-        <a href="#page3"><span>레디큐 추천</span><i class="reco"></i></a>
+        <a href="#page3"><span>LINE UP</span><i class="reco"></i></a>
       </li>
       <li data-menuanchor="page4">
-        <a href="#page4"><span>레디큐 제품</span><i class="product"></i></a>
+        <a href="#page4"><span>PRODUCT</span><i class="product"></i></a>
       </li>
       <li data-menuanchor="page5">
-        <a href="#page5"><span>레디큐 비디오</span><i class="video"></i></a>
+        <a href="#page5"><span>VIDEO</span><i class="video"></i></a>
       </li>
     </ul>
     <header class="header">
       <div class="hd-left">
-        <a href="#"><img src="images/header/logo.png" alt="헤더로고" /></a>
+        <a href="index.html"><img src="images/section1/로고.png" alt="헤더로고" /></a>
       </div>
       <div class="hd-right">
         <div class="hd-right-left">
@@ -129,7 +143,10 @@
               <a href="#"><span>브랜드스토리</span></a>
             </li>
             <li>
-              <a href="#"><span>제품소개</span></a>
+              <a href="product.html"><span>제품소개</span></a>
+            </li>
+            <li id="event">
+              <a href="#"><span>이벤트</span></a>
             </li>
             <li>
               <a href="#"><span>구매처</span></a>
@@ -141,9 +158,33 @@
         </div>
         <div class="hd-right-right">
           <div class="hamberger">
-            <span class="hamberger-bf">●</span>
+            <!-- <span class="hamberger-bf">●</span> -->
             <i class="fa-solid fa-bars"></i>
+            <!-- <button class="nav-close">닫기</button> -->
           </div>
+          <ul class="mb-nav">
+            <li>
+              <a href="#"><span>Log In</span></a>
+            </li>
+            <li>
+              <a href="#"><span>Sign Up</span></a>
+            </li>
+            <li>
+              <a href="#"><span>브랜드스토리</span></a>
+            </li>
+            <li>
+              <a href="product.html"><span>제품소개</span></a>
+            </li>
+            <li>
+              <a href="#"><span>이벤트</span></a>
+            </li>
+            <li>
+              <a href="#"><span>구매처</span></a>
+            </li>
+            <li>
+              <a href="#"><span>뉴스룸</span></a>
+            </li>
+          </ul>
           <div class="hd-login">
             <ul>
               <li>
@@ -183,12 +224,16 @@
           </div>
         </div>
       </div>
+     
     </header>
     <div id="fullpage">
       <div class="section" id="section1">
         <div class="section1-bg">
           <div class="section1-bgbg">
             <img src="images/section1/bg2.png" alt="섹션1배경" />
+            <img class="yummy" src="images/section1/yummy.png" alt="맛있는">
+            <img class="starbg" src="images/section1/bg2-1.png" alt="배경">
+            <img class="qua" src="images/section1/bg2-2.png" alt="캬할땐큐하자">
             <!-- <div class="section1-subbg">
               <img src="images/section1/bg2.png" alt="섹션1배경2">
             </div> -->
@@ -198,6 +243,9 @@
           </div>
           <div class="jangseonggue">
             <img src="images/section1/jangseonggue.png" alt="장성규" />
+          </div>
+          <div class="ready-Q">
+            <img class="qua" src="images/section1/bg2-2.png" alt="캬할땐큐하자">
           </div>
           <div class="scroll">
             <img src="images/section1/스크롤.png" alt="스크롤" />
@@ -211,7 +259,7 @@
             <img src="images/section2/RUREADY.png" alt="알유레디" />
           </div>
           <div class="more-btn">
-            <a href="#"><span>영상 더보기</span></a>
+            <a href="#section5"><span>영상 더보기</span></a>
           </div>
           <div class="section2-chu">
             <img class="chu" src="images/section2/readyqchu.png" alt="츄">
@@ -219,7 +267,7 @@
           <div class="section2-jangmv">
             <img src="images/section2/jangmovie.png" alt="장무비" />
             <div class="section2-vd">
-              <video src="images/section2/30A.mp4" controls ></video>
+              <video src="images/section2/30A.mp4" autoplay loop muted></video>
             </div>
           </div>
         </div>
@@ -341,7 +389,7 @@
                     </p>
                     <p class="p2">
                       숙취해소는 물론 지친 몸에 활력을<br />
-                      불어넣어주는 타우린까지!
+                      불어넣어주는 타우린까지 !
                     </p>
                   </div>
                 </div>
@@ -389,7 +437,7 @@
                     
                     <p class="p1">
                       망고, 오렌지, 패션후르츠, 구아바,<br />
-                      바나나의 트로피컬한 달콤상큼한 맛!
+                      바나나의 트로피컬한 달콤상큼한 맛 !
                     </p>
                     <p class="p2">
                       한독의 기술력으로 흡수율을 높인 커큐민이<br />

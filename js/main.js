@@ -40,6 +40,10 @@ $(function () {
       nextEl: ".product .swiper-button-next",
       prevEl: ".product .swiper-button-prev",
     },
+    autoplay: {
+      delay: 3000, // 자동 재생 간격 (5초)
+    },
+    
   });
   
 });

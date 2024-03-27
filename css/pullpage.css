@@ -126,7 +126,7 @@ em {
   padding: 8px;
   text-align: center;
   white-space: nowrap;
-  visibility: hidden;
+  /* visibility: hidden; */
 }
 #pageMenu a .home, #pageMenu a .readyq, #pageMenu a .reco, #pageMenu a .product,#pageMenu a .video  {
   display: inline-block;
@@ -140,19 +140,10 @@ em {
   transform: translateY(-50%);
  
 }
-#pageMenu li a .event img {
-  width: 27px;
-  height: auto;
-  display: inline-block;
-  position: absolute;
-  left: -10px;
-  top: -180px;
-  margin-bottom: 400px;
-}
 #pageMenu li.active a span {
   font-size: 14px;
   padding: 8px;
-  background-color: rgb(228, 28, 211);
+  background-color: #e94a7d;
   white-space: nowrap;
   visibility: visible;
   color: #fff;
@@ -161,7 +152,7 @@ em {
 #pageMenu li.active a i {
   width: 12px;
   height: 12px;
-  background-color:  rgb(228, 28, 211);
+  background-color: #e94a7d;
   border: none;
   opacity: 1;
 }

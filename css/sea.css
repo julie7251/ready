@@ -1,10 +1,5 @@
-@media screen and (max-width: 1920px) {
-  /* 수정예정 */
-  .container {
-    padding: 0 20px;
-  }
-}
-@media screen and (max-width: 1819px){
+@charset "utf-8";
+@media screen and (max-width: 1819px) {
   .section2-tit {
     position: absolute;
     top: 25%;
@@ -15,16 +10,16 @@
     width: 23%;
     animation: fadeInUp 1.5s ease-out forwards;
   }
-  .more-btn{
+  .more-btn {
     position: relative;
     top: 67%;
     left: 16.3%;
   }
-  .more-btn span{
+  .more-btn span {
     padding: 1.2% 4%;
     color: #fff;
     font-size: 1vw;
-    background-color: #e94A7d;
+    background-color: #e94a7d;
     border-radius: 7px;
   }
   .section2-chu {
@@ -38,27 +33,26 @@
   }
   .section2-jangmv img {
     position: relative;
-    top:0;
+    top: 0;
     right: 3%;
     width: 60%;
   }
   .section2-vd {
     position: absolute;
-    top:0%;
+    top: 0%;
     left: 3%;
     width: 47%;
     height: 100%;
-    
   }
   .section2-vd video {
     display: block;
-    position:absolute;
+    position: absolute;
     top: 14%;
     left: 1%;
     width: 100%;
   }
 }
-@media screen and (max-width: 1761px){
+@media screen and (max-width: 1761px) {
   .section2-tit {
     position: absolute;
     top: 25%;
@@ -69,50 +63,16 @@
     width: 23%;
     animation: fadeInUp 1.5s ease-out forwards;
   }
-  .more-btn{
+  .more-btn {
     position: relative;
     top: 67%;
     left: 16.3%;
   }
-  .more-btn span{
+  .more-btn span {
     padding: 1.2% 4%;
     color: #fff;
     font-size: 1vw;
-    background-color: #e94A7d;
-    border-radius: 7px;
-  }
-  .section2-chu {
-    position: absolute;
-    bottom: -1%;
-    left: 5%;
-    width: 100%;
-  }
-  .section2-chu .chu {
-    width: 35%;
-  }
-
-}
-@media screen and (max-width: 1734px){
-  .section2-tit {
-    position: absolute;
-    top: 25%;
-    left: 11.5%;
-    width: 100%;
-  }
-  .section2-tit img {
-    width: 23%;
-    animation: fadeInUp 1.5s ease-out forwards;
-  }
-  .more-btn{
-    position: relative;
-    top: 67%;
-    left: 16.3%;
-  }
-  .more-btn span{
-    padding: 1.2% 4%;
-    color: #fff;
-    font-size: 1vw;
-    background-color: #e94A7d;
+    background-color: #e94a7d;
     border-radius: 7px;
   }
   .section2-chu {
@@ -125,7 +85,7 @@
     width: 35%;
   }
 }
-@media screen and (max-width: 1650px){
+@media screen and (max-width: 1734px) {
   .section2-tit {
     position: absolute;
     top: 25%;
@@ -136,16 +96,49 @@
     width: 23%;
     animation: fadeInUp 1.5s ease-out forwards;
   }
-  .more-btn{
+  .more-btn {
     position: relative;
     top: 67%;
     left: 16.3%;
   }
-  .more-btn span{
+  .more-btn span {
     padding: 1.2% 4%;
     color: #fff;
     font-size: 1vw;
-    background-color: #e94A7d;
+    background-color: #e94a7d;
+    border-radius: 7px;
+  }
+  .section2-chu {
+    position: absolute;
+    bottom: -1%;
+    left: 5%;
+    width: 100%;
+  }
+  .section2-chu .chu {
+    width: 35%;
+  }
+}
+@media screen and (max-width: 1650px) {
+  .section2-tit {
+    position: absolute;
+    top: 25%;
+    left: 11.5%;
+    width: 100%;
+  }
+  .section2-tit img {
+    width: 23%;
+    animation: fadeInUp 1.5s ease-out forwards;
+  }
+  .more-btn {
+    position: relative;
+    top: 67%;
+    left: 16.3%;
+  }
+  .more-btn span {
+    padding: 1.2% 4%;
+    color: #fff;
+    font-size: 1vw;
+    background-color: #e94a7d;
     border-radius: 7px;
   }
   .section2-chu {
@@ -199,7 +192,7 @@
     bottom: 3%;
     left: 44.5%;
     transform: translateX(-44.5%);
-    width: 6%;
+    width: 5%;
     /* background-color: aqua; */
   }
   .scroll > img {
@@ -222,9 +215,6 @@
 }
 
 @media screen and (max-width: 1558px) {
-  .hd-left img {
-    width: 50px;
-  }
   .hd-nav {
     font-size: 13px;
   }
@@ -238,6 +228,7 @@
   }
   .fa-solid {
     font-size: 13px;
+    display: block;
   }
 }
 @media screen and (max-width: 1491px) {
@@ -277,7 +268,7 @@
     animation: tilt 0.5s infinite alternate;
   }
 }
-@media screen and (max-width: 1423px){
+@media screen and (max-width: 1423px) {
   .section2-tit {
     position: absolute;
     top: 25%;
@@ -288,16 +279,16 @@
     width: 23%;
     animation: fadeInUp 1.5s ease-out forwards;
   }
-  .more-btn{
+  .more-btn {
     position: relative;
     top: 64%;
     left: 11%;
   }
-  .more-btn span{
+  .more-btn span {
     padding: 1.2% 5%;
     color: #fff;
     font-size: 1.3vw;
-    background-color: #e94A7d;
+    background-color: #e94a7d;
     border-radius: 7px;
   }
   .section2-chu {
@@ -315,14 +306,14 @@
   }
   .section2-vd {
     position: absolute;
-    top:2%;
+    top: 2%;
     left: 4%;
     width: 46%;
     height: 100%;
   }
   .section2-vd video {
     display: block;
-    position:absolute;
+    position: absolute;
     top: 14%;
     left: 1%;
     width: 100%;
@@ -383,16 +374,16 @@
     width: 23%;
     animation: fadeInUp 1.5s ease-out forwards;
   }
-  .more-btn{
+  .more-btn {
     position: relative;
     top: 64%;
     left: 11%;
   }
-  .more-btn span{
+  .more-btn span {
     padding: 1.2% 5%;
     color: #fff;
     font-size: 1.3vw;
-    background-color: #e94A7d;
+    background-color: #e94a7d;
     border-radius: 7px;
   }
   .section2-chu {
@@ -416,14 +407,14 @@
   }
   .section2-vd {
     position: absolute;
-    top:2%;
+    top: 2%;
     left: 4%;
     width: 47%;
     height: 100%;
   }
   .section2-vd video {
     display: block;
-    position:absolute;
+    position: absolute;
     top: 14%;
     left: 1%;
     width: 100%;
@@ -474,16 +465,16 @@
   .section1-bgbg .yummy {
     display: none;
   }
-  .more-btn{
+  .more-btn {
     position: relative;
     top: 53%;
     left: 7%;
   }
-  .more-btn span{
+  .more-btn span {
     padding: 2% 8%;
     color: #fff;
     font-size: 1.8vw;
-    background-color: #e94A7d;
+    background-color: #e94a7d;
     border-radius: 7px;
   }
   .section2-tit {
@@ -496,16 +487,16 @@
     width: 23%;
     animation: fadeInUp 1.5s ease-out forwards;
   }
-  .more-btn{
+  .more-btn {
     position: relative;
     top: 58%;
     left: 11%;
   }
-  .more-btn span{
+  .more-btn span {
     padding: 1.6% 5%;
     color: #fff;
     font-size: 1.5vw;
-    background-color: #e94A7d;
+    background-color: #e94a7d;
     border-radius: 7px;
   }
   .section2-chu {
@@ -529,14 +520,14 @@
   }
   .section2-vd {
     position: absolute;
-    top:2%;
+    top: 2%;
     left: 4%;
     width: 47%;
     height: 100%;
   }
   .section2-vd video {
     display: block;
-    position:absolute;
+    position: absolute;
     top: 14%;
     left: 1%;
     width: 100%;
@@ -599,16 +590,16 @@
     width: 21%;
     animation: fadeInUp 1.5s ease-out forwards;
   }
-  .more-btn{
+  .more-btn {
     position: relative;
     top: 63%;
     left: 5%;
   }
-  .more-btn span{
+  .more-btn span {
     padding: 1.6% 5%;
     color: #fff;
     font-size: 1.8vw;
-    background-color: #e94A7d;
+    background-color: #e94a7d;
     border-radius: 7px;
   }
   .section2-chu {
@@ -632,14 +623,14 @@
   }
   .section2-vd {
     position: absolute;
-    top:2%;
+    top: 2%;
     left: 4%;
     width: 54%;
     height: 100%;
   }
   .section2-vd video {
     display: block;
-    position:absolute;
+    position: absolute;
     top: 14%;
     left: 1%;
     width: 100%;
@@ -660,7 +651,7 @@
     bottom: 0%;
     left: 44%;
     transform: translateX(-44%);
-    width: 9%;
+    width: 6%;
     /* background-color: aqua; */
   }
   .scroll > img {
@@ -680,7 +671,6 @@
     background-color: #fff;
     animation: disappear 3s infinite;
   }
-  
 }
 @media screen and (max-width: 855px) {
   .section1-bgbg .starbg {
@@ -739,7 +729,7 @@
     display: none;
   }
 }
-@media screen and (max-width: 772px){
+@media screen and (max-width: 772px) {
   .section2-tit {
     position: absolute;
     top: 37%;
@@ -750,16 +740,16 @@
     width: 25%;
     animation: fadeInUp 1.5s ease-out forwards;
   }
-  .more-btn{
+  .more-btn {
     position: relative;
     top: 63%;
     left: 4%;
   }
-  .more-btn span{
+  .more-btn span {
     padding: 1.6% 5%;
     color: #fff;
     font-size: 1.8vw;
-    background-color: #e94A7d;
+    background-color: #e94a7d;
     border-radius: 7px;
   }
   .section2-chu {
@@ -783,42 +773,69 @@
   }
   .section2-vd {
     position: absolute;
-    top:2%;
+    top: 2%;
     left: 4%;
     width: 54%;
     height: 100%;
   }
   .section2-vd video {
     display: block;
-    position:absolute;
+    position: absolute;
     top: 14%;
     left: 1%;
     width: 100%;
   }
 }
 @media screen and (max-width: 768px) {
+  .hd-left {
+    width: 13%;
+  }
+  .hd-left a {
+    width: 100%;
+  }
+  .hd-left a img {
+    width: 100%;
+    display: block;
+    margin-top: 2px;
+  }
   .hd-right-right {
     justify-content: flex-end;
   }
   .hamberger {
-    display: inline-block;
     position: relative;
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ff9a3b;
   }
-
-  .hamberger > i {
+  .hamberger i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     font-size: 25px;
+    color: #fff;
+  }
+  .hamberger-bf {
+    position: absolute;
+    content: "";
+    top: -40%;
+    right: -64%;
+    font-size: 50px;
+    color: #ff9a3b;
   }
   .hd-language,
   .hd-login {
     display: none;
   }
-  .hd-right-right {
+  /* .hd-right-right {
     width: 20%;
   }
   .hd-nav {
     font-size: 13px;
     gap: 3%;
-  }
+  } */
   .section1-bgbg {
     position: relative;
     display: inline-block;
@@ -879,17 +896,17 @@
     width: 68%;
     animation: fadeInUp 1.5s ease-out forwards;
   }
-  .more-btn{
+  .more-btn {
     position: relative;
     top: 83%;
     left: 37%;
     width: 100%;
   }
-  .more-btn span{
+  .more-btn span {
     padding: 2% 8%;
     color: #fff;
     font-size: 2vw;
-    background-color: #e94A7d;
+    background-color: #e94a7d;
     border-radius: 7px;
   }
   .section2-chu {
@@ -904,7 +921,7 @@
   .section2-jangmv {
     position: absolute;
     top: 35%;
-    left:13%;
+    left: 13%;
     width: 100%;
   }
   .section2-jangmv img {
@@ -917,14 +934,28 @@
     left: 5%;
     width: 62%;
     height: 100%;
-    
   }
   .section2-vd video {
     display: block;
-    position:absolute;
+    position: absolute;
     top: 14%;
     left: 1%;
     width: 100%;
+  }
+  .hd-nav {
+    display: none;
+  }
+  .mb-nav li {
+    line-height: 35px;
+  }
+  .mb-nav li a {
+    color: #fff;
+    font-weight: 600;
+  }
+  /* 메뉴 자바스크립트 기능 */
+  .nav-active {
+    /* right: calc(100% - 450px); */
+    display: block;
   }
 }
 @media screen and (max-width: 730px) {
@@ -948,7 +979,7 @@
     bottom: 0%;
     left: 44%;
     transform: translateX(-44%);
-    width: 9%;
+    width: 6%;
     /* background-color: aqua; */
   }
   .scroll > img {
@@ -978,17 +1009,17 @@
     width: 76%;
     animation: fadeInUp 1.5s ease-out forwards;
   }
-  .more-btn{
+  .more-btn {
     position: relative;
     top: 80%;
     left: 37%;
     width: 100%;
   }
-  .more-btn span{
+  .more-btn span {
     padding: 2% 8%;
     color: #fff;
     font-size: 2vw;
-    background-color: #e94A7d;
+    background-color: #e94a7d;
     border-radius: 7px;
   }
   .section2-chu {
@@ -1003,7 +1034,7 @@
   .section2-jangmv {
     position: absolute;
     top: 35%;
-    left:13%;
+    left: 13%;
     width: 100%;
   }
   .section2-jangmv img {
@@ -1016,11 +1047,10 @@
     left: 5%;
     width: 62%;
     height: 100%;
-    
   }
   .section2-vd video {
     display: block;
-    position:absolute;
+    position: absolute;
     top: 14%;
     left: 1%;
     width: 100%;
@@ -1032,7 +1062,7 @@
     bottom: 4%;
     left: 44%;
     transform: translateX(-44%);
-    width: 12%;
+    width: 8%;
     /* background-color: aqua; */
   }
   .scroll > img {
@@ -1051,6 +1081,9 @@
     border-radius: 50%;
     background-color: #fff;
     animation: disappear 3s infinite;
+  }
+  .hd-nav {
+    display: none;
   }
 }
 @media screen and (max-width: 638px) {
@@ -1100,9 +1133,6 @@
   }
 }
 @media screen and (max-width: 565px) {
-  .hd-nav {
-    display: none;
-  }
   .section1-bgbg .starbg {
     display: none;
   }
@@ -1112,36 +1142,27 @@
   .section1-bgbg .yummy {
     display: none;
   }
-  .hd-nav {
-  position: fixed;
-  top: 0;
-  left: 0%;
-  width: 450px ;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.84);
-  z-index: 999999;
-  padding: 50px;
-  transition: all 0.3s;
- 
-  overflow-y: auto;
-  transition: left 0.3s ease-in-out; 
+
+  /* .hamberger i {
+    position: relative;
+    display: block;
+    bottom: 1.4px;
+    right: 60%;
+    font-size: 25px;
+    color: #fff;
   }
-  /* 메뉴 자바스크립트 기능 */
-.nav-active {
-  left: calc(100% - 450px);
-}
-.nav-close {
-  position: absolute;
-  top: 20px;
-  right: 30px;
-  display: block;
-  width: 23px;
-  height: 23px;
-  font-size: 0;
-  background: url("../images/close2.png") no-repeat center;
-  border: 0;
-  cursor: pointer;
-}
+  .hamberger-bf {
+    position: absolute;
+    content: "";
+    top: -40%;
+    right: 0%;
+    font-size: 50px;
+    color: #ff9a3b;
+  } */
+  /* .hd-right-right{
+    position: relative;
+  } */
+
   .scroll {
     position: absolute;
     bottom: 7%;
@@ -1177,17 +1198,17 @@
     width: 80%;
     animation: fadeInUp 1.5s ease-out forwards;
   }
-  .more-btn{
+  .more-btn {
     position: relative;
     top: 75%;
     left: 28%;
     width: 100%;
   }
-  .more-btn span{
+  .more-btn span {
     padding: 4% 14%;
     color: #fff;
     font-size: 3vw;
-    background-color: #e94A7d;
+    background-color: #e94a7d;
     border-radius: 7px;
   }
   .section2-chu {
@@ -1202,7 +1223,7 @@
   .section2-jangmv {
     position: absolute;
     top: 35%;
-    left:13%;
+    left: 13%;
     width: 100%;
   }
   .section2-jangmv img {
@@ -1215,13 +1236,19 @@
     left: 5%;
     width: 62%;
     height: 100%;
-    
   }
   .section2-vd video {
     display: block;
-    position:absolute;
+    position: absolute;
     top: 14%;
     left: 1%;
+    width: 100%;
+  }
+  .hd-left {
+    padding-left: 10px;
+    width: 20%;
+  }
+  .hd-left img {
     width: 100%;
   }
 }
@@ -1326,17 +1353,17 @@
     width: 80%;
     animation: fadeInUp 1.5s ease-out forwards;
   }
-  .more-btn{
+  .more-btn {
     position: relative;
     top: 70%;
     left: 31%;
     width: 100%;
   }
-  .more-btn span{
+  .more-btn span {
     padding: 3% 8%;
     color: #fff;
     font-size: 4vw;
-    background-color: #e94A7d;
+    background-color: #e94a7d;
     border-radius: 7px;
   }
   .section2-chu {
@@ -1351,7 +1378,7 @@
   .section2-jangmv {
     position: absolute;
     top: 35%;
-    left:7%;
+    left: 7%;
     width: 100%;
   }
   .section2-jangmv img {
@@ -1364,11 +1391,10 @@
     left: 7%;
     width: 69%;
     height: 100%;
-    
   }
   .section2-vd video {
     display: block;
-    position:absolute;
+    position: absolute;
     top: 14%;
     left: 1%;
     width: 100%;
@@ -1475,17 +1501,17 @@
     width: 68%;
     animation: fadeInUp 2.5s ease-out forwards;
   }
-  .more-btn{
+  .more-btn {
     position: relative;
     top: 69%;
     left: 21%;
     width: 100%;
   }
-  .more-btn span{
+  .more-btn span {
     padding: 3% 17%;
     color: #fff;
     font-size: 5vw;
-    background-color: #e94A7d;
+    background-color: #e94a7d;
     border-radius: 7px;
   }
   .section2-chu {
@@ -1500,7 +1526,7 @@
   .section2-jangmv {
     position: absolute;
     top: 35%;
-    left:2.9%;
+    left: 2.9%;
     width: 100%;
   }
   .section2-jangmv img {
@@ -1513,17 +1539,23 @@
     left: 7%;
     width: 78%;
     height: 100%;
-    
   }
   .section2-vd video {
     display: block;
-    position:absolute;
+    position: absolute;
     top: 14%;
     left: 1%;
     width: 100%;
   }
 }
 @media screen and (max-width: 320px) {
+  .hd-left {
+    padding-left: 10px;
+    width: 50%;
+  }
+  .hd-left img {
+    width: 100%;
+  }
   .section1-bgbg > img {
     display: none;
   }
@@ -1544,7 +1576,7 @@
     top: 79px;
     left: -3%;
     display: inline-block;
-    width: 100%;
+    width: 101%;
   }
   .section1-bgbg .qua {
     position: absolute;
@@ -1615,26 +1647,25 @@
     left: -10%;
     width: 100%;
     height: 100%;
-    
   }
   .section2-vd video {
     display: block;
-    position:absolute;
+    position: absolute;
     top: 14%;
     left: -2%;
     width: 145%;
   }
-  .more-btn{
+  .more-btn {
     position: relative;
     top: 80%;
     left: 21%;
     width: 100%;
   }
-  .more-btn span{
+  .more-btn span {
     padding: 3% 17%;
     color: #fff;
     font-size: 5vw;
-    background-color: #e94A7d;
+    background-color: #e94a7d;
     border-radius: 7px;
   }
 }
