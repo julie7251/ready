@@ -22,7 +22,7 @@ $(function () {
           $(this).get(0).pause();
         });
       }
-      console.log(`onleave!`);
+     
     },
     afterLoad: function (anchorLink, index) {
       // 스크롤이 완료된 후 #section2에 도달했을 때 애니메이션을 실행합니다.
@@ -33,11 +33,11 @@ $(function () {
       if (index == 2) {
         $('.section2-tit img').addClass('animate'),
         $('.more-btn span').addClass('animate');
-        $('.section2-vd video').each(function () {
-          $(this).get(0).play();
-        });
+        // $('.section2-vd video').each(function () {
+        //   $(this).get(0).play();
+        // });
       }
-      console.log(`afterLoad!`);
+    
     },
 
   });
@@ -51,6 +51,17 @@ $(function () {
   });
   $(".hamberger").click(function() {
     $(".mb-nav").slideToggle(); // "mb-nav" 요소 슬라이드 토글
+  });
+  $(document).ready(function () {
+    // 이미지 경로를 저장하는 객체
+    var imagePaths = {
+      "서브사진1": "images/productpage/image 53.png",
+      "서브사진2": "images/productpage/image 55 (1).png",
+      "서브사진3": "images/productpage/image 57 (1).png",
+      "서브사진4": "images/productpage/image 58 (1).png",
+      "서브사진5": "images/productpage/image 59 (1).png",
+    };
+
   });
 });
 ;

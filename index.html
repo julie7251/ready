@@ -88,33 +88,58 @@
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NCGPKDP7" height="0" width="0" style="display: none; visibility: hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-          <!-- 모달창-이벤트 -->
-      <!-- <div class="modal-wrap" id="modal">
-        <div class="modal">
-          <img src="images/modal-bg.png" alt="이벤트" class="modal-bg">
-          <div class="roulette-wrapper">
-            <div class="resultLayer">
-              이벤트 종료되었을 경우
-              <img id="resultImg" src="http://webimg.jestina.co.kr/UpData/jestina/event/201201_jWeek/roulette_product_end.png" alt="이벤트종료">
-              이미 응모했을 경우
-              <img id="resultImg" src="http://webimg.jestina.co.kr/UpData/jestina/event/201201_jWeek/roulette_product_07.png" alt="이미참여하셨습니다/">
-              <button id="closeLayer">
-                <img src="http://webimg.jestina.co.kr/UpData/jestina/event/201201_jWeek/popup_close__btn.png" alt="닫기">
-              </button>
+      <!-- 모달창-이벤트 -->
+    <div class="modal-wrap" id="modal">
+      
+      <div class="modal">
+        <img src="images/modal-bg.png" alt="이벤트" class="modal-bg" />
+        <img src="images/close.png" alt="닫기" class="close-btn" id="close" />
+        <div class="roulette-wrapper">
+          <div class="resultLayer">
+            <!-- 응모 결과 -->
+            <div class="result">
+                <img src="images/result-1.png" alt="이벤트상품" id="resultImg" class="resultImg" />
+                <form name="result-box">
+                  <fieldset>
+                    <p class="notice">
+                      경품 발송을 위해 아래 정보를 입력해주세요. <br />
+                      <span> 개인정보 미 동의시, 경품 발송이 불가합니다.</span>
+                    </p>
+                    <ul>
+                      <li>
+                        <label class="field" for="resultName">이름 : </label>
+                        <input type="text" class="input-box" id="resultName" name="resultName" />
+                      </li>
+                      <li>
+                        <label class="field" for="resultTel">연락처 : </label>
+                        <input type="text" class="input-box" id="resultTel" name="resultTel" />
+                      </li>
+                      <!-- <li>
+                        <label class="field" for="resultNumber">인증번호 : </label>
+                        <input type="text" class="input-box" id="resultNumber" name="resultNumber" />
+                      </li> -->
+                      <button class="resultBt">인증하기</button>
+                      <li class="checkbox">
+                        <input type="checkbox" id="resultInfo" name="resultInfo" />
+                        <label for="resultInfo" class="check">개인정보 수집 동의</label>
+                      </li>
+                    </ul>
+                  </fieldset>
+                  <button type="submit" class="resultOk" id="resultOk">참여 완료</button>
+                </form>
             </div>
-            <img id="roulette-gift" src="images/roulette.png">
-            <img id="roulette-niddle" src="images/niddle.png">
-            <button id="start-rotate">
-              <img id="roulette-startBtn" src="images/go.png">
-            </button>
           </div>
-          <script type='text/javascript' src='http://php-jestina2.azurewebsites.net/scripts/jQueryRotate.js'></script>
-          <div class="modal-ft">
-            <img src="images/day.png" alt="닫기" class="close-day" id="day">
-            <img src="images/close.png" alt="닫기" class="close-btn" id="close">
-          </div>
+          <img id="roulette-gift" src="images/roulette.png" />
+          <img id="roulette-niddle" src="images/niddle.png" />
+          <button id="start-rotate">
+            <img id="roulette-startBtn" src="images/go.png" />
+          </button>
         </div>
-    </div> -->
+        <script type="text/javascript" src="http://php-jestina2.azurewebsites.net/scripts/jQueryRotate.js"></script>
+      </div>
+        
+    </div>
+    </div>
     <ul id="pageMenu">
       <li data-menuanchor="page1" class="active">
         <a href="#page1"><span>MAIN</span><i class="home"></i></a>
@@ -164,10 +189,10 @@
           </div>
           <ul class="mb-nav">
             <li>
-              <a href="#"><span>Log In</span></a>
+              <a href="login.html"><span>Log In</span></a>
             </li>
             <li>
-              <a href="#"><span>Sign Up</span></a>
+              <a href="join.html"><span>Sign Up</span></a>
             </li>
             <li>
               <a href="#"><span>브랜드스토리</span></a>
@@ -267,7 +292,8 @@
           <div class="section2-jangmv">
             <img src="images/section2/jangmovie.png" alt="장무비" />
             <div class="section2-vd">
-              <video src="images/section2/30A.mp4" autoplay loop muted></video>
+              <!-- <video src="images/section2/30A.mp4" autoplay loop muted controls></video> -->
+              <video src="images/section2/30A.mp4" controls></video>
             </div>
           </div>
         </div>
@@ -453,64 +479,88 @@
         </div>
       </div>
       <div class="section" id="section5">
-<!-- video -->
-<div class="sw-inner">
-<img src="images/txt_img1.png" alt="영상보기텍스트" class="ad_txt">
- <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
-  <div class="swiper-wrapper">
-    <div class="swiper-slide view">
-      <iframe width="640" height="360" src="https://www.youtube.com/embed/uU3_lJUGono" 
-      title="[ENG] 신동엽 이소라 드디어 만나는 순간 | 이소라의 슈퍼마켙 소라 EP.01-1" frameborder="0" 
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-      allowfullscreen></iframe>
-    </div>
-    <div class="swiper-slide view">
-      <iframe width="640" height="360" src="https://www.youtube.com/embed/s-JKnZJ7cxM" title="밤 11시까지.. 한잔하면서 가격 꺾어 마셨습니다.. 숙취해소제 네고 [네고왕] Ep.15" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    </div>
-    <div class="swiper-slide">
-      <iframe width="640" height="360" src="https://www.youtube.com/embed/fbZHk9EXzp0" title="선넘규! 장성규! 레디큐 촬영하Q! 폭발하Q! 극한 광고 촬영기" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    </div>
-    <div class="swiper-slide">
-      <iframe width="640" height="360" src="https://www.youtube.com/embed/5TEebQfw3p0" title="벚꽃축제 못 가는 아쉬움, 장성규와 함께 레디큐 벚꽃에디션으로 해소해요🌸" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    </div>
-    <div class="swiper-slide">
-      <iframe width="640" height="360" src="https://www.youtube.com/embed/BKfXVCI2d84" title="박나래 숙취해소 READY Q 광고E" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    </div>
-    <div class="swiper-slide">
-      <iframe width="640" height="360" src="https://www.youtube.com/embed/jjbPxgXocR0" title="박나래의 레디큐 - 회식편" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    </div>
-    </div>
-   
-  </div>
-<div class="img-swbox">
-<div thumbsSlider="" class="swiper mySwiper">
-  <div class="swiper-wrapper">
-    <div class="swiper-slide">
-      <img src="images/imgbox/video-img1.jpg" alt="1">
-    </div>
-    <div class="swiper-slide">
-      <img src="images/imgbox/video-img2.jpg" alt="2">
-    </div>
-    <div class="swiper-slide">
-      <img src="images/imgbox/video-img3.jpg" alt="3">
-    </div>
-    <div class="swiper-slide">
-      <img src="images/imgbox/video-img4.jpg" alt="4">
-    </div>
-    <div class="swiper-slide">
-      <img src="images/imgbox/video-img5.jpg" alt="5">
-    </div>
-    <div class="swiper-slide">
-      <img src="images/imgbox/video-img6.jpg" alt="6">
-    </div>
-  </div>
-</div>
-   <div class="swiper-button-next"></div>
-  <div class="swiper-button-prev"></div>
-</div>
-</div>
-</div>
-   <footer class="section fp-auto-height" id="section6">
+        <!-- video -->
+        <div class="sw-inner">
+          <img src="images/txt_img1.png" alt="영상보기텍스트" class="ad_txt" />
+          <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide view">
+                <iframe
+                  width="640"
+                  height="360"
+                  src="https://www.youtube.com/embed/uU3_lJUGono"
+                  title="[ENG] 신동엽 이소라 드디어 만나는 순간 | 이소라의 슈퍼마켙 소라 EP.01-1"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen></iframe>
+              </div>
+              <div class="swiper-slide view">
+                <iframe
+                  width="640"
+                  height="360"
+                  src="https://www.youtube.com/embed/s-JKnZJ7cxM"
+                  title="밤 11시까지.. 한잔하면서 가격 꺾어 마셨습니다.. 숙취해소제 네고 [네고왕] Ep.15"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen></iframe>
+              </div>
+              <div class="swiper-slide">
+                <iframe
+                  width="640"
+                  height="360"
+                  src="https://www.youtube.com/embed/fbZHk9EXzp0"
+                  title="선넘규! 장성규! 레디큐 촬영하Q! 폭발하Q! 극한 광고 촬영기"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen></iframe>
+              </div>
+              <div class="swiper-slide">
+                <iframe
+                  width="640"
+                  height="360"
+                  src="https://www.youtube.com/embed/5TEebQfw3p0"
+                  title="벚꽃축제 못 가는 아쉬움, 장성규와 함께 레디큐 벚꽃에디션으로 해소해요🌸"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen></iframe>
+              </div>
+              <div class="swiper-slide">
+                <iframe width="640" height="360" src="https://www.youtube.com/embed/BKfXVCI2d84" title="박나래 숙취해소 READY Q 광고E" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              </div>
+              <div class="swiper-slide">
+                <iframe width="640" height="360" src="https://www.youtube.com/embed/jjbPxgXocR0" title="박나래의 레디큐 - 회식편" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="img-swbox">
+            <div thumbsSlider="" class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="images/imgbox/video-img1.jpg" alt="1" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="images/imgbox/video-img2.jpg" alt="2" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="images/imgbox/video-img3.jpg" alt="3" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="images/imgbox/video-img4.jpg" alt="4" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="images/imgbox/video-img5.jpg" alt="5" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="images/imgbox/video-img6.jpg" alt="6" />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+      </div>
+      <footer class="section fp-auto-height" id="section6">
         <nav class="ft-nav">
           <ul class="ft-menu">
             <li><a href="#">회사소개</a></li>
@@ -544,9 +594,7 @@
             </div>
           </div>
         </div>
-      </footer>  
-</div>
-      <!-- 섹션5 끝 -->
+      </footer>
     </div>
     <!-- 풀페이지끝 -->
   </body>

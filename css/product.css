@@ -28,7 +28,7 @@ li {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: #E94A7D;
   z-index: 10000;
 }
 .header .logo {

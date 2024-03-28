@@ -140,10 +140,19 @@ em {
   transform: translateY(-50%);
  
 }
+#pageMenu li a .event img {
+  width: 27px;
+  height: auto;
+  display: inline-block;
+  position: absolute;
+  left: -10px;
+  top: -180px;
+  margin-bottom: 400px;
+}
 #pageMenu li.active a span {
   font-size: 14px;
   padding: 8px;
-  background-color: #e94a7d;
+  background-color: rgb(228, 28, 211);
   white-space: nowrap;
   visibility: visible;
   color: #fff;
@@ -152,7 +161,7 @@ em {
 #pageMenu li.active a i {
   width: 12px;
   height: 12px;
-  background-color: #e94a7d;
+  background-color:  rgb(228, 28, 211);
   border: none;
   opacity: 1;
 }

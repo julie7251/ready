@@ -1,96 +1,140 @@
-// 모달창
-$(function(){
-    $("#day").click(function(){
-        modalClose();
-        //컨펌 이벤트 처리
-    });
-    $("#event").click(function(){        $("#modal").css('display','fixed').hide().fadeIn();
-    });
-    $("#close").click(function(){
-        modalClose();
-    });
-    function modalClose(){
-      $("#modal").fadeOut();
-    }
-  });
-
-// 룰렛 돌리기
 $(document).ready(function () {
-    var prize = 'product03';
-    // product01 = 조엘 컬러바
-    // product02 = 크리스피기프티콘
-    // product03 = 스타벅스 기프티콘
-    // product04 = 더블 5,000원 쿠폰번호 1397
-    // product05 = 더블 3,000원 쿠폰번호 1396
-    // product06 = 더블 1,000원 쿠폰번호 1395
-
-    // product07 = 이미참여하셨습니다
-
-    $('#start-rotate').click(function () {
-        if (prize == 'product01') {
-            var degrees = 65;
-            rotate(degrees);
-            $('#resultImg').attr('src',
-                'http://webimg.jestina.co.kr/UpData/jestina/event/201201_jWeek/roulette_product_01.png'
-            );
-            window.setTimeout(resultLayer, 5400);
-        } else if (prize == 'product02') {
-            var degrees = 120;
-            rotate(degrees);
-            $('#resultImg').attr('src',
-                'http://webimg.jestina.co.kr/UpData/jestina/event/201201_jWeek/roulette_product_02.png'
-            );
-            window.setTimeout(resultLayer, 5400);
-        } else if (prize == 'product03') {
-            var degrees = 0;
-            rotate(degrees);
-            $('#resultImg').attr('src',
-                'http://webimg.jestina.co.kr/UpData/jestina/event/201201_jWeek/roulette_product_03.png'
-            );
-            window.setTimeout(resultLayer, 5400);
-        } else if (prize == 'product04') {
-            var degrees = 220;
-            rotate(degrees);
-            $('#resultImg').attr('src',
-                'http://webimg.jestina.co.kr/UpData/jestina/event/201201_jWeek/roulette_product_04.png'
-            );
-            window.setTimeout(resultLayer, 5400);
-        } else if (prize == 'product05') {
-            var degrees = 290;
-            rotate(degrees);
-            $('#resultImg').attr('src',
-                'http://webimg.jestina.co.kr/UpData/jestina/event/201201_jWeek/roulette_product_05.png'
-            );
-            window.setTimeout(resultLayer, 5400);
-        } else if (prize == 'product06') {
-            var degrees = 160;
-            rotate(degrees);
-            $('#resultImg').attr('src',
-                'http://webimg.jestina.co.kr/UpData/jestina/event/201201_jWeek/roulette_product_06.png'
-            );
-            window.setTimeout(resultLayer, 5400);
-        }
+    $(".modal-wrap").fadeIn(); // 모달 창 보이기
+    // 모달이 이미 열려있는지 여부를 확인하는 함수
+    function isModalOpened() {
+      return document.cookie.includes("modalOpened=true");
+    }
+  
+    // 모달이 열려있는 경우에는 바로 반환하여 모달을 다시 열지 않도록 함
+    if (!isModalOpened()) {
+      $(".modal-wrap").fadeIn(); // 모달 창 보이기
+    }
+  
+    $("#event").click(function () {
+      $("#modal").css("display", "fixed").hide().fadeIn();
     });
-
+  
+    $("#close").click(function () {
+      modalClose();
+    });
+  
+    // 모달을 닫는 함수
+    function modalClose() {
+      $("#modal").fadeOut();
+      $(".modal-wrap").fadeOut(); // 모달 창 숨기기
+      // 모달이 닫힐 때 쿠키를 설정하여 다음에는 모달이 뜨지 않도록 함
+      document.cookie = "modalOpened=true"; // 모달이 닫힌 후 쿠키 설정
+    }
+  
+    var prize = "product03";
+    var prize;
+    // 1부터 5까지의 랜덤한 정수 생성
+    var randomNumber = Math.floor(Math.random() * 5) + 1;
+    // randomNumber에 따라 prize 값 설정
+    switch (randomNumber) {
+      case 1:
+        prize = "product01";
+        break;
+      case 2:
+        prize = "product02";
+        break;
+      case 3:
+        prize = "product03";
+        break;
+      case 4:
+        prize = "product04";
+        break;
+      case 5:
+        prize = "product05";
+        break;
+      default:
+        // 예외 처리 등을 추가할 수 있음
+        break;
+    }
+  
+    $("#start-rotate").click(function () {
+      var degrees;
+      var resultImage;
+      switch (prize) {
+        case "product01":
+          degrees = 0;
+          resultImage = "images/result-1.png";
+          break;
+        case "product02":
+          degrees = 72;
+          resultImage = "images/result-2.png";
+          break;
+        case "product03":
+          degrees = 144;
+          resultImage = "images/result-3.png";
+          break;
+        case "product04":
+          degrees = 216;
+          resultImage = "images/result-4.png";
+          break;
+        case "product05":
+          degrees = 288;
+          resultImage = "images/result-5.png";
+          break;
+        default:
+          // 예외 처리 등을 추가할 수 있음
+          break;
+      }
+      rotate(degrees);
+      $("#resultImg").attr("src", resultImage);
+      window.setTimeout(resultLayer, 5400);
+    });
+  
     function rotate(degrees) {
-        $("#roulette-gift").rotate({
-            angle: 0,
-            animateTo: 360 * 5 + degrees,
-            easing: $.easing.easeInOutElastic,
-            duration: 5000
-        });
-    };
-
+      $("#roulette-gift").rotate({
+        angle: 0,
+        animateTo: 360 * 5 + degrees,
+        easing: $.easing.easeInOutElastic,
+        duration: 5000,
+      });
+    }
+  
     function resultLayer() {
-        $('.resultLayer').css('display', 'block');
-    };
-
-    $('#closeLayer').click(function () {
-        $('.resultLayer').css('display', 'none');
-
-        $("#roulette-gift").rotate({
-            angle: 0,
-            duration: 0
-        });
+      $(".resultLayer").css("display", "block");
+    }
+  
+    $("#closeLayer").click(function () {
+      $(".resultLayer").css("display", "none");
+  
+      $("#roulette-gift").rotate({
+        angle: 0,
+        duration: 0,
+      });
     });
-});
+  
+    // 결과 확인 버튼 클릭 이벤트 처리
+    $("#resultOk").click(function (event) {
+      event.preventDefault(); // 기본 이벤트 제거 (폼 전송 방지)
+  
+      // 개인정보 수집 동의 여부 확인
+      var agreement = $("#resultInfo").prop("checked");
+  
+      // 개인정보 수집에 동의한 경우에만 알림창 띄우기
+      if (agreement) {
+        // 경품 발송을 위해 입력된정보 가져오기
+        var name = $("#resultName").val();
+        var tel = $("#resultTel").val();
+        // 입력된 정보 확인
+        var confirmationMessage = "이름: " + name + "\n연락처: " + tel + "\n위 정보로 경품 발송을 진행하시겠습니까?";
+  
+        // 경품 발송 정보 확인을 위한 알림창 표시
+        var confirmation = confirm(confirmationMessage);
+  
+        // 사용자가 확인을 눌렀을 때만 경품 발송 진행
+        if (confirmation) {
+          // 여기에 경품 발송 등의 작업을 수행하는 코드를 추가할 수 있습니다.
+          alert("이벤트 참여 완료! 메인페이지로 이동합니다.");
+  
+          // 모달 닫기
+          modalClose();
+        }
+      } else {
+        alert("개인정보 수집에 동의해주세요.");
+      }
+    });
+  });
