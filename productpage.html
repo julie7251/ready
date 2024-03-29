@@ -156,7 +156,7 @@
                   <a href="#"><i class="fa-regular fa-user"></i></a>
                 </li>
                 <li class="login-ul">
-                  <a href="#"><span>Log In</span></a>
+                  <a href="login.html"><span>Log In</span></a>
                   <ul class="signup">
                     <li>
                       <a href="join.html"><span>Sign Up</span></a>
@@ -220,7 +220,6 @@
               $(".subimg li img").on("mouseover", function () {
                 // 서브 이미지의 src를 가져옴
                 var imgSrc = $(this).attr("src");
-
                 // 메인 이미지의 src를 변경함
                 $(".mainimg").attr("src", imgSrc);
               });
@@ -242,7 +241,7 @@
               <li><span>배송비</span></li>
               <li><span>무료</span></li>
               <li><span>레디큐 츄</span></li>
-              <li><input type="number" id="quantity" value="1" min="1" onchange="calculateTotal()" /><span class="gae">개</span></li>
+              <li><input type="number" id="quantity" value="0" min="0" onchange="calculateTotal()" /><span class="gae">개</span></li>
               <li>
                 <span>TOTAL: <span id="totalPrice">0</span>원</span>
                 <script>
