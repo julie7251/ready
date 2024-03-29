@@ -485,17 +485,17 @@
     right: 10px;
     top: 10px;
   }
-  .roulette-wrapper #roulette-gift{
+  .roulette-wrapper #roulette-gift {
     width: 240px;
     top: 33%;
     left: 16%;
   }
-  .roulette-wrapper #roulette-niddle{
+  .roulette-wrapper #roulette-niddle {
     width: 6%;
     top: 31%;
     left: 48%;
   }
-  .roulette-wrapper #roulette-startBtn{
+  .roulette-wrapper #roulette-startBtn {
     width: 60px;
     top: 50%;
     left: 42%;
@@ -518,7 +518,8 @@
     font-size: 9px;
   }
   .result form {
-    width: 90%;}
+    width: 90%;
+  }
   #modal > div > div.roulette-wrapper > div > div > form > fieldset > ul > li.checkbox {
     margin-top: 40px;
     margin-bottom: 15px;
@@ -555,37 +556,62 @@
     background: url("../images/target-3-mo2.png") no-repeat center center;
     background-size: cover;
   }
-  .right p {
-    font-size: 12px;
+  /* 섹션 4 */
+  .product-1 .right h2 {
+    font-size: 22px;
+    width: 105px;
+    height: 30px;
+    line-height: 35px;
+    margin-bottom: 15px;
   }
-  .product-title,
-  .ad_txt {
-    width: 280px;
-  }
-  .product-4 .p2 br {
-    display: none;
-  }
-  .swiper-button-prev:after,
-  .swiper-button-next:after {
-    width: 35px;
-    height: 35px;
-    font-weight: bold;
-    color: #E94A7D;
-    display: block;
+  .product-2 .right h2,
+  .product-4 .right h2 {
+    font-size: 22px;
+    width: 200px;
+    height: 30px;
+    line-height: 35px;
+    margin-bottom: 15px;
   }
 }
+.product-3 .right h2,
+.product-5 .right h2 {
+  font-size: 22px;
+  width: 220px;
+  height: 30px;
+  line-height: 35px;
+  margin-bottom: 15px;
+}
+.right p {
+  font-size: 12px;
+}
+.product-title,
+.ad_txt {
+  width: 280px;
+}
+.product-4 .p2 br {
+  display: none;
+}
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  width: 35px;
+  height: 35px;
+  font-weight: bold;
+  color: #e94a7d;
+  display: block;
+}
+
 @media screen and (max-width: 374px) {
   /* 모달창 */
   .modal {
     width: 300px;
     height: 449px;
   }
-  .roulette-wrapper #roulette-gift{
+  .roulette-wrapper #roulette-gift {
     width: 207px;
     top: 33%;
     left: 16%;
   }
-  .roulette-wrapper #roulette-startBtn{
+  .roulette-wrapper #roulette-startBtn {
     width: 55px;
     top: 50%;
     left: 41.5%;
@@ -598,7 +624,7 @@
     left: 3.2%;
     border: 8px solid #ffae00;
   }
-  .resultImg{
+  .resultImg {
     width: 180px;
   }
   #modal > div > div.roulette-wrapper > div > div > form > fieldset > ul > li.checkbox {
@@ -609,12 +635,13 @@
     height: 180px;
   }
   #modal > div > div > div > div > form > fieldset > ul > li {
-   height: 25px;
+    height: 25px;
   }
   #modal > div > div > div > div > form > fieldset > ul > li > label {
     font-size: 10px;
   }
-  #resultTel , #resultName{
+  #resultTel,
+  #resultName {
     height: 20px;
   }
   #modal > div > div.roulette-wrapper > div > div > form > fieldset > ul > button {

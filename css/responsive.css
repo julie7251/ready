@@ -151,6 +151,50 @@
     display: none;
   }
 }
+@media screen and (max-width: 390px) {
+  .ad-txt{
+
+    /* margin-top: 30%; */
+  }
+  .sw-inner {
+    width: 90vw;
+    /* margin-top: 30%; */
+  }
+  /* 이미지 스와이퍼 전체 */
+  .sw-inner .mySwiper {
+    /* width: 80%; */
+    /* height: 40%; */
+    /* background-color: red; */
+  }
+  .mySwiper2 .swiper-slide {
+    /* background-color: blue; */
+    /* height: 55vh; */
+  }
+  .mySwiper2 .swiper-slide iframe {
+    width: 100%;
+    height: 60vw;
+    /* background-color: #fff; */
+  }
+  /* 영상 부모화면 */
+  .sw-inner .mySwiper2 {
+    width: 90%;
+    height: 60%; /* 영상.이미지 간격 */
+  }
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none;
+  }
+  #pageMenu a .home,
+  #pageMenu a .readyq,
+  #pageMenu a .reco,
+  #pageMenu a .product,
+  #pageMenu a .video {
+    display: none;
+  }
+  #pageMenu li.active a i {
+    display: none;
+  }
+}
 @media screen and (max-width: 380px) {
   #pageMenu {
     gap: 3.5%;
@@ -189,6 +233,9 @@
     width: 320px;
     margin-top: 60%;
   }
+  /* .sw-inner .ad-txt{
+  width: 330px
+  } */
   .mySwiper2 .swiper-slide {
     /* background-color: blue; */
     height: 30vh;
@@ -198,14 +245,5 @@
     height: 50%; /* 영상.이미지 간격 */
   }
 
-  #pageMenu a .home,
-  #pageMenu a .readyq,
-  #pageMenu a .reco,
-  #pageMenu a .product,
-  #pageMenu a .video {
-    display: none;
-  }
-  #pageMenu li.active a i {
-    display: none;
-  }
+
 }

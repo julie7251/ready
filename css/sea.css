@@ -1633,31 +1633,31 @@
   .section2-jangmv {
     position: absolute;
     top: 33%;
-    left: -10%;
+    left: -10.5%;
     width: 100%;
   }
   .section2-jangmv img {
     position: relative;
-    width: 130%;
-    height: 370px;
+    width: 127%;
+    height: 262px;
   }
   .section2-vd {
     position: absolute;
-    top: 1%;
-    left: -10%;
-    width: 100%;
+    top: 2%;
+    left: 10%;
+    width: 70%;
     height: 100%;
   }
   .section2-vd video {
     display: block;
     position: absolute;
     top: 14%;
-    left: -2%;
+    left: -1%;
     width: 145%;
   }
   .more-btn {
     position: relative;
-    top: 80%;
+    top: 70%;
     left: 21%;
     width: 100%;
   }

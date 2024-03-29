@@ -133,8 +133,8 @@
               <li>
                 <a href="product.html"><span>제품소개</span></a>
               </li>
-              <li>
-                <a href="#"><span>이벤트</span></a>
+              <li id="event">
+                <a href="index.html"><span>이벤트</span></a>
               </li>
               <li>
                 <a href="#"><span>구매처</span></a>
@@ -150,7 +150,6 @@
               <i class="fa-solid fa-bars"></i>
               <button class="nav-close">닫기</button>
             </div>
-
             <div class="hd-login">
               <ul>
                 <li>
@@ -160,7 +159,7 @@
                   <a href="#"><span>Log In</span></a>
                   <ul class="signup">
                     <li>
-                      <a href="#"><span>Sign Up</span></a>
+                      <a href="join.html"><span>Sign Up</span></a>
                     </li>
                   </ul>
                 </li>
@@ -191,6 +190,17 @@
           </div>
         </div>
       </header>
+      <script>
+        $(".singup-i").click(function () {
+          $(".signup li").fadeToggle(600);
+        });
+        $(".language-i").click(function () {
+          $(".language li").fadeToggle(600);
+        });
+        $(".hamberger").click(function () {
+          $(".mb-nav").slideToggle(); // "mb-nav" 요소 슬라이드 토글
+        });
+      </script>
       <div class="section1 inner">
         <div class="section1-product">
           <div class="left-side">
@@ -249,7 +259,7 @@
                 </script>
               </li>
               <li>
-                <button><a href="#">구매하기</a></button>
+                <button><a href="login.html">구매하기</a></button>
               </li>
             </ul>
           </div>
