@@ -49,6 +49,15 @@ body {
   width: 100%;
   height: 100%;
 }
+.modal-bg2{
+  display: none;
+  z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
 
 .close-btn {
   width: 50px;
@@ -95,7 +104,6 @@ body {
 .resultLayer {
   width: 100%;
   max-width: 450px;
-  min-width: 310px;
   /* height: 80%; */
   height: 580px;
   display: none;
@@ -190,7 +198,7 @@ body {
   line-height: 1.3;
 }
 .result form > fieldset > p > span {
-  color: #e94a7c;
+  color: #E94A7D;
   font-size: 11px;
   font-weight: 600;
 }
@@ -796,7 +804,7 @@ body {
   margin-bottom: 15px;
   display: flex;
   gap: 2%;
-  color: #e94a7c;
+  color: #E94A7D;
   font-family: "Gothic A1", sans-serif;
   font-weight: 600;
   font-size: 14px;
@@ -826,7 +834,7 @@ body {
   margin-bottom: 20px;
 }
 .product-1 .right h2 {
-  background-color: #e94a7c;
+  background-color: #E94A7D;
   width: 190px;
   /* width:40%; */
   height: 50px;
@@ -834,7 +842,7 @@ body {
 }
 .product-2 .right h2,
 .product-4 .right h2 {
-  background-color: #e94a7c;
+  background-color: #E94A7D;
   /* width: 354px; */
   width: 360px;
   height: 50px;
@@ -842,7 +850,7 @@ body {
 }
 .product-3 .right h2,
 .product-5 .right h2 {
-  background-color: #e94a7c;
+  background-color: #E94A7D;
   /* width: 354px; */
   width: 400px;
   height: 50px;
@@ -852,14 +860,14 @@ body {
   position: absolute;
   top: 63%;
   right: 10%;
-  color: #e94a7c;
+  color: #E94A7D;
   font-weight: bold;
 }
 .product .swiper-button-prev {
   position: absolute;
   top: 63%;
   left: 10%;
-  color: #e94a7c;
+  color: #E94A7D;
   font-weight: bold;
 }
 /* ==================================승아 */
@@ -880,7 +888,7 @@ body {
   width: 35px;
   height: 35px;
   font-weight: bold;
-  color: #e94a7c;
+  color: #E94A7D;
 }
 .sw-inner {
   padding-top: 5%;
@@ -928,7 +936,7 @@ body {
   background-color: rgba(0, 0, 0, 0.3);
 }
 .sw-inner .mySwiper .swiper-slide-thumb-active {
-  border: 5px solid #e94a7c;
+  border: 5px solid #E94A7D;
   opacity: 1;
 }
 /* =====================================푸터 */

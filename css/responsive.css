@@ -21,9 +21,9 @@
     margin-top: 20%;
   }
   /* 이미지 스와이퍼 전체 */
-.sw-inner .mySwiper {
-  width: 80%;
-}
+  .sw-inner .mySwiper {
+    width: 80%;
+  }
   .mySwiper2 .swiper-slide {
     /* background-color: blue; */
   }
@@ -34,7 +34,7 @@
   /* 영상 부모화면 */
   .sw-inner .mySwiper2 {
     width: 90%;
-    height: 70%;/* 영상.이미지 간격 */
+    height: 70%; /* 영상.이미지 간격 */
   }
 }
 
@@ -102,8 +102,9 @@
   }
   footer {
     font-size: 10px;
-  }}
-  
+  }
+}
+
 @media screen and (max-width: 412px) {
   .section1-bgbg {
     position: relative;
@@ -195,5 +196,16 @@
   /* 영상 부모화면 */
   .sw-inner .mySwiper2 {
     height: 50%; /* 영상.이미지 간격 */
+  }
+
+  #pageMenu a .home,
+  #pageMenu a .readyq,
+  #pageMenu a .reco,
+  #pageMenu a .product,
+  #pageMenu a .video {
+    display: none;
+  }
+  #pageMenu li.active a i {
+    display: none;
   }
 }

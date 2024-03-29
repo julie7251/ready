@@ -152,7 +152,7 @@ em {
 #pageMenu li.active a span {
   font-size: 14px;
   padding: 8px;
-  background-color: rgb(228, 28, 211);
+  background-color: #e94a7c;
   white-space: nowrap;
   visibility: visible;
   color: #fff;
@@ -161,7 +161,7 @@ em {
 #pageMenu li.active a i {
   width: 12px;
   height: 12px;
-  background-color:  rgb(228, 28, 211);
+  background-color:  #e94a7c;
   border: none;
   opacity: 1;
 }
