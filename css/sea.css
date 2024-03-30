@@ -1,0 +1,1671 @@
+@charset "utf-8";
+@media screen and (max-width: 1819px) {
+  .section2-tit {
+    position: absolute;
+    top: 25%;
+    left: 11.5%;
+    width: 100%;
+  }
+  .section2-tit img {
+    width: 23%;
+    animation: fadeInUp 1.5s ease-out forwards;
+  }
+  .more-btn {
+    position: relative;
+    top: 67%;
+    left: 16.3%;
+  }
+  .more-btn span {
+    padding: 1.2% 4%;
+    color: #fff;
+    font-size: 1vw;
+    background-color: #e94a7d;
+    border-radius: 7px;
+  }
+  .section2-chu {
+    position: absolute;
+    bottom: -1%;
+    left: 5%;
+    width: 100%;
+  }
+  .section2-chu .chu {
+    width: 35%;
+  }
+  .section2-jangmv img {
+    position: relative;
+    top: 0;
+    right: 3%;
+    width: 60%;
+  }
+  .section2-vd {
+    position: absolute;
+    top: 0%;
+    left: 3%;
+    width: 47%;
+    height: 100%;
+  }
+  .section2-vd video {
+    display: block;
+    position: absolute;
+    top: 14%;
+    left: 1%;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1761px) {
+  .section2-tit {
+    position: absolute;
+    top: 25%;
+    left: 11.5%;
+    width: 100%;
+  }
+  .section2-tit img {
+    width: 23%;
+    animation: fadeInUp 1.5s ease-out forwards;
+  }
+  .more-btn {
+    position: relative;
+    top: 67%;
+    left: 16.3%;
+  }
+  .more-btn span {
+    padding: 1.2% 4%;
+    color: #fff;
+    font-size: 1vw;
+    background-color: #e94a7d;
+    border-radius: 7px;
+  }
+  .section2-chu {
+    position: absolute;
+    bottom: -1%;
+    left: 5%;
+    width: 100%;
+  }
+  .section2-chu .chu {
+    width: 35%;
+  }
+}
+@media screen and (max-width: 1734px) {
+  .section2-tit {
+    position: absolute;
+    top: 25%;
+    left: 11.5%;
+    width: 100%;
+  }
+  .section2-tit img {
+    width: 23%;
+    animation: fadeInUp 1.5s ease-out forwards;
+  }
+  .more-btn {
+    position: relative;
+    top: 67%;
+    left: 16.3%;
+  }
+  .more-btn span {
+    padding: 1.2% 4%;
+    color: #fff;
+    font-size: 1vw;
+    background-color: #e94a7d;
+    border-radius: 7px;
+  }
+  .section2-chu {
+    position: absolute;
+    bottom: -1%;
+    left: 5%;
+    width: 100%;
+  }
+  .section2-chu .chu {
+    width: 35%;
+  }
+}
+@media screen and (max-width: 1650px) {
+  .section2-tit {
+    position: absolute;
+    top: 25%;
+    left: 11.5%;
+    width: 100%;
+  }
+  .section2-tit img {
+    width: 23%;
+    animation: fadeInUp 1.5s ease-out forwards;
+  }
+  .more-btn {
+    position: relative;
+    top: 67%;
+    left: 16.3%;
+  }
+  .more-btn span {
+    padding: 1.2% 4%;
+    color: #fff;
+    font-size: 1vw;
+    background-color: #e94a7d;
+    border-radius: 7px;
+  }
+  .section2-chu {
+    position: absolute;
+    bottom: -1%;
+    left: 5%;
+    width: 100%;
+  }
+  .section2-chu .chu {
+    width: 35%;
+  }
+}
+@media screen and (max-width: 1598px) {
+  .section1-bgbg {
+    position: relative;
+    display: inline-block;
+    left: 20%;
+    bottom: -52%;
+    transform: translateY(-50%);
+    width: 100%;
+    /* height: 100%; */
+  }
+  .section1-bgbg img {
+    width: 50%;
+    height: 100%;
+  }
+  .section1-bg2 {
+    position: absolute;
+    bottom: 43%;
+    left: 26%;
+    width: 43%;
+  }
+  .section1-bg2 img {
+    width: 90%;
+    display: block;
+    animation: fadeInUp 1.5s ease-out forwards;
+  }
+  .jangseonggue {
+    position: absolute;
+    bottom: 20%;
+    left: 30%;
+    width: 100%;
+  }
+  .jangseonggue img {
+    width: 30%;
+    height: 100%;
+    animation: tilt 0.5s infinite alternate;
+  }
+  .scroll {
+    position: absolute;
+    bottom: 3%;
+    left: 44.5%;
+    transform: translateX(-44.5%);
+    width: 5%;
+    /* background-color: aqua; */
+  }
+  .scroll > img {
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+  }
+  .scroll-btn {
+    position: absolute;
+    display: block;
+    bottom: 77%;
+    left: 42%;
+    width: 12%;
+    height: 12%;
+    border-radius: 50%;
+    background-color: #fff;
+    animation: disappear 3s infinite;
+  }
+}
+
+@media screen and (max-width: 1558px) {
+  .hd-nav {
+    font-size: 13px;
+  }
+  .hd-login ul li {
+    font-size: 13px;
+    gap: 2%;
+  }
+  .hd-language ul li {
+    font-size: 13px;
+    gap: 7%;
+  }
+  .fa-solid {
+    font-size: 13px;
+    display: block;
+  }
+}
+@media screen and (max-width: 1491px) {
+  .section1-bgbg {
+    position: relative;
+    display: inline-block;
+    left: 18%;
+    bottom: -49%;
+    transform: translateY(-50%);
+    width: 100%;
+    /* height: 100%; */
+  }
+  .section1-bgbg img {
+    width: 55%;
+    height: 100%;
+  }
+  .section1-bg2 {
+    position: absolute;
+    bottom: 40%;
+    left: 24%;
+    width: 48%;
+  }
+  .section1-bg2 img {
+    width: 90%;
+    display: block;
+    animation: fadeInUp 1.5s ease-out forwards;
+  }
+  .jangseonggue {
+    position: absolute;
+    bottom: 24%;
+    left: 31%;
+    width: 100%;
+  }
+  .jangseonggue img {
+    width: 28%;
+    height: 100%;
+    animation: tilt 0.5s infinite alternate;
+  }
+}
+@media screen and (max-width: 1423px) {
+  .section2-tit {
+    position: absolute;
+    top: 25%;
+    left: 8%;
+    width: 100%;
+  }
+  .section2-tit img {
+    width: 23%;
+    animation: fadeInUp 1.5s ease-out forwards;
+  }
+  .more-btn {
+    position: relative;
+    top: 64%;
+    left: 11%;
+  }
+  .more-btn span {
+    padding: 1.2% 5%;
+    color: #fff;
+    font-size: 1.3vw;
+    background-color: #e94a7d;
+    border-radius: 7px;
+  }
+  .section2-chu {
+    position: absolute;
+    bottom: -1%;
+    left: 8%;
+    width: 100%;
+  }
+  .section2-chu .chu {
+    width: 40%;
+  }
+  .section2-jangmv img {
+    position: relative;
+    width: 60%;
+  }
+  .section2-vd {
+    position: absolute;
+    top: 2%;
+    left: 4%;
+    width: 46%;
+    height: 100%;
+  }
+  .section2-vd video {
+    display: block;
+    position: absolute;
+    top: 14%;
+    left: 1%;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1245px) {
+  .section1-bgbg {
+    position: relative;
+    display: inline-block;
+    left: 10%;
+    bottom: -49%;
+    transform: translateY(-50%);
+    width: 100%;
+    /* height: 100%; */
+  }
+  .section1-bgbg img {
+    width: 70%;
+    height: 100%;
+  }
+  .section1-bg2 {
+    position: absolute;
+    bottom: 43%;
+    left: 18%;
+    width: 60%;
+  }
+  .section1-bg2 img {
+    width: 90%;
+    display: block;
+    animation: fadeInUp 1.5s ease-out forwards;
+  }
+  .jangseonggue {
+    position: absolute;
+    bottom: 27%;
+    left: 28%;
+    width: 100%;
+  }
+  .jangseonggue img {
+    width: 35%;
+    height: 100%;
+    animation: tilt 0.5s infinite alternate;
+  }
+  .section1-bgbg .starbg {
+    display: none;
+  }
+  .ready-Q .qua {
+    display: none;
+  }
+  .section1-bgbg .yummy {
+    display: none;
+  }
+  .section2-tit {
+    position: absolute;
+    top: 25%;
+    left: 8%;
+    width: 100%;
+  }
+  .section2-tit img {
+    width: 23%;
+    animation: fadeInUp 1.5s ease-out forwards;
+  }
+  .more-btn {
+    position: relative;
+    top: 64%;
+    left: 11%;
+  }
+  .more-btn span {
+    padding: 1.2% 5%;
+    color: #fff;
+    font-size: 1.3vw;
+    background-color: #e94a7d;
+    border-radius: 7px;
+  }
+  .section2-chu {
+    position: absolute;
+    bottom: -1%;
+    left: 8%;
+    width: 100%;
+  }
+  .section2-chu .chu {
+    width: 40%;
+  }
+  .section2-jangmv {
+    position: absolute;
+    top: 22%;
+    right: -36%;
+    width: 100%;
+  }
+  .section2-jangmv img {
+    position: relative;
+    width: 62%;
+  }
+  .section2-vd {
+    position: absolute;
+    top: 2%;
+    left: 4%;
+    width: 47%;
+    height: 100%;
+  }
+  .section2-vd video {
+    display: block;
+    position: absolute;
+    top: 14%;
+    left: 1%;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1091px) {
+  .section1-bgbg {
+    position: relative;
+    display: inline-block;
+    left: 10%;
+    bottom: -49%;
+    transform: translateY(-50%);
+    width: 100%;
+    /* height: 100%; */
+  }
+  .section1-bgbg img {
+    width: 70%;
+    height: 100%;
+  }
+  .section1-bg2 {
+    position: absolute;
+    bottom: 45%;
+    left: 18%;
+    width: 60%;
+  }
+  .section1-bg2 img {
+    width: 90%;
+    display: block;
+    animation: fadeInUp 1.5s ease-out forwards;
+  }
+  .jangseonggue {
+    position: absolute;
+    bottom: 30%;
+    left: 28%;
+    width: 100%;
+  }
+  .jangseonggue img {
+    width: 35%;
+    height: 100%;
+    animation: tilt 0.5s infinite alternate;
+  }
+  .section1-bgbg .starbg {
+    display: none;
+  }
+  .ready-Q .qua {
+    display: none;
+  }
+  .section1-bgbg .yummy {
+    display: none;
+  }
+  .more-btn {
+    position: relative;
+    top: 53%;
+    left: 7%;
+  }
+  .more-btn span {
+    padding: 2% 8%;
+    color: #fff;
+    font-size: 1.8vw;
+    background-color: #e94a7d;
+    border-radius: 7px;
+  }
+  .section2-tit {
+    position: absolute;
+    top: 25%;
+    left: 8%;
+    width: 100%;
+  }
+  .section2-tit img {
+    width: 23%;
+    animation: fadeInUp 1.5s ease-out forwards;
+  }
+  .more-btn {
+    position: relative;
+    top: 58%;
+    left: 11%;
+  }
+  .more-btn span {
+    padding: 1.6% 5%;
+    color: #fff;
+    font-size: 1.5vw;
+    background-color: #e94a7d;
+    border-radius: 7px;
+  }
+  .section2-chu {
+    position: absolute;
+    bottom: -1%;
+    left: 8%;
+    width: 100%;
+  }
+  .section2-chu .chu {
+    width: 50%;
+  }
+  .section2-jangmv {
+    position: absolute;
+    top: 22%;
+    right: -36%;
+    width: 100%;
+  }
+  .section2-jangmv img {
+    position: relative;
+    width: 62%;
+  }
+  .section2-vd {
+    position: absolute;
+    top: 2%;
+    left: 4%;
+    width: 47%;
+    height: 100%;
+  }
+  .section2-vd video {
+    display: block;
+    position: absolute;
+    top: 14%;
+    left: 1%;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 963px) {
+  .section1-bgbg {
+    position: relative;
+    display: inline-block;
+    left: 10%;
+    bottom: -49%;
+    transform: translateY(-50%);
+    width: 100%;
+    /* height: 100%; */
+  }
+  .section1-bgbg img {
+    width: 70%;
+    height: 100%;
+  }
+  .section1-bg2 {
+    position: absolute;
+    bottom: 47%;
+    left: 18%;
+    width: 60%;
+  }
+  .section1-bg2 img {
+    width: 90%;
+    display: block;
+    animation: fadeInUp 1.5s ease-out forwards;
+  }
+  .jangseonggue {
+    position: absolute;
+    bottom: 30%;
+    left: 28%;
+    width: 100%;
+  }
+  .jangseonggue img {
+    width: 35%;
+    height: 100%;
+    animation: tilt 0.5s infinite alternate;
+  }
+  .section1-bgbg .starbg {
+    display: none;
+  }
+  .ready-Q .qua {
+    display: none;
+  }
+  .section1-bgbg .yummy {
+    display: none;
+  }
+}
+@media screen and (max-width: 896px) {
+  .section2-tit {
+    position: absolute;
+    top: 37%;
+    left: 4%;
+    width: 100%;
+  }
+  .section2-tit img {
+    width: 21%;
+    animation: fadeInUp 1.5s ease-out forwards;
+  }
+  .more-btn {
+    position: relative;
+    top: 63%;
+    left: 5%;
+  }
+  .more-btn span {
+    padding: 1.6% 5%;
+    color: #fff;
+    font-size: 1.8vw;
+    background-color: #e94a7d;
+    border-radius: 7px;
+  }
+  .section2-chu {
+    position: absolute;
+    bottom: -1%;
+    left: 8%;
+    width: 100%;
+  }
+  .section2-chu .chu {
+    width: 55%;
+  }
+  .section2-jangmv {
+    position: absolute;
+    top: 28%;
+    right: -30%;
+    width: 100%;
+  }
+  .section2-jangmv img {
+    position: relative;
+    width: 70%;
+  }
+  .section2-vd {
+    position: absolute;
+    top: 2%;
+    left: 4%;
+    width: 54%;
+    height: 100%;
+  }
+  .section2-vd video {
+    display: block;
+    position: absolute;
+    top: 14%;
+    left: 1%;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 869px) {
+  .section1-bgbg .starbg {
+    display: none;
+  }
+  .ready-Q .qua {
+    display: none;
+  }
+  .section1-bgbg .yummy {
+    display: none;
+  }
+  .scroll {
+    position: absolute;
+    bottom: 0%;
+    left: 44%;
+    transform: translateX(-44%);
+    width: 6%;
+    /* background-color: aqua; */
+  }
+  .scroll > img {
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+  }
+  .scroll-btn {
+    position: absolute;
+    display: block;
+    bottom: 77%;
+    left: 42%;
+    width: 12%;
+    height: 12%;
+    border-radius: 50%;
+    background-color: #fff;
+    animation: disappear 3s infinite;
+  }
+}
+@media screen and (max-width: 855px) {
+  .section1-bgbg .starbg {
+    display: none;
+  }
+  .ready-Q .qua {
+    display: none;
+  }
+  .section1-bgbg .yummy {
+    display: none;
+  }
+}
+@media screen and (max-width: 776px) {
+  .section1-bgbg {
+    position: relative;
+    display: inline-block;
+    left: 10%;
+    bottom: -49%;
+    transform: translateY(-50%);
+    width: 100%;
+    /* height: 100%; */
+  }
+  .section1-bgbg img {
+    width: 70%;
+    height: 100%;
+  }
+  .section1-bg2 {
+    position: absolute;
+    bottom: 47%;
+    left: 18%;
+    width: 60%;
+  }
+  .section1-bg2 img {
+    width: 90%;
+    display: block;
+    animation: fadeInUp 1.5s ease-out forwards;
+  }
+  .jangseonggue {
+    position: absolute;
+    bottom: 36%;
+    left: 28%;
+    width: 100%;
+  }
+  .jangseonggue img {
+    width: 35%;
+    height: 100%;
+    animation: tilt 0.5s infinite alternate;
+  }
+  .section1-bgbg .starbg {
+    display: none;
+  }
+  .ready-Q .qua {
+    display: none;
+  }
+  .section1-bgbg .yummy {
+    display: none;
+  }
+}
+@media screen and (max-width: 772px) {
+  .section2-tit {
+    position: absolute;
+    top: 37%;
+    left: 1%;
+    width: 100%;
+  }
+  .section2-tit img {
+    width: 25%;
+    animation: fadeInUp 1.5s ease-out forwards;
+  }
+  .more-btn {
+    position: relative;
+    top: 63%;
+    left: 4%;
+  }
+  .more-btn span {
+    padding: 1.6% 5%;
+    color: #fff;
+    font-size: 1.8vw;
+    background-color: #e94a7d;
+    border-radius: 7px;
+  }
+  .section2-chu {
+    position: absolute;
+    bottom: -1%;
+    left: 8%;
+    width: 100%;
+  }
+  .section2-chu .chu {
+    width: 55%;
+  }
+  .section2-jangmv {
+    position: absolute;
+    top: 28%;
+    right: -30%;
+    width: 100%;
+  }
+  .section2-jangmv img {
+    position: relative;
+    width: 70%;
+  }
+  .section2-vd {
+    position: absolute;
+    top: 2%;
+    left: 4%;
+    width: 54%;
+    height: 100%;
+  }
+  .section2-vd video {
+    display: block;
+    position: absolute;
+    top: 14%;
+    left: 1%;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .hd-left {
+    width: 13%;
+  }
+  .hd-left a {
+    width: 100%;
+  }
+  .hd-left a img {
+    width: 100%;
+    display: block;
+    margin-top: 2px;
+  }
+  .hd-right-right {
+    justify-content: flex-end;
+  }
+  .hamberger {
+    position: relative;
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #c5144c;
+  }
+  .hamberger i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+    color: #fff;
+  }
+  .hamberger-bf {
+    position: absolute;
+    content: "";
+    top: -40%;
+    right: -64%;
+    font-size: 50px;
+    color: #ff9a3b;
+  }
+  .hd-language,
+  .hd-login {
+    display: none;
+  }
+  /* .hd-right-right {
+    width: 20%;
+  }
+  .hd-nav {
+    font-size: 13px;
+    gap: 3%;
+  } */
+  .section1-bgbg {
+    position: relative;
+    display: inline-block;
+    left: 0%;
+    bottom: -40%;
+    transform: translateY(-50%);
+    width: 100%;
+    /* height: 100%; */
+  }
+  .section1-bgbg img {
+    width: 90%;
+    height: 100%;
+  }
+  .section1-bg2 {
+    position: absolute;
+    bottom: 55%;
+    left: 11%;
+    width: 76%;
+  }
+  .section1-bg2 img {
+    width: 90%;
+    display: block;
+    animation: fadeInUp 1.5s ease-out forwards;
+  }
+  .jangseonggue {
+    position: absolute;
+    bottom: 37%;
+    left: 23%;
+    width: 100%;
+  }
+  .jangseonggue img {
+    width: 45%;
+    height: 100%;
+    animation: tilt 0.5s infinite alternate;
+  }
+  .section1-bgbg .starbg {
+    display: none;
+  }
+  .ready-Q .qua {
+    display: none;
+  }
+  .section1-bgbg .yummy {
+    display: none;
+  }
+  .section2-bg {
+    position: relative;
+    /* bottom: -1%; */
+    width: 100%;
+    height: 100vh;
+  }
+  .section2-tit {
+    position: absolute;
+    top: 11%;
+    left: 37%;
+    width: 40%;
+  }
+  .section2-tit img {
+    width: 68%;
+    animation: fadeInUp 1.5s ease-out forwards;
+  }
+  .more-btn {
+    position: relative;
+    top: 83%;
+    left: 37%;
+    width: 100%;
+  }
+  .more-btn span {
+    padding: 2% 8%;
+    color: #fff;
+    font-size: 2vw;
+    background-color: #e94a7d;
+    border-radius: 7px;
+  }
+  .section2-chu {
+    position: absolute;
+    bottom: -1%;
+    left: 5%;
+    width: 100%;
+  }
+  .section2-chu .chu {
+    width: 40%;
+  }
+  .section2-jangmv {
+    position: absolute;
+    top: 35%;
+    left: 13%;
+    width: 100%;
+  }
+  .section2-jangmv img {
+    position: relative;
+    width: 80%;
+  }
+  .section2-vd {
+    position: absolute;
+    top: 1%;
+    left: 5%;
+    width: 62%;
+    height: 100%;
+  }
+  .section2-vd video {
+    display: block;
+    position: absolute;
+    top: 14%;
+    left: 1%;
+    width: 100%;
+  }
+  .hd-nav {
+    display: none;
+  }
+  .mb-nav li {
+    line-height: 35px;
+  }
+  .mb-nav li a {
+    color: #fff;
+    font-weight: 600;
+  }
+  /* 메뉴 자바스크립트 기능 */
+  .nav-active {
+    /* right: calc(100% - 450px); */
+    display: block;
+  }
+}
+@media screen and (max-width: 730px) {
+  /* .hd-nav{
+    display:none;
+  } */
+  .hd-right-right {
+    width: 20%;
+  }
+  .section1-bgbg .starbg {
+    display: none;
+  }
+  .section1-bgbg .qua {
+    display: none;
+  }
+  .section1-bgbg .yummy {
+    display: none;
+  }
+  .scroll {
+    position: absolute;
+    bottom: 0%;
+    left: 44%;
+    transform: translateX(-44%);
+    width: 6%;
+    /* background-color: aqua; */
+  }
+  .scroll > img {
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+  }
+  .scroll-btn {
+    position: absolute;
+    display: block;
+    bottom: 77%;
+    left: 42%;
+    width: 12%;
+    height: 12%;
+    border-radius: 50%;
+    background-color: #fff;
+    animation: disappear 3s infinite;
+  }
+  .section2-tit {
+    position: absolute;
+    top: 11%;
+    left: 35%;
+    width: 40%;
+  }
+  .section2-tit img {
+    width: 76%;
+    animation: fadeInUp 1.5s ease-out forwards;
+  }
+  .more-btn {
+    position: relative;
+    top: 80%;
+    left: 37%;
+    width: 100%;
+  }
+  .more-btn span {
+    padding: 2% 8%;
+    color: #fff;
+    font-size: 2vw;
+    background-color: #e94a7d;
+    border-radius: 7px;
+  }
+  .section2-chu {
+    position: absolute;
+    bottom: -1%;
+    left: 5%;
+    width: 100%;
+  }
+  .section2-chu .chu {
+    width: 40%;
+  }
+  .section2-jangmv {
+    position: absolute;
+    top: 35%;
+    left: 13%;
+    width: 100%;
+  }
+  .section2-jangmv img {
+    position: relative;
+    width: 80%;
+  }
+  .section2-vd {
+    position: absolute;
+    top: 1%;
+    left: 5%;
+    width: 62%;
+    height: 100%;
+  }
+  .section2-vd video {
+    display: block;
+    position: absolute;
+    top: 14%;
+    left: 1%;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 688px) {
+  .scroll {
+    position: absolute;
+    bottom: 4%;
+    left: 44%;
+    transform: translateX(-44%);
+    width: 8%;
+    /* background-color: aqua; */
+  }
+  .scroll > img {
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+  }
+  .scroll-btn {
+    position: absolute;
+    display: block;
+    bottom: 77%;
+    left: 42%;
+    width: 12%;
+    height: 12%;
+    border-radius: 50%;
+    background-color: #fff;
+    animation: disappear 3s infinite;
+  }
+  .hd-nav {
+    display: none;
+  }
+}
+@media screen and (max-width: 638px) {
+  .section1-bgbg {
+    position: relative;
+    display: inline-block;
+    left: 0%;
+    bottom: -40%;
+    transform: translateY(-50%);
+    width: 100%;
+    /* height: 100%; */
+  }
+  .section1-bgbg img {
+    width: 90%;
+    height: 100%;
+  }
+  .section1-bg2 {
+    position: absolute;
+    bottom: 55%;
+    left: 11%;
+    width: 76%;
+  }
+  .section1-bg2 img {
+    width: 90%;
+    display: block;
+    animation: fadeInUp 1.5s ease-out forwards;
+  }
+  .jangseonggue {
+    position: absolute;
+    bottom: 40%;
+    left: 23%;
+    width: 100%;
+  }
+  .jangseonggue img {
+    width: 45%;
+    height: 100%;
+    animation: tilt 0.5s infinite alternate;
+  }
+  .section1-bgbg .starbg {
+    display: none;
+  }
+  .ready-Q .qua {
+    display: none;
+  }
+  .section1-bgbg .yummy {
+    display: none;
+  }
+}
+@media screen and (max-width: 565px) {
+  .section1-bgbg .starbg {
+    display: none;
+  }
+  .ready-Q .qua {
+    display: none;
+  }
+  .section1-bgbg .yummy {
+    display: none;
+  }
+
+  /* .hamberger i {
+    position: relative;
+    display: block;
+    bottom: 1.4px;
+    right: 60%;
+    font-size: 25px;
+    color: #fff;
+  }
+  .hamberger-bf {
+    position: absolute;
+    content: "";
+    top: -40%;
+    right: 0%;
+    font-size: 50px;
+    color: #ff9a3b;
+  } */
+  /* .hd-right-right{
+    position: relative;
+  } */
+
+  .scroll {
+    position: absolute;
+    bottom: 7%;
+    left: 44%;
+    transform: translateX(-44%);
+    width: 14%;
+    /* background-color: aqua; */
+  }
+  .scroll > img {
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+  }
+  .scroll-btn {
+    position: absolute;
+    display: block;
+    bottom: 77%;
+    left: 42%;
+    width: 12%;
+    height: 12%;
+    border-radius: 50%;
+    background-color: #fff;
+    animation: disappear 3s infinite;
+  }
+  .section2-tit {
+    position: absolute;
+    top: 11%;
+    left: 30%;
+    width: 47%;
+  }
+  .section2-tit img {
+    width: 80%;
+    animation: fadeInUp 1.5s ease-out forwards;
+  }
+  .more-btn {
+    position: relative;
+    top: 75%;
+    left: 28%;
+    width: 100%;
+  }
+  .more-btn span {
+    padding: 4% 14%;
+    color: #fff;
+    font-size: 3vw;
+    background-color: #e94a7d;
+    border-radius: 7px;
+  }
+  .section2-chu {
+    position: absolute;
+    bottom: -1%;
+    left: 5%;
+    width: 100%;
+  }
+  .section2-chu .chu {
+    width: 70%;
+  }
+  .section2-jangmv {
+    position: absolute;
+    top: 35%;
+    left: 13%;
+    width: 100%;
+  }
+  .section2-jangmv img {
+    position: relative;
+    width: 80%;
+  }
+  .section2-vd {
+    position: absolute;
+    top: 1%;
+    left: 5%;
+    width: 62%;
+    height: 100%;
+  }
+  .section2-vd video {
+    display: block;
+    position: absolute;
+    top: 14%;
+    left: 1%;
+    width: 100%;
+  }
+  .hd-left {
+    padding-left: 10px;
+    width: 20%;
+  }
+  .hd-left img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 530px) {
+  .section1-bgbg {
+    position: relative;
+    display: inline-block;
+    left: 0%;
+    bottom: -40%;
+    transform: translateY(-50%);
+    width: 100%;
+    /* height: 100%; */
+  }
+  .section1-bgbg img {
+    width: 90%;
+    height: 100%;
+  }
+  .section1-bg2 {
+    position: absolute;
+    bottom: 55%;
+    left: 11%;
+    width: 76%;
+  }
+  .section1-bg2 img {
+    width: 90%;
+    display: block;
+    animation: fadeInUp 1.5s ease-out forwards;
+  }
+  .jangseonggue {
+    position: absolute;
+    bottom: 44%;
+    left: 23%;
+    width: 100%;
+  }
+  .jangseonggue img {
+    width: 45%;
+    height: 100%;
+    animation: tilt 0.5s infinite alternate;
+  }
+  .section1-bgbg .starbg {
+    display: none;
+  }
+  .ready-Q .qua {
+    display: none;
+  }
+  .section1-bgbg .yummy {
+    display: none;
+  }
+}
+@media screen and (max-width: 453px) {
+  .section1-bgbg {
+    position: relative;
+    display: inline-block;
+    left: 0%;
+    bottom: -40%;
+    transform: translateY(-50%);
+    width: 100%;
+    /* height: 100%; */
+  }
+  .section1-bgbg img {
+    width: 90%;
+    height: 100%;
+  }
+  .section1-bg2 {
+    position: absolute;
+    bottom: 58%;
+    left: 12%;
+    width: 75%;
+  }
+  .section1-bg2 img {
+    width: 90%;
+    display: block;
+    animation: fadeInUp 1.5s ease-out forwards;
+  }
+  .jangseonggue {
+    position: absolute;
+    bottom: 47%;
+    left: 21%;
+    width: 100%;
+  }
+  .jangseonggue img {
+    width: 50%;
+    height: 100%;
+    animation: tilt 0.5s infinite alternate;
+  }
+  .section1-bgbg .starbg {
+    display: none;
+  }
+  .ready-Q .qua {
+    display: none;
+  }
+  .section1-bgbg .yummy {
+    display: none;
+  }
+  .section2-tit {
+    position: absolute;
+    top: 12%;
+    left: 29%;
+    width: 55%;
+  }
+  .section2-tit img {
+    width: 80%;
+    animation: fadeInUp 1.5s ease-out forwards;
+  }
+  .more-btn {
+    position: relative;
+    top: 70%;
+    left: 31%;
+    width: 100%;
+  }
+  .more-btn span {
+    padding: 3% 8%;
+    color: #fff;
+    font-size: 4vw;
+    background-color: #e94a7d;
+    border-radius: 7px;
+  }
+  .section2-chu {
+    position: absolute;
+    bottom: -1%;
+    left: 5%;
+    width: 100%;
+  }
+  .section2-chu .chu {
+    width: 80%;
+  }
+  .section2-jangmv {
+    position: absolute;
+    top: 35%;
+    left: 7%;
+    width: 100%;
+  }
+  .section2-jangmv img {
+    position: relative;
+    width: 90%;
+  }
+  .section2-vd {
+    position: absolute;
+    top: 2%;
+    left: 7%;
+    width: 69%;
+    height: 100%;
+  }
+  .section2-vd video {
+    display: block;
+    position: absolute;
+    top: 14%;
+    left: 1%;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 412px) {
+  .section1-bgbg {
+    position: relative;
+    display: inline-block;
+    left: 0%;
+    bottom: -40%;
+    transform: translateY(-50%);
+    width: 100%;
+    /* height: 100%; */
+  }
+  .section1-bgbg img {
+    width: 90%;
+    height: 100%;
+  }
+  .section1-bg2 {
+    position: absolute;
+    bottom: 58%;
+    left: 12%;
+    width: 75%;
+  }
+  .section1-bg2 img {
+    width: 90%;
+    display: block;
+    animation: fadeInUp 1.5s ease-out forwards;
+  }
+  .jangseonggue {
+    position: absolute;
+    bottom: 49%;
+    left: 23%;
+    width: 100%;
+  }
+  .jangseonggue img {
+    width: 45%;
+    height: 100%;
+    animation: tilt 0.5s infinite alternate;
+  }
+  .section1-bgbg .starbg {
+    display: none;
+  }
+  .ready-Q .qua {
+    display: none;
+  }
+  .section1-bgbg .yummy {
+    display: none;
+  }
+}
+@media screen and (max-width: 380px) {
+  .section1-bgbg {
+    position: relative;
+    display: inline-block;
+    left: 0%;
+    bottom: -40%;
+    transform: translateY(-50%);
+    width: 100%;
+    /* height: 100%; */
+  }
+  .section1-bgbg img {
+    width: 90%;
+    height: 100%;
+  }
+  .section1-bg2 {
+    position: absolute;
+    bottom: 58%;
+    left: 12%;
+    width: 75%;
+  }
+  .section1-bg2 img {
+    width: 90%;
+    display: block;
+    animation: fadeInUp 1.5s ease-out forwards;
+  }
+  .jangseonggue {
+    position: absolute;
+    bottom: 52%;
+    left: 23%;
+    width: 100%;
+  }
+  .jangseonggue img {
+    width: 45%;
+    height: 100%;
+    animation: tilt 0.5s infinite alternate;
+  }
+  .section1-bgbg .starbg {
+    display: none;
+  }
+  .ready-Q .qua {
+    display: none;
+  }
+  .section1-bgbg .yummy {
+    display: none;
+  }
+  .section2-tit {
+    position: absolute;
+    top: 12%;
+    left: 23%;
+    width: 80%;
+  }
+  .section2-tit img {
+    width: 68%;
+    animation: fadeInUp 2.5s ease-out forwards;
+  }
+  .more-btn {
+    position: relative;
+    top: 69%;
+    left: 21%;
+    width: 100%;
+  }
+  .more-btn span {
+    padding: 3% 17%;
+    color: #fff;
+    font-size: 5vw;
+    background-color: #e94a7d;
+    border-radius: 7px;
+  }
+  .section2-chu {
+    position: absolute;
+    bottom: -1%;
+    left: 5%;
+    width: 100%;
+  }
+  .section2-chu .chu {
+    width: 100%;
+  }
+  .section2-jangmv {
+    position: absolute;
+    top: 35%;
+    left: 2.9%;
+    width: 100%;
+  }
+  .section2-jangmv img {
+    position: relative;
+    width: 100%;
+  }
+  .section2-vd {
+    position: absolute;
+    top: 1%;
+    left: 7%;
+    width: 78%;
+    height: 100%;
+  }
+  .section2-vd video {
+    display: block;
+    position: absolute;
+    top: 14%;
+    left: 1%;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 320px) {
+  .hd-left {
+    padding-left: 10px;
+    width: 50%;
+  }
+  .hd-left img {
+    width: 100%;
+  }
+  .section1-bgbg > img {
+    display: none;
+  }
+  /* .section1-bgbg img {
+    width: 90%;
+    height: 100%;
+  } */
+  .section1-bg2 > img {
+    display: none;
+  }
+  /* .section1-bg2 img {
+    width: 90%;
+    display: block;
+    animation: fadeInUp 1.5s ease-out forwards;
+  } */
+  .section1-bgbg .starbg {
+    position: relative;
+    top: 79px;
+    left: -3%;
+    display: inline-block;
+    width: 101%;
+  }
+  .section1-bgbg .qua {
+    position: absolute;
+    top: 15%;
+    right: 2%;
+    display: block;
+    width: 120%;
+    height: 50%;
+  }
+  .section1-bgbg .yummy {
+    position: absolute;
+    bottom: 9%;
+    left: 7%;
+    width: 80%;
+    height: 20%;
+    display: block;
+  }
+  .jangseonggue {
+    position: absolute;
+    bottom: 40%;
+    left: 2%;
+    width: 100%;
+  }
+  .jangseonggue img {
+    width: 90%;
+    height: 100%;
+    animation: tilt 0.5s infinite alternate;
+  }
+  .scroll {
+    position: absolute;
+    bottom: 8%;
+    left: 45.5%;
+    transform: translateX(-44%);
+    width: 20%;
+    /* background-color: aqua; */
+  }
+  .scroll > img {
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+  }
+  .scroll-btn {
+    position: absolute;
+    display: block;
+    bottom: 77%;
+    left: 42%;
+    width: 12%;
+    height: 12%;
+    border-radius: 50%;
+    background-color: #fff;
+    animation: disappear 3s infinite;
+  }
+  .section2-jangmv {
+    position: absolute;
+    top: 33%;
+    left: -10.5%;
+    width: 100%;
+  }
+  .section2-jangmv img {
+    position: relative;
+    width: 127%;
+    height: 262px;
+  }
+  .section2-vd {
+    position: absolute;
+    top: 2%;
+    left: 10%;
+    width: 70%;
+    height: 100%;
+  }
+  .section2-vd video {
+    display: block;
+    position: absolute;
+    top: 14%;
+    left: -1%;
+    width: 145%;
+  }
+  .more-btn {
+    position: relative;
+    top: 70%;
+    left: 21%;
+    width: 100%;
+  }
+  .more-btn span {
+    padding: 3% 17%;
+    color: #fff;
+    font-size: 5vw;
+    background-color: #e94a7d;
+    border-radius: 7px;
+  }
+}
