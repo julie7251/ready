@@ -12,18 +12,220 @@
   text-decoration: none;
 }
 
-ul,
-li {
+ul {
   list-style: none;
+  color: #fff;
+
 }
 
+span{
+  color: #fff;
+}
 body {
   min-width: 320px;
-  background-color: rgba(255, 211, 0, 0.5); /* #ffd300 색상의 70% 불투명한 배경색 */
-  
+  background-color: #ffd300;
+  height: auto;
+}
+
+
+/* 헤더 */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #e94a7d;
+  z-index: 10000;
+    display: flex;
+  justify-content: space-around;
+  color: #fff;
+}
+.header .logo {
+  padding: 15px;
+  font-size: 40px;
+  /* color: #fff; */
+  text-align: center;
+}
+.hd-left {
+  width: 10%;
+}
+.hd-left img {
+  width: 100%;
+}
+.hd-right {
+  width: 80%;
+  /* background-color: aqua; */
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.hd-right-left {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+.hd-nav {
+  width: 100%;
+  /* background-color: beige; */
+  display: flex;
+  gap: 3%;
+  font-size: 0.9vw;
+  font-weight: 600;
+  color: #fff;
+  justify-content: flex-end;
+  min-width: 1000px;
+}
+.hd-right-right {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 4%;
+}
+.mb-nav {
+  position: fixed;
+  top: 81px;
+  right: 0%;
+  width: 320px;
+  height: 300px;
+  background-color: rgba(73, 56, 31, 0.84);
+  z-index: 999999;
+  padding: 30px;
+  /* transition: right 0.3s ease-in-out; 
+  overflow-y: auto; */
+  font-size: 18px;
+  gap: 3%;
+  display: none;
+  overflow: hidden;
+}
+.hamberger {
+  display: none;
+}
+.hd-login {
+  width: 50%;
+}
+.hd-login::after {
+  content: "";
+  top: 0;
+  right: 0;
+  width: 1px;
+  height: 3px;
+  background-color: #fff;
+}
+.hd-login ul {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 6%;
+}
+.hd-login ul li {
+  color: #fff;
+  font-size: 0.9vw;
+  font-weight: 600;
+}
+.signup {
+  position: relative;
+}
+.signup li {
+  display: none;
+  width: 90px;
+  position: absolute;
+  top: 4px;
+  left: 0px;
+  padding-top: 10px;
+}
+.signup li a {
+  display: block;
+  width: 100%;
+}
+.signup li a span {
+  display: block;
+  width: 100%;
+  /* background-color: aqua; */
+}
+.language {
+  position: relative;
+}
+.language li {
+  display: none;
+  width: 80px;
+  position: absolute;
+  top: 4px;
+  left: 0px;
+  padding-top: 10px;
+}
+.language li a {
+  display: block;
+  width: 100%;
+}
+.language li a span {
+  display: block;
+  width: 100%;
+  /* background-color: aqua; */
+}
+/* header-middle */
+.header-middle {
+  position: relative;
+  display: block;
+  background-color: #fff;
+}
+/* .hd-login>ul>li>.login-ul{
+  /* display:none; }*/
+.hd-nav li a span {
+  position: relative;
+}
+.hd-nav li a span::after {
+  content: "";
+  position: absolute;
+  bottom: -12px;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  opacity: 0;
+  background-color: #fff;
+  transition: all 0.5s;
+}
+.hd-nav li a:hover span::after {
+  width: 100%;
+  opacity: 1;
+}
+.fa-regular {
+  font-size: 1vw;
+}
+.fa-solid {
+  font-size: 0.8vw;
+}
+.hd-language {
+  width: 20%;
+}
+.hd-language ul {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 15%;
+}
+.hd-language ul li {
+  color: #fff;
+  font-size: 0.9vw;
+  font-weight: 600;
+}
+.fa-regular{
+  color: #fff;
+}
+.fa-solid{
+  color: #fff;
 }
 
 /* ==============================================================메인 */
+#container {
+  width: 90%;
+  max-width: 500px; /* 폼의 최대 너비*/
+  margin: 0 auto;
+  padding: 8% 0 6% 0;
+  color: #444;
+}
 .field {
   float: left;
   font-weight: bold;
@@ -32,10 +234,8 @@ body {
   margin-right: 15px;
   /* background-color: aqua; */
   width: 100px;
+  color: #444;
 }
-
-
-
 .r {
   line-height: 55px;
   background-color: burlywood;
@@ -54,22 +254,14 @@ button {
   background-color:  #ffd300;
   font-weight: bold;
   margin: 20px auto;
+  color: #444;
 }
 /* form button:hover,form button:active,form button:focus {
   background:#ffd300;
 } */
 
-#container {
-  width: 90%;
-  max-width: 500px; /* 폼의 최대 너비*/
-  margin: 0 auto;
-  padding: 8% 0 6% 0;
-}
-
 form {
-  
   padding: 3% 3% 6% 3%;
-  border: 1px solid #444;
   width: 100%;
   height: auto; /* 자동으로 늘어나도록 설정 */
   margin: auto;
@@ -77,12 +269,13 @@ form {
   background-color: #fff;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
-
 h1 {
   text-align: center;
   font-size: 25px;
   padding: 3% 0 3% 0;
   margin-bottom: 15%;
+  color: #444;
+  font-weight: bold;
 }
 #user-info li {
   padding: 2%;
@@ -95,11 +288,11 @@ h1 {
   padding-left: 2%;
   white-space: nowrap;
 }
-
 #user-info .field {
   font-weight: bold;
   text-align: left;
   white-space: nowrap;
+  /* color: #444; */
 }
 /* 인풋박스 */
 #user-info input {
@@ -108,16 +301,107 @@ h1 {
   /* border-radius: 5px; */
   padding: 1.5%;
 }
-
 /* 에러시 노출텍스트 */
 #user-info .error {
   max-width: 100%; /* 최대 너비 설정 */
   color: red;
   display: block;
-  font-size: 11px;
+  font-size: 12px;
   font-weight: bold;
   text-align: left;
-  margin-bottom: 5px;
+  margin-top: 5px;
+}
+input, p{
+  display: inline;
+}
+p{
+/* background-color: red;*/
+line-height: 1.5em;
+font-size: 14px;
 }
 
 
+
+/* =====================================푸터 */
+footer {
+  min-width: 320px;
+  font-size: 14px;
+  color: #444;
+  border: 1px solid #444;
+  background-color: #ffd300;
+  /* background-color: #dab8d4; */
+}
+
+.xi-caret-down-min {
+  position: absolute;
+  top: 13px;
+  font-size: 20px;
+  width: 30px;
+  color: #444;
+}
+.ft-menu {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  display: flex;
+  justify-content: left;
+  gap: 7%;
+  padding-left: 7%;
+  position: relative;
+  border-bottom: 1px solid #444;
+  font-weight: bold;
+  white-space: nowrap;
+  text-align: left;
+}
+.site {
+  width: 12%;
+  position: absolute;
+  right: 15%;
+  text-align: center;
+  /* background-color: #fff; */
+  /* color: #444; */
+}
+.familysite {
+  width: 100%;
+  margin-top: 1px;
+  background-color: #fff;
+  border: 1px solid #444;
+  color: #444;
+}
+.familysite li{
+  text-align: center;
+}
+/* .familysite a{
+color: #222;
+} */
+.familysite li:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+footer .logo-img {
+  width: 250px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  padding: 1.5% 0 1.5% 0;
+}
+.sns-img {
+  padding: 1% 0 1% 0;
+  text-align: center;
+}
+.sns-img img {
+  width: 60px;
+  padding-right: 1%;
+}
+.text {
+  color: #444;
+  text-align: center;
+  /* letter-spacing: 0.2px; */
+  line-height: 1.5em;
+}
+.text-copy {
+  font-weight: bold;
+  text-align: center;
+  padding: 0 0 5% 0;
+  color: #444;
+}

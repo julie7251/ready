@@ -5,7 +5,6 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-
   list-style: none;
   font-family: "Gothic A1", sans-serif;
   font-size: 14px;
@@ -13,6 +12,31 @@
   text-decoration: none;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-align: left;
+}
+body{
+background-color: #ffd300;
+}
+ul,
+li {
+  list-style: none;
+  color: #444;
+
+}
+span{
+  color: #fff;
+}
+.fa-regular{
+  color: #fff;
+}
+.fa-solid{
+  color: #fff;
+}
+.error-message{
+  color: red;
+  display: block;
+font-size: 12px;
+padding: 2%;
 }
 .login-page {
   width: 360px;
@@ -20,8 +44,9 @@
   margin: auto;
 }
 h1{
-    font-size: 24px;
+    font-size: 25px;
     padding: 2% 0 30% 0;
+    text-align: center;
 }
 .form {
   position: relative;
@@ -38,29 +63,25 @@ h1{
   /* background: #f2f2f2; */
   background: #fff;
   width: 100%;
-  border: 0.1px solid  rgba(151, 151, 151);;
-  margin: 0 0 15px;
-  padding: 3%;
+  border: 0.1px solid   #888;
+  padding: 4%;
 }
 .form button {
   outline: 0;
   background-color: #ffd300;
   width: 100%;
   border: 0;
-  padding: 3% 0 3% 0;
+  padding: 4%;
   -webkit-transition: all 0.3 ease;
   transition: all 0.3 ease;
   cursor: pointer;
   font-weight: bold;
-}
-.form button:hover,
-.form button:active,
-.form button:focus {
-  background-color: #ffd300;
+  text-align: center;
+  margin-top: 20%;
 }
 .form .message {
   margin: 15px 0 0;
-  color: #b3b3b3;
+  color: #c71212;
   font-size: 12px;
 }
 .form .message a {
@@ -100,8 +121,6 @@ h1{
   color: #f71616;
   text-decoration: none;
 }
-.container .info span .fa {
-}
 .login-page ul {
   display: flex;
   gap: 1%;
@@ -121,8 +140,7 @@ h1{
 }
 .more-cate li a{
     font-size: 12px;
-    color: rgba(151, 151, 151);
-
+    color: #888;
 }
 .more-cate li:last-child a{
     font-size: 12px;
@@ -137,25 +155,116 @@ h1{
   transform: translateY(-50%);
   width: 0.8px; /* 선의 너비 */
   height: 70%; /* 선의 높이 */
-  background-color: rgba(151, 151, 151);
+  background-color:  #888;
 }
 .more-cate > li:last-child::after {
   display: none;
 }
-
 .sns-bt-box {
-  width: 140px;
+  width: 200px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   gap: 4%;
-  /* background-color: #4caf50; */
-  margin: auto;
-  padding: 12% 0 4% 0;
+  margin: 0 auto;
+  padding: 2% 0 4% 0;
+  /* background-color: rebeccapurple; */
 }
 .sns-bt img {
   width: 35px;
 }
-p{
+/* p{
     font-size: 12px;
-    color: rgba(151, 151, 151);
+    color: #444;
+    text-align: center;
+} */
+p{
+  /* background-color: red;*/
+  line-height: 1.5em;
+  font-size: 14px;
+  text-align: center;
+  }
+  
+
+/* =====================================푸터 */
+footer {
+  min-width: 320px;
+  font-size: 14px;
+  color: #444;
+  border: 1px solid #444;
+  background-color: #ffd300;
+  /* background-color: #dab8d4; */
+}
+
+.xi-caret-down-min {
+  position: absolute;
+  top: 13px;
+  font-size: 20px;
+  width: 30px;
+  color: #444;
+}
+.ft-menu {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  display: flex;
+  justify-content: left;
+  gap: 7%;
+  padding-left: 7%;
+  position: relative;
+  border-bottom: 1px solid #444;
+  font-weight: bold;
+  white-space: nowrap;
+  text-align: left;
+}
+.site {
+  width: 12%;
+  position: absolute;
+  right: 15%;
+  text-align: center;
+  /* background-color: #fff; */
+  /* color: #444; */
+}
+.familysite {
+  width: 100%;
+  margin-top: 1px;
+  background-color: #fff;
+  border: 1px solid #444;
+  color: #444;
+}
+.familysite li{
+  text-align: center;
+}
+/* .familysite a{
+color: #222;
+} */
+.familysite li:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+footer .logo-img {
+  width: 250px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  padding: 1.5% 0 1.5% 0;
+}
+.sns-img {
+  padding: 1% 0 1% 0;
+  text-align: center;
+}
+.sns-img img {
+  width: 60px;
+  padding-right: 1%;
+}
+.text {
+  color: #444;
+  text-align: center;
+  /* letter-spacing: 0.2px; */
+  line-height: 1.5em;
+}
+.text-copy {
+  font-weight: bold;
+  text-align: center;
+  padding: 0 0 5% 0;
+  color: #444;
 }

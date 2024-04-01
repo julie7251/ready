@@ -1,47 +1,280 @@
 <!DOCTYPE html>
 <html lang="ko">
   <head>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-NCGPKDP7");
+    </script>
+    <!-- End Google Tag Manager -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>로그인</title>
+    <!-- favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="images/favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="/images/favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- seo -->
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="description"
+      content="레디큐는 맛있는 숙취해소제를 찾는 사람들을 위한 브랜드입니다."
+    />
+    <meta
+      name="keywords"
+      content="레디큐, 한독, readyq, 숙취해소제품, 숙취해소, 레디큐브랜드, 레디큐효능, 레디큐스틱, 레디큐스틱형, 숙취해소제, 맛있는숙취해소, 합리적인숙취해소, 포켓사이즈, 간편한숙취해소, 레디큐효과, 레디큐복용법, 가성비, 필수템, 스틱형, 망고맛, 열대과일맛, 레디큐룰렛이벤트, 룰렛이벤트, 숙취, 망고맛레디큐, 음주전, 음주후, 포켓"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta property="title" content="레디큐" />
+    <meta
+      property="keyword"
+      content="레디큐, 한독, readyq, 숙취해소제품, 숙취해소, 레디큐브랜드, 레디큐효능, 레디큐스틱, 레디큐스틱형, 숙취해소제, 맛있는숙취해소, 합리적인숙취해소, 포켓사이즈, 간편한숙취해소, 레디큐효과, 레디큐복용법, 가성비, 필수템, 스틱형, 망고맛, 열대과일맛, 레디큐룰렛이벤트, 룰렛이벤트, 숙취, 망고맛레디큐, 음주전, 음주후, 포켓"
+    />
+    <meta property="og:title" content="레디큐" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content=" 맛있는 숙취해소제, 레디큐" />
+    <meta property="og:description" content="맛있는 숙취해소제, 레디큐" />
+    <meta
+      property="og:image"
+      content="https://ready-sable.vercel.app/images/logo2.png"
+    />
+    <meta property="og:url" content="https://ready-sable.vercel.app/" />
+    <!-- ikon -->
+    <script
+      src="https://kit.fontawesome.com/5251502df3.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- css -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="css/reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.css"
+    />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/pullpage.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/jiwon.css" />
+    <link rel="stylesheet" href="css/sea.css" />
+    <link rel="stylesheet" href="css/product.css" />
     <link rel="stylesheet" href="css/login.css" />
+    <!-- 외부 JavaScript 파일 -->
+    <script src="js/jiwon.js"></script>
+    <script src="js/main.js" defer></script>
+    <!-- js -->
+    <script src="js/html5shiv.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.js"
+      integrity="sha512-bxzECOBohzcTcWocMAlNDE2kYs0QgwGs4eD8TlAN2vfovq13kfDfp95sJSZrNpt0VMkpP93ZxLC/+WN/7Trw2g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- <script src="js/prefixfree.min.js"></script> -->
+    <script src="js/respond.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- <script src="js/main.js"></script> -->
+    <script src="js/seunga.js"></script>
+    <script src="js/sea.js"></script>
+    <script src="js/join.js"></script>
     <script src="js/login.js"></script>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-NJLM9XX34S"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-NJLM9XX34S");
+    </script>
   </head>
   <body>
-    <div class="login-page">
-      <div class="form">
-        <!-- <img src="IMAGES/logo1.png" alt="logo-img"> -->
-        <h1>로그인</h1>
-        <form class="register-form">
-          <input type="text" placeholder="name" />
-          <input type="password" placeholder="password" />
-          <input type="text" placeholder="email address" />
-          <button>create</button>
-          <p class="message">Already registered? <a href="#">Sign In</a></p>
-        </form>
-        <form class="login-form">
-          <input type="text" placeholder="아이디를 입력하세요" required/>
-          <input type="password" placeholder="비밀번호를 입력하세요" required/>
-          <button class="logon-bt"><a href="index.html">로그인</a></button>
-          <ul class="more-cate">
-            <li><a href="#">아이디 찾기</a></li>
-            <li><a href="#">비밀번호 찾기</a></li>
-            <li><a href="join.html">회원가입</a></li>
-          </ul>
-          <ul class="sns-bt-box">
-            <li>
-              <a href="#" class="sns-bt"><img src="IMAGES/kakao_icon.png" alt="" /></a>
-            </li>
-            <li>
-              <a href="#" class="sns-bt"><img src="IMAGES/naver_icon.png" alt="" /></a>
-            </li>
-            <li>
-              <a href="#" class="sns-bt"><img src="IMAGES/google_icon.png" alt="" /></a>
-            </li>
-          </ul>
-          <p>SNS 간편 로그인</p>
-        </form>
+    <div id="wrap">
+      <header class="header">
+        <div class="hd-left">
+          <a href="index.html"
+            ><img src="images/section1/로고.png" alt="헤더로고"
+          /></a>
+        </div>
+        <div class="hd-right">
+          <div class="hd-right-left">
+            <ul class="hd-nav">
+              <li>
+                <a href="#"><span>브랜드스토리</span></a>
+              </li>
+              <li>
+                <a href="product.html"><span>제품소개</span></a>
+              </li>
+              <li id="event">
+                <a id="event" href="javascript:void(0);"><span>이벤트</span></a>
+              </li>
+              <li>
+                <a href="#"><span>구매처</span></a>
+              </li>
+              <li>
+                <a href="#"><span>뉴스룸</span></a>
+              </li>
+            </ul>
+          </div>
+          <div class="hd-right-right">
+            <div class="hamberger">
+              <span class="hamberger-bf">●</span>
+              <i class="fa-solid fa-bars"></i>
+              <button class="nav-close">닫기</button>
+            </div>
+            <div class="hd-login">
+              <ul>
+                <li>
+                  <a href="#"><i class="fa-regular fa-user"></i></a>
+                </li>
+                <li class="login-ul">
+                  <a href="login22.html"><span>Log In</span></a>
+                  <ul class="signup">
+                    <li>
+                      <a href="join.html"><span>Sign Up</span></a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="singup-i">
+                  <a href="#"
+                    ><span><i class="fa-solid fa-chevron-down"></i></span
+                  ></a>
+                </li>
+              </ul>
+            </div>
+            <div class="hd-language">
+              <ul>
+                <li>
+                  <a href="#"><span>KR</span></a>
+                  <ul class="language">
+                    <li>
+                      <a href="#"><span>EN</span></a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="language-i">
+                  <a href="#"
+                    ><span><i class="fa-solid fa-chevron-down"></i></span
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="login-page">
+        <div class="form">
+          <!-- <img src="IMAGES/logo1.png" alt="logo-img"> -->
+          <h1>로그인</h1>
+          <form class="login-form">
+            <input type="text" id="username" placeholder="아이디를 입력하세요" required/>
+            <span id="usernameError" class="error-message"></span> <!-- 아이디 오류 메시지 -->
+            <input type="password" id="password" placeholder="비밀번호를 입력하세요" required/>
+            <span id="passwordError" class="error-message"></span> <!-- 비밀번호 오류 메시지 -->
+            <button class="logon-bt"><a href="index.html">로그인</a></button>
+            <ul class="more-cate">
+              <li><a href="#">아이디 찾기</a></li>
+              <li><a href="#">비밀번호 찾기</a></li>
+              <li><a href="join.html">회원가입</a></li>
+            </ul>
+            <ul class="sns-bt-box">
+              <li>
+                <a href="#" class="sns-bt"><img src="IMAGES/kakao_icon.png" alt="" /></a>
+              </li>
+              <li>
+                <a href="#" class="sns-bt"><img src="IMAGES/naver_icon.png" alt="" /></a>
+              </li>
+              <li>
+                <a href="#" class="sns-bt"><img src="IMAGES/google_icon.png" alt="" /></a>
+              </li>
+            </ul>
+            <p>SNS 간편 로그인</p>
+          </form>
+        </div>
       </div>
+      <footer class="section fp-auto-height" id="section6">
+        <nav class="ft-nav">
+          <ul class="ft-menu">
+            <li><a href="#">회사소개</a></li>
+            <li><a href="#">이용약관</a></li>
+            <li><a href="#">개인정보처리방침</a></li>
+            <li><a href="#">고객센터</a></li>
+            <li class="site">
+              <a href="#" class="family-site-toggle"
+                >패밀리사이트<i class="xi-caret-down-min"></i
+              ></a>
+              <ul class="familysite" style="display: none">
+                <li><a href="#">한독프로몰</a></li>
+                <li><a href="#">뉴트리시아</a></li>
+                <li><a href="#">클리어틴</a></li>
+                <li><a href="#">페스</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <div class="ft-bt">
+          <a href="#"
+            ><img src="images/logo.png" class="logo-img" alt="로고"
+          /></a>
+          <div class="contents-box">
+            <div class="text">
+              <p> 주식회사 레디큐 ㅣ서울특별시 강남구 테헤란로 123 (하나빌딩)</p>
+              <p>TEL. 1544-0831</p>
+              <p>평일 10:00 ~ 17:00 (주말 및 공휴일 휴무)</p>
+              <div class="sns-img">
+                <a href="#"> <img src="images/facebook.png" alt="1" /></a>
+                <a href="#"><img src="images/instar.png" alt="2" /></a>
+                <a href="#"><img src="images/youtube.png" alt="3" /></a>
+              </div>
+              <p class="text-copy">COPYRIGHT (C) 2024 GREENART ACADEMY</p>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
   </body>
 </html>
