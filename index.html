@@ -26,20 +26,25 @@
     <link rel="mask-icon" href="/images/favicon/safari-pinned-tab.svg" color="#5bbad5" />
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
-    <!-- SEO -->
-<meta name="mobile-web-app-capable" content="yes" />
-<meta name="format-detection" content="telephone=no" />
-<meta name="apple-mobile-web-app-capable" content="yes" />
-<meta name="description" content="레디큐는 맛있는 숙취해소제를 찾는 사람들을 위한 브랜드입니다." />
-<meta name="robots" content="index, follow" />
-<meta property="title" content="레디큐" />
-<meta property="keywords" content="레디큐, 한독, readyq, 숙취해소제품, 숙취해소, 레디큐브랜드, 레디큐효능, 레디큐스틱, 레디큐스틱형, 숙취해소제, 맛있는숙취해소, 합리적인숙취해소, 포켓사이즈, 간편한숙취해소, 레디큐효과, 레디큐복용법, 가성비, 필수템, 스틱형, 망고맛, 열대과일맛, 레디큐룰렛이벤트, 룰렛이벤트, 숙취, 망고맛레디큐, 음주전, 음주후, 포켓" />
-<meta property="og:title" content="레디큐" />
-<meta property="og:type" content="website" />
-<meta property="og:description" content="레디큐는 맛있는 숙취해소제를 찾는 사람들을 위한 브랜드입니다." />
-<meta property="og:image" content="https://ready-sable.vercel.app/images/logo.png" />
-<meta property="og:url" content="https://ready-sable.vercel.app/" />
-
+    <!-- seo -->
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="description" content="레디큐는 맛있는 숙취해소제를 찾는 사람들을 위한 브랜드입니다." />
+    <meta
+      name="keywords"
+      content="레디큐, 한독, readyq, 숙취해소제품, 숙취해소, 레디큐브랜드, 레디큐효능, 레디큐스틱, 레디큐스틱형, 숙취해소제, 맛있는숙취해소, 합리적인숙취해소, 포켓사이즈, 간편한숙취해소, 레디큐효과, 레디큐복용법, 가성비, 필수템, 스틱형, 망고맛, 열대과일맛, 레디큐룰렛이벤트, 룰렛이벤트, 숙취, 망고맛레디큐, 음주전, 음주후, 포켓" />
+    <meta name="robots" content="index, follow" />
+    <meta property="title" content="레디큐" />
+    <meta
+      property="keyword"
+      content="레디큐, 한독, readyq, 숙취해소제품, 숙취해소, 레디큐브랜드, 레디큐효능, 레디큐스틱, 레디큐스틱형, 숙취해소제, 맛있는숙취해소, 합리적인숙취해소, 포켓사이즈, 간편한숙취해소, 레디큐효과, 레디큐복용법, 가성비, 필수템, 스틱형, 망고맛, 열대과일맛, 레디큐룰렛이벤트, 룰렛이벤트, 숙취, 망고맛레디큐, 음주전, 음주후, 포켓" />
+    <meta property="og:title" content="레디큐" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content=" 맛있는 숙취해소제, 레디큐" />
+    <meta property="og:description" content="맛있는 숙취해소제, 레디큐" />
+    <meta property="og:image" content="https://ready-sable.vercel.app/images/logo.png" />
+    <meta property="og:url" content="https://ready-sable.vercel.app/" />
     <!-- ikon -->
     <script src="https://kit.fontawesome.com/5251502df3.js" crossorigin="anonymous"></script>
     <!-- css -->
@@ -114,7 +119,7 @@
                         <label class="field" for="resultNumber">인증번호 : </label>
                         <input type="text" class="input-box" id="resultNumber" name="resultNumber" />
                       </li> -->
-                      <button type="button" class="resultBt">본인인증</button>
+                      <button class="resultBt">인증하기</button>
                       <li class="checkbox">
                         <input type="checkbox" id="resultInfo" name="resultInfo" />
                         <label for="resultInfo" class="check">개인정보 수집 동의</label>
@@ -185,7 +190,7 @@
           </div>
           <ul class="mb-nav">
             <li>
-              <a href="login.html" target="_blank"><span>Log In</span></a>
+              <a href="login.html"><span>Log In</span></a>
             </li>
             <li>
               <a href="join.html"><span>Sign Up</span></a>
@@ -212,7 +217,7 @@
                 <a href="#"><i class="fa-regular fa-user"></i></a>
               </li>
               <li class="login-ul">
-                <a href="login.html" target="_blank"><span>Log In</span></a>
+                <a href="login.html"><span>Log In</span></a>
                 <ul class="signup">
                   <li>
                     <a href="join.html"><span>Sign Up</span></a>
@@ -229,10 +234,10 @@
           <div class="hd-language">
             <ul>
               <li>
-                <a href="#"><span>KR</span></a>
+                <a href="#" id="kr"><span>KR</span></a>
                 <ul class="language">
                   <li>
-                    <a href="#"><span>EN</span></a>
+                    <a href="#" id="en"><span>EN</span></a>
                   </li>
                 </ul>
               </li>
@@ -242,10 +247,26 @@
                 ></a>
               </li>
             </ul>
+            <script>
+              document.addEventListener('DOMContentLoaded', function () {
+  // EN을 클릭했을 때의 이벤트 리스너를 추가합니다.
+  document.getElementById('en').addEventListener('click', function (e) {
+    e.preventDefault(); // 기본 이벤트를 방지합니다.
+
+    // KR과 EN의 위치를 바꾸는 로직을 구현합니다.
+    var kr = document.getElementById('kr');
+    var en = document.getElementById('en');
+
+    // KR과 EN의 내용을 교체합니다.
+    var krText = kr.innerHTML;
+    kr.innerHTML = en.innerHTML;
+    en.innerHTML = krText;
+  });
+});
+            </script>
           </div>
         </div>
       </div>
-     
     </header>
     <div id="fullpage">
       <div class="section" id="section1">

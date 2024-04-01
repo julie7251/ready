@@ -136,9 +136,7 @@
     <div id="wrap">
       <header class="header">
         <div class="hd-left">
-          <a href="index.html"
-            ><img src="images/section1/로고.png" alt="헤더로고"
-          /></a>
+          <a href="index.html"><img src="images/section1/로고.png" alt="헤더로고" /></a>
         </div>
         <div class="hd-right">
           <div class="hd-right-left">
@@ -150,7 +148,7 @@
                 <a href="product.html"><span>제품소개</span></a>
               </li>
               <li id="event">
-                <a id="event" href="javascript:void(0);"><span>이벤트</span></a>
+                <a href="#"><span>이벤트</span></a>
               </li>
               <li>
                 <a href="#"><span>구매처</span></a>
@@ -162,17 +160,40 @@
           </div>
           <div class="hd-right-right">
             <div class="hamberger">
-              <span class="hamberger-bf">●</span>
+              <!-- <span class="hamberger-bf">●</span> -->
               <i class="fa-solid fa-bars"></i>
-              <button class="nav-close">닫기</button>
+              <!-- <button class="nav-close">닫기</button> -->
             </div>
+            <ul class="mb-nav">
+              <li>
+                <a href="login.html"><span>Log In</span></a>
+              </li>
+              <li>
+                <a href="join.html"><span>Sign Up</span></a>
+              </li>
+              <li>
+                <a href="#"><span>브랜드스토리</span></a>
+              </li>
+              <li>
+                <a href="product.html"><span>제품소개</span></a>
+              </li>
+              <li id="event">
+                <a href="index.html"><span>이벤트</span></a>
+              </li>
+              <li>
+                <a href="#"><span>구매처</span></a>
+              </li>
+              <li>
+                <a href="#"><span>뉴스룸</span></a>
+              </li>
+            </ul>
             <div class="hd-login">
               <ul>
                 <li>
                   <a href="#"><i class="fa-regular fa-user"></i></a>
                 </li>
                 <li class="login-ul">
-                  <a href="login22.html"><span>Log In</span></a>
+                  <a href="login.html"><span>Log In</span></a>
                   <ul class="signup">
                     <li>
                       <a href="join.html"><span>Sign Up</span></a>
@@ -189,10 +210,10 @@
             <div class="hd-language">
               <ul>
                 <li>
-                  <a href="#"><span>KR</span></a>
+                  <a href="#" id="kr"><span>KR</span></a>
                   <ul class="language">
                     <li>
-                      <a href="#"><span>EN</span></a>
+                      <a href="#" id="en"><span>EN</span></a>
                     </li>
                   </ul>
                 </li>
@@ -202,6 +223,23 @@
                   ></a>
                 </li>
               </ul>
+              <script>
+                document.addEventListener('DOMContentLoaded', function () {
+    // EN을 클릭했을 때의 이벤트 리스너를 추가합니다.
+    document.getElementById('en').addEventListener('click', function (e) {
+      e.preventDefault(); // 기본 이벤트를 방지합니다.
+  
+      // KR과 EN의 위치를 바꾸는 로직을 구현합니다.
+      var kr = document.getElementById('kr');
+      var en = document.getElementById('en');
+  
+      // KR과 EN의 내용을 교체합니다.
+      var krText = kr.innerHTML;
+      kr.innerHTML = en.innerHTML;
+      en.innerHTML = krText;
+    });
+  });
+              </script>
             </div>
           </div>
         </div>
