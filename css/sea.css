@@ -1253,171 +1253,95 @@
   }
 }
 @media screen and (max-width: 530px) {
-  .hd-left {
-    padding-left: 10px;
-    width: 40%;
-  }
-  .hd-left img {
+  .section1-bgbg {
+    position: relative;
+    display: inline-block;
+    left: 0%;
+    bottom: -40%;
+    transform: translateY(-50%);
     width: 100%;
+    /* height: 100%; */
   }
-  .section1-bgbg > img {
-    display: none;
-  }
-  /* .section1-bgbg img {
+  .section1-bgbg img {
     width: 90%;
     height: 100%;
-  } */
-  .section1-bg2 > img {
-    display: none;
   }
-  /* .section1-bg2 img {
+  .section1-bg2 {
+    position: absolute;
+    bottom: 55%;
+    left: 11%;
+    width: 76%;
+  }
+  .section1-bg2 img {
     width: 90%;
     display: block;
     animation: fadeInUp 1.5s ease-out forwards;
-  } */
-  .section1-bgbg .starbg {
-    position: relative;
-    top: 80px;
-    left: -3%;
-    display: inline-block;
-    width: 100%;
-    height: 770px;
-  }
-  .section1-bgbg .qua {
-    position: absolute;
-    top: 10%;
-    right: 10%;
-    display: block;
-    width: 105%;
-    height: 70%;
-  }
-  .section1-bgbg .yummy {
-    position: absolute;
-    bottom: 9%;
-    left: 21%;
-    width: 50%;
-    height: 20%;
-    display: block;
   }
   .jangseonggue {
     position: absolute;
-    bottom: 40%;
-    left: 16%;
+    bottom: 44%;
+    left: 23%;
     width: 100%;
   }
   .jangseonggue img {
-    width: 60%;
+    width: 45%;
     height: 100%;
     animation: tilt 0.5s infinite alternate;
   }
-  .scroll {
-    position: absolute;
-    bottom: 8%;
-    left: 45.5%;
-    transform: translateX(-44%);
-    width: 15%;
-    /* background-color: aqua; */
+  .section1-bgbg .starbg {
+    display: none;
   }
-  .scroll > img {
-    display: block;
-    margin: auto;
-    width: 100%;
-    height: 100%;
+  .ready-Q .qua {
+    display: none;
   }
-  .scroll-btn {
-    position: absolute;
-    display: block;
-    bottom: 77%;
-    left: 42%;
-    width: 12%;
-    height: 12%;
-    border-radius: 50%;
-    background-color: #fff;
-    animation: disappear 3s infinite;
+  .section1-bgbg .yummy {
+    display: none;
   }
 }
 @media screen and (max-width: 453px) {
-  .hd-left {
-    padding-left: 10px;
-    width: 40%;
-  }
-  .hd-left img {
+  .section1-bgbg {
+    position: relative;
+    display: inline-block;
+    left: 0%;
+    bottom: -40%;
+    transform: translateY(-50%);
     width: 100%;
+    /* height: 100%; */
   }
-  .section1-bgbg > img {
-    display: none;
-  }
-  /* .section1-bgbg img {
+  .section1-bgbg img {
     width: 90%;
     height: 100%;
-  } */
-  .section1-bg2 > img {
-    display: none;
   }
-  /* .section1-bg2 img {
+  .section1-bg2 {
+    position: absolute;
+    bottom: 58%;
+    left: 12%;
+    width: 75%;
+  }
+  .section1-bg2 img {
     width: 90%;
     display: block;
     animation: fadeInUp 1.5s ease-out forwards;
-  } */
-  .section1-bgbg .starbg {
-    position: relative;
-    top: 80px;
-    left: -3%;
-    display: inline-block;
-    width: 100%;
-    height: 780px;
-  }
-  .section1-bgbg .qua {
-    position: absolute;
-    top: 13%;
-    right: 2%;
-    display: block;
-    width: 120%;
-    height: 60%;
-  }
-  .section1-bgbg .yummy {
-    position: absolute;
-    bottom: 9%;
-    left: 17%;
-    width: 60%;
-    height: 20%;
-    display: block;
   }
   .jangseonggue {
     position: absolute;
-    bottom: 40%;
-    left: 12%;
+    bottom: 47%;
+    left: 21%;
     width: 100%;
   }
   .jangseonggue img {
-    width: 70%;
+    width: 50%;
     height: 100%;
     animation: tilt 0.5s infinite alternate;
   }
-  .scroll {
-    position: absolute;
-    bottom: 8%;
-    left: 45.5%;
-    transform: translateX(-44%);
-    width: 16%;
-    /* background-color: aqua; */
+  .section1-bgbg .starbg {
+    display: none;
   }
-  .scroll > img {
-    display: block;
-    margin: auto;
-    width: 100%;
-    height: 100%;
+  .ready-Q .qua {
+    display: none;
   }
-  .scroll-btn {
-    position: absolute;
-    display: block;
-    bottom: 77%;
-    left: 42%;
-    width: 12%;
-    height: 12%;
-    border-radius: 50%;
-    background-color: #fff;
-    animation: disappear 3s infinite;
+  .section1-bgbg .yummy {
+    display: none;
   }
   .section2-tit {
     position: absolute;
@@ -1477,173 +1401,96 @@
   }
 }
 @media screen and (max-width: 412px) {
-  .hd-left {
-    padding-left: 10px;
-    width: 40%;
-  }
-  .hd-left img {
+  .section1-bgbg {
+    position: relative;
+    display: inline-block;
+    left: 0%;
+    bottom: -40%;
+    transform: translateY(-50%);
     width: 100%;
+    /* height: 100%; */
   }
-  .section1-bgbg > img {
-    display: none;
-  }
-  /* .section1-bgbg img {
+  .section1-bgbg img {
     width: 90%;
     height: 100%;
-  } */
-  .section1-bg2 > img {
-    display: none;
   }
-  /* .section1-bg2 img {
+  .section1-bg2 {
+    position: absolute;
+    bottom: 58%;
+    left: 12%;
+    width: 75%;
+  }
+  .section1-bg2 img {
     width: 90%;
     display: block;
     animation: fadeInUp 1.5s ease-out forwards;
-  } */
-  .section1-bgbg .starbg {
-    position: relative;
-    top: 80px;
-    left: -3%;
-    display: inline-block;
-    width: 100%;
-    height: 800px;
-  }
-  .section1-bgbg .qua {
-    position: absolute;
-    top: 13%;
-    right: 2%;
-    display: block;
-    width: 120%;
-    height: 60%;
-  }
-  .section1-bgbg .yummy {
-    position: absolute;
-    bottom: 9%;
-    left: 17%;
-    width: 60%;
-    height: 20%;
-    display: block;
   }
   .jangseonggue {
     position: absolute;
-    bottom: 40%;
-    left: 8%;
+    bottom: 49%;
+    left: 23%;
     width: 100%;
   }
   .jangseonggue img {
-    width: 80%;
+    width: 45%;
     height: 100%;
     animation: tilt 0.5s infinite alternate;
   }
-  .scroll {
-    position: absolute;
-    bottom: 8%;
-    left: 45.5%;
-    transform: translateX(-44%);
-    width: 20%;
-    /* background-color: aqua; */
+  .section1-bgbg .starbg {
+    display: none;
   }
-  .scroll > img {
-    display: block;
-    margin: auto;
-    width: 100%;
-    height: 100%;
+  .ready-Q .qua {
+    display: none;
   }
-  .scroll-btn {
-    position: absolute;
-    display: block;
-    bottom: 77%;
-    left: 42%;
-    width: 12%;
-    height: 12%;
-    border-radius: 50%;
-    background-color: #fff;
-    animation: disappear 3s infinite;
+  .section1-bgbg .yummy {
+    display: none;
   }
 }
 @media screen and (max-width: 380px) {
-  .hd-left {
-    padding-left: 10px;
-    width: 40%;
-  }
-  .hd-left img {
+  .section1-bgbg {
+    position: relative;
+    display: inline-block;
+    left: 0%;
+    bottom: -40%;
+    transform: translateY(-50%);
     width: 100%;
+    /* height: 100%; */
   }
-  .section1-bgbg > img {
-    display: none;
-  }
-  /* .section1-bgbg img {
+  .section1-bgbg img {
     width: 90%;
     height: 100%;
-  } */
-  .section1-bg2 > img {
-    display: none;
   }
-  /* .section1-bg2 img {
+  .section1-bg2 {
+    position: absolute;
+    bottom: 58%;
+    left: 12%;
+    width: 75%;
+  }
+  .section1-bg2 img {
     width: 90%;
     display: block;
     animation: fadeInUp 1.5s ease-out forwards;
-  } */
-  .section1-bgbg .starbg {
-    position: relative;
-    top: 80px;
-    left: -3%;
-    display: inline-block;
-    width: 100%;
-    height: 800px;
-  }
-  .section1-bgbg .qua {
-    position: absolute;
-    top: 15%;
-    right: 2%;
-    display: block;
-    width: 120%;
-    height: 50%;
-  }
-  .section1-bgbg .yummy {
-    position: absolute;
-    bottom: 9%;
-    left: 7%;
-    width: 80%;
-    height: 20%;
-    display: block;
   }
   .jangseonggue {
     position: absolute;
-    bottom: 40%;
-    left: 2%;
+    bottom: 52%;
+    left: 23%;
     width: 100%;
   }
   .jangseonggue img {
-    width: 90%;
+    width: 45%;
     height: 100%;
     animation: tilt 0.5s infinite alternate;
   }
-  .scroll {
-    position: absolute;
-    bottom: 8%;
-    left: 45.5%;
-    transform: translateX(-44%);
-    width: 20%;
-    /* background-color: aqua; */
+  .section1-bgbg .starbg {
+    display: none;
   }
-  .scroll > img {
-    display: block;
-    margin: auto;
-    width: 100%;
-    height: 100%;
+  .ready-Q .qua {
+    display: none;
   }
-  .scroll-btn {
-    position: absolute;
-    display: block;
-    bottom: 77%;
-    left: 42%;
-    width: 12%;
-    height: 12%;
-    border-radius: 50%;
-    background-color: #fff;
-    animation: disappear 3s infinite;
+  .section1-bgbg .yummy {
+    display: none;
   }
-  .sectio
   .section2-tit {
     position: absolute;
     top: 12%;
