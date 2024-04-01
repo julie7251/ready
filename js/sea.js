@@ -37,11 +37,8 @@ $(function () {
         //   $(this).get(0).play();
         // });
       }
-    
     },
-
   });
-
   // 이벤트 핸들러
   $(".singup-i").click(function () {
     $(".signup li").fadeToggle(600);
