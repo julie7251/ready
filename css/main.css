@@ -453,6 +453,8 @@ body {
 }
 .hd-language {
   width: 20%;
+  display: flex; /* Flexbox를 사용하여 아이템을 수평으로 정렬 */
+  transition: all 0.5s ease;
 }
 .hd-language ul {
   display: flex;
@@ -465,7 +467,25 @@ body {
   font-size: 0.9vw;
   font-weight: 600;
 }
+.language-en {
+  order: 1; /* 기본 순서 */
+  transition: all 0.5s ease; /* 부드러운 전환 효과 적용 */
+}
 
+/* KR 언어 선택 영역 */
+.language-kr {
+  order: 2; /* 기본 순서 */
+  transition: all 0.5s ease; /* 부드러운 전환 효과 적용 */
+}
+
+/* 순서 변경 시 적용될 스타일 */
+.switched .language-en {
+  order: 2;
+}
+
+.switched .language-kr {
+  order: 1;
+}
 /* 섹션1 */
 #section1 {
   width: 100%;
