@@ -1253,95 +1253,171 @@
   }
 }
 @media screen and (max-width: 530px) {
-  .section1-bgbg {
-    position: relative;
-    display: inline-block;
-    left: 0%;
-    bottom: -40%;
-    transform: translateY(-50%);
-    width: 100%;
-    /* height: 100%; */
+  .hd-left {
+    padding-left: 10px;
+    width: 40%;
   }
-  .section1-bgbg img {
+  .hd-left img {
+    width: 100%;
+  }
+  .section1-bgbg > img {
+    display: none;
+  }
+  /* .section1-bgbg img {
     width: 90%;
     height: 100%;
+  } */
+  .section1-bg2 > img {
+    display: none;
   }
-  .section1-bg2 {
-    position: absolute;
-    bottom: 55%;
-    left: 11%;
-    width: 76%;
-  }
-  .section1-bg2 img {
+  /* .section1-bg2 img {
     width: 90%;
     display: block;
     animation: fadeInUp 1.5s ease-out forwards;
+  } */
+  .section1-bgbg .starbg {
+    position: relative;
+    top: 80px;
+    left: -3%;
+    display: inline-block;
+    width: 100%;
+    height: 770px;
+  }
+  .section1-bgbg .qua {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    display: block;
+    width: 105%;
+    height: 70%;
+  }
+  .section1-bgbg .yummy {
+    position: absolute;
+    bottom: 9%;
+    left: 21%;
+    width: 50%;
+    height: 20%;
+    display: block;
   }
   .jangseonggue {
     position: absolute;
-    bottom: 44%;
-    left: 23%;
+    bottom: 40%;
+    left: 16%;
     width: 100%;
   }
   .jangseonggue img {
-    width: 45%;
+    width: 60%;
     height: 100%;
     animation: tilt 0.5s infinite alternate;
   }
-  .section1-bgbg .starbg {
-    display: none;
+  .scroll {
+    position: absolute;
+    bottom: 8%;
+    left: 45.5%;
+    transform: translateX(-44%);
+    width: 15%;
+    /* background-color: aqua; */
   }
-  .ready-Q .qua {
-    display: none;
+  .scroll > img {
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: 100%;
   }
-  .section1-bgbg .yummy {
-    display: none;
+  .scroll-btn {
+    position: absolute;
+    display: block;
+    bottom: 77%;
+    left: 42%;
+    width: 12%;
+    height: 12%;
+    border-radius: 50%;
+    background-color: #fff;
+    animation: disappear 3s infinite;
   }
 }
 @media screen and (max-width: 453px) {
-  .section1-bgbg {
-    position: relative;
-    display: inline-block;
-    left: 0%;
-    bottom: -40%;
-    transform: translateY(-50%);
-    width: 100%;
-    /* height: 100%; */
+  .hd-left {
+    padding-left: 10px;
+    width: 40%;
   }
-  .section1-bgbg img {
+  .hd-left img {
+    width: 100%;
+  }
+  .section1-bgbg > img {
+    display: none;
+  }
+  /* .section1-bgbg img {
     width: 90%;
     height: 100%;
+  } */
+  .section1-bg2 > img {
+    display: none;
   }
-  .section1-bg2 {
-    position: absolute;
-    bottom: 58%;
-    left: 12%;
-    width: 75%;
-  }
-  .section1-bg2 img {
+  /* .section1-bg2 img {
     width: 90%;
     display: block;
     animation: fadeInUp 1.5s ease-out forwards;
+  } */
+  .section1-bgbg .starbg {
+    position: relative;
+    top: 80px;
+    left: -3%;
+    display: inline-block;
+    width: 100%;
+    height: 780px;
+  }
+  .section1-bgbg .qua {
+    position: absolute;
+    top: 13%;
+    right: 2%;
+    display: block;
+    width: 120%;
+    height: 60%;
+  }
+  .section1-bgbg .yummy {
+    position: absolute;
+    bottom: 9%;
+    left: 17%;
+    width: 60%;
+    height: 20%;
+    display: block;
   }
   .jangseonggue {
     position: absolute;
-    bottom: 47%;
-    left: 21%;
+    bottom: 40%;
+    left: 12%;
     width: 100%;
   }
   .jangseonggue img {
-    width: 50%;
+    width: 70%;
     height: 100%;
     animation: tilt 0.5s infinite alternate;
   }
-  .section1-bgbg .starbg {
-    display: none;
+  .scroll {
+    position: absolute;
+    bottom: 8%;
+    left: 45.5%;
+    transform: translateX(-44%);
+    width: 16%;
+    /* background-color: aqua; */
   }
-  .ready-Q .qua {
-    display: none;
+  .scroll > img {
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: 100%;
   }
-  .section1-bgbg .yummy {
-    display: none;
+  .scroll-btn {
+    position: absolute;
+    display: block;
+    bottom: 77%;
+    left: 42%;
+    width: 12%;
+    height: 12%;
+    border-radius: 50%;
+    background-color: #fff;
+    animation: disappear 3s infinite;
   }
   .section2-tit {
     position: absolute;
@@ -1401,96 +1477,173 @@
   }
 }
 @media screen and (max-width: 412px) {
-  .section1-bgbg {
-    position: relative;
-    display: inline-block;
-    left: 0%;
-    bottom: -40%;
-    transform: translateY(-50%);
-    width: 100%;
-    /* height: 100%; */
+  .hd-left {
+    padding-left: 10px;
+    width: 40%;
   }
-  .section1-bgbg img {
+  .hd-left img {
+    width: 100%;
+  }
+  .section1-bgbg > img {
+    display: none;
+  }
+  /* .section1-bgbg img {
     width: 90%;
     height: 100%;
+  } */
+  .section1-bg2 > img {
+    display: none;
   }
-  .section1-bg2 {
-    position: absolute;
-    bottom: 58%;
-    left: 12%;
-    width: 75%;
-  }
-  .section1-bg2 img {
+  /* .section1-bg2 img {
     width: 90%;
     display: block;
     animation: fadeInUp 1.5s ease-out forwards;
+  } */
+  .section1-bgbg .starbg {
+    position: relative;
+    top: 80px;
+    left: -3%;
+    display: inline-block;
+    width: 100%;
+    height: 800px;
+  }
+  .section1-bgbg .qua {
+    position: absolute;
+    top: 13%;
+    right: 2%;
+    display: block;
+    width: 120%;
+    height: 60%;
+  }
+  .section1-bgbg .yummy {
+    position: absolute;
+    bottom: 9%;
+    left: 17%;
+    width: 60%;
+    height: 20%;
+    display: block;
   }
   .jangseonggue {
     position: absolute;
-    bottom: 49%;
-    left: 23%;
+    bottom: 40%;
+    left: 8%;
     width: 100%;
   }
   .jangseonggue img {
-    width: 45%;
+    width: 80%;
     height: 100%;
     animation: tilt 0.5s infinite alternate;
   }
-  .section1-bgbg .starbg {
-    display: none;
+  .scroll {
+    position: absolute;
+    bottom: 8%;
+    left: 45.5%;
+    transform: translateX(-44%);
+    width: 20%;
+    /* background-color: aqua; */
   }
-  .ready-Q .qua {
-    display: none;
+  .scroll > img {
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: 100%;
   }
-  .section1-bgbg .yummy {
-    display: none;
+  .scroll-btn {
+    position: absolute;
+    display: block;
+    bottom: 77%;
+    left: 42%;
+    width: 12%;
+    height: 12%;
+    border-radius: 50%;
+    background-color: #fff;
+    animation: disappear 3s infinite;
   }
 }
 @media screen and (max-width: 380px) {
-  .section1-bgbg {
-    position: relative;
-    display: inline-block;
-    left: 0%;
-    bottom: -40%;
-    transform: translateY(-50%);
-    width: 100%;
-    /* height: 100%; */
+  .hd-left {
+    padding-left: 10px;
+    width: 40%;
   }
-  .section1-bgbg img {
+  .hd-left img {
+    width: 100%;
+  }
+  .section1-bgbg > img {
+    display: none;
+  }
+  /* .section1-bgbg img {
     width: 90%;
     height: 100%;
+  } */
+  .section1-bg2 > img {
+    display: none;
   }
-  .section1-bg2 {
-    position: absolute;
-    bottom: 58%;
-    left: 12%;
-    width: 75%;
-  }
-  .section1-bg2 img {
+  /* .section1-bg2 img {
     width: 90%;
     display: block;
     animation: fadeInUp 1.5s ease-out forwards;
+  } */
+  .section1-bgbg .starbg {
+    position: relative;
+    top: 80px;
+    left: -3%;
+    display: inline-block;
+    width: 100%;
+    height: 800px;
+  }
+  .section1-bgbg .qua {
+    position: absolute;
+    top: 15%;
+    right: 2%;
+    display: block;
+    width: 120%;
+    height: 50%;
+  }
+  .section1-bgbg .yummy {
+    position: absolute;
+    bottom: 9%;
+    left: 7%;
+    width: 80%;
+    height: 20%;
+    display: block;
   }
   .jangseonggue {
     position: absolute;
-    bottom: 52%;
-    left: 23%;
+    bottom: 40%;
+    left: 2%;
     width: 100%;
   }
   .jangseonggue img {
-    width: 45%;
+    width: 90%;
     height: 100%;
     animation: tilt 0.5s infinite alternate;
   }
-  .section1-bgbg .starbg {
-    display: none;
+  .scroll {
+    position: absolute;
+    bottom: 8%;
+    left: 45.5%;
+    transform: translateX(-44%);
+    width: 20%;
+    /* background-color: aqua; */
   }
-  .ready-Q .qua {
-    display: none;
+  .scroll > img {
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: 100%;
   }
-  .section1-bgbg .yummy {
-    display: none;
+  .scroll-btn {
+    position: absolute;
+    display: block;
+    bottom: 77%;
+    left: 42%;
+    width: 12%;
+    height: 12%;
+    border-radius: 50%;
+    background-color: #fff;
+    animation: disappear 3s infinite;
   }
+  .sectio
   .section2-tit {
     position: absolute;
     top: 12%;
