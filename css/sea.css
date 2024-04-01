@@ -1251,8 +1251,7 @@
   .hd-left img {
     width: 100%;
   }
-}
-@media screen and (max-width: 530px) {
+}@media screen and (max-width: 530px) {
   .hd-left {
     padding-left: 10px;
     width: 40%;
